@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONIG SYSTEMS | REDE OFTALMO V3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #050505; color: #E5E5E5; font-family: 'Inter', sans-serif; overflow: hidden; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .accent { color: #10B981; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .slide { height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 0 10%; position: relative; }
+        .sim-bar { height: 8px; width: 100%; background: rgba(255,255,255,0.1); border-radius: 99px; position: relative; }
+        .sim-handle { height: 24px; width: 24px; background: #10B981; border-radius: 50%; position: absolute; top: 50%; left: 70%; transform: translate(-50%, -50%); box-shadow: 0 0 20px rgba(16, 185, 129, 0.6); }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 3: O SIMULADOR DE ROI (A CURA) -->
+    <div class="slide" id="slide3">
+        <div class="max-w-5xl">
+            <p class="uppercase tracking-widest text-sm mb-6 opacity-60">Konig Systems | O Retorno</p>
+            <h2 class="serif text-6xl mb-12">O investimento que se <span class="italic accent">paga em dias.</span></h2>
+            
+            <div class="grid grid-cols-12 gap-12 items-center">
+                <div class="col-span-7">
+                    <div class="glass p-10 rounded-3xl">
+                        <p class="text-sm uppercase tracking-widest mb-10 opacity-50">Simulador de Recuperação Operacional</p>
+                        
+                        <div class="mb-12">
+                            <div class="flex justify-between mb-4 text-sm font-bold">
+                                <span>TAXA DE RECUPERAÇÃO DE AGENDA</span>
+                                <span class="accent">70%</span>
+                            </div>
+                            <div class="sim-bar">
+                                <div class="sim-handle"></div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-8">
+                            <div>
+                                <p class="text-xs opacity-40 mb-1">CAPACIDADE CLÍNICA</p>
+                                <p class="text-2xl font-light">60 Consultórios</p>
+                            </div>
+                            <div>
+                                <p class="text-xs opacity-40 mb-1">TICKET MÉDIO CIRÚRGICO</p>
+                                <p class="text-2xl font-light">R$ 4.500,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-5">
+                    <div class="text-center">
+                        <p class="text-sm opacity-50 mb-2">LUCRO RECUPERADO / MÊS</p>
+                        <div class="text-7xl serif accent mb-8">R$ 189k</div>
+                        <p class="text-sm opacity-60 mb-10 leading-relaxed">
+                            A tecnologia Konig transforma o custo da ociosidade em infraestrutura de crescimento acelerado para a Rede Oftalmo.
+                        </p>
+                        <button class="w-full py-5 bg-emerald-500 text-black font-bold rounded-xl hover:bg-emerald-400 transition-all uppercase tracking-widest text-sm">
+                            Iniciar Implantação de Elite
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
