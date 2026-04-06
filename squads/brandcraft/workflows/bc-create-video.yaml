@@ -1,0 +1,52 @@
+name: bc-create-video
+description: Workflow para criar vídeos programáticos (Reels, motion graphics, carousels animados)
+pipeline: "Maestro → Vault → Director (Remotion) → Brush (assets) → Gauge (QA)"
+
+steps:
+  - name: Load Template
+    description: Carrega design tokens para vídeo
+    agent: Vault
+    command: "*load-template --name={template_name}"
+    
+  - name: Configure Composition
+    description: Configura composição Remotion
+    agent: Director
+    command: "*create-reel --content={content} --duration={duration}"
+    
+  - name: Generate Assets
+    description: Gera assets visuais
+    agent: Brush
+    command: "*generate-image --prompt={scene_description}"
+    
+  - name: Render Video
+    description: Renderiza composição para MP4
+    agent: Director
+    command: "*render-video --compositionId={composition_id}"
+    
+  - name: Validate Quality
+    description: Valida consistência da marca
+    agent: Gauge
+    command: "*validate-tokens --document={video_file}"
+
+inputs:
+  - name: template_name
+    type: string
+    required: true
+  - name: content
+    type: string
+    required: true
+  - name: duration
+    type: number
+    default: 15
+    description: Duração em segundos
+  - name: format
+    type: string
+    enum: [reel, story, landscape, square, animated-carousel]
+    default: reel
+    
+outputs:
+  - name: video
+    type: file
+    description: Arquivo MP4/WebM
+  - name: quality_report
+    type: file

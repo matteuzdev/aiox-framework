@@ -1,0 +1,55 @@
+name: konig-revenue-core
+version: 1.0.0
+description: "Revenue, oferta e funnel da Konig. Base para COD, SaaS, serviços e outras frentes."
+author: "Codex"
+license: UNLICENSED
+slashPrefix: revenue
+
+aiox:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  tasks:
+    - design-offer-path.md
+    - design-funnel-system.md
+    - qualify-lead.md
+    - update-crm-pipeline.md
+    - generate-sales-report.md
+  agents:
+    - revenue-chief.md
+    - funnel-architect.md
+    - sdr-agent.md
+  workflows:
+    - sdr-workflow.md
+  checklists:
+    - revenue-gate.md
+  templates: []
+  tools: []
+  scripts:
+    - src/sdr/sdr_agent.py
+
+config:
+  extends: extend
+  coding-standards: config/coding-standards.md
+  tech-stack: config/tech-stack.md
+  source-tree: config/source-tree.md
+
+dependencies:
+  node: []
+  python:
+    - agno
+    - openai
+    - httpx
+    - python-dotenv
+  squads:
+    - company-strategic-core
+    - konig-planning-core
+    - konig-prospecting-core
+
+tags:
+  - revenue
+  - offer
+  - funnel
+  - cod
+  - sales

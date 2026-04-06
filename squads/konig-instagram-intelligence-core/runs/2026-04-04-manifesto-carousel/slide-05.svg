@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#f8f3ea"/>
+  <rect x="70" y="70" width="940" height="1210" rx="42" fill="#fffdfa" stroke="rgba(21,32,37,0.12)"/>
+  <text x="120" y="170" fill="#0a4b41" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="4">05</text>
+  <text x="120" y="350" fill="#152025" font-family="Georgia, Times New Roman, serif" font-size="82" font-weight="600">Seu conteúdo</text>
+  <text x="120" y="440" fill="#152025" font-family="Georgia, Times New Roman, serif" font-size="82" font-weight="600">precisa fazer</text>
+  <text x="120" y="530" fill="#152025" font-family="Georgia, Times New Roman, serif" font-size="82" font-weight="600">o ICP pensar:</text>
+  <rect x="120" y="650" width="840" height="360" rx="28" fill="#0a4b41"/>
+  <text x="170" y="760" fill="#fffdfa" font-family="Georgia, Times New Roman, serif" font-size="62" font-weight="600">“esse cara entende</text>
+  <text x="170" y="835" fill="#fffdfa" font-family="Georgia, Times New Roman, serif" font-size="62" font-weight="600">exatamente o</text>
+  <text x="170" y="910" fill="#fffdfa" font-family="Georgia, Times New Roman, serif" font-size="62" font-weight="600">gargalo que eu</text>
+  <text x="170" y="985" fill="#fffdfa" font-family="Georgia, Times New Roman, serif" font-size="62" font-weight="600">vivo aqui dentro”.</text>
+</svg>

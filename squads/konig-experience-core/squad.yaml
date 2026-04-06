@@ -1,0 +1,63 @@
+name: konig-experience-core
+version: 1.0.0
+description: "Experiencia do usuario e percepcao de valor da Konig. Inclui BrandCraft para geracao de materiais visuais brand-consistent."
+author: "Codex"
+license: UNLICENSED
+slashPrefix: exp
+
+aiox:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  tasks:
+    - design-user-journey.md
+    - review-experience-quality.md
+    - build-brand-foundation.md
+    - brand-extract.md
+    - brand-render.md
+    - brand-video.md
+  agents:
+    - experience-chief.md
+    - service-designer.md
+    - brand-director.md
+    - identity-designer.md
+    - brand-strategist.md
+    - presentation-designer.md
+    - brandcraft-orchestrator.md
+    - brandcraft-extractor.md
+    - brandcraft-renderer.md
+    - brandcraft-presenter.md
+    - brandcraft-filmmaker.md
+    - brandcraft-inspector.md
+  workflows:
+    - extract-design-system.yaml
+    - create-brand-document.yaml
+    - create-brand-video.yaml
+  checklists:
+    - experience-gate.md
+    - brand-consistency.md
+  templates: []
+  tools: []
+  scripts: []
+
+config:
+  extends: extend
+  coding-standards: config/coding-standards.md
+  tech-stack: config/tech-stack.md
+  source-tree: config/source-tree.md
+
+dependencies:
+  node: []
+  python: []
+  squads:
+    - konig-product-core
+    - konig-context-core
+    - company-strategic-core
+    - brandcraft
+
+tags:
+  - experience
+  - ux
+  - service
+  - quality

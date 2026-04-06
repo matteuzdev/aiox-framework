@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#0a4b41"/>
+  <circle cx="920" cy="1120" r="220" fill="rgba(255,253,250,0.10)"/>
+  <text x="120" y="170" fill="#fffdfa" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="4">07</text>
+  <text x="120" y="400" fill="#fffdfa" font-family="Georgia, Times New Roman, serif" font-size="104" font-weight="600">IA é o meio.</text>
+  <text x="120" y="585" fill="#fffdfa" font-family="Georgia, Times New Roman, serif" font-size="90" font-weight="600">O problema do</text>
+  <text x="120" y="685" fill="#fffdfa" font-family="Georgia, Times New Roman, serif" font-size="90" font-weight="600">cliente é o</text>
+  <text x="120" y="785" fill="#fffdfa" font-family="Georgia, Times New Roman, serif" font-size="90" font-weight="600">começo.</text>
+  <line x1="120" y1="900" x2="960" y2="900" stroke="rgba(255,253,250,0.22)"/>
+  <text x="120" y="1030" fill="#fffdfa" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700">Quem comunica isso melhor, fecha mais.</text>
+  <text x="120" y="1145" fill="#dfe9e4" font-family="Arial, Helvetica, sans-serif" font-size="34">Konig Systems</text>
+</svg>

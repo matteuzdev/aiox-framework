@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konig Systems | Carrossel Feed Manifesto</title>
+  <style>
+    :root {
+      --sand: #f8f3ea;
+      --sand-2: #efe6d6;
+      --forest: #0a4b41;
+      --forest-2: #0f6b5d;
+      --graphite: #152025;
+      --graphite-soft: #314047;
+      --line: rgba(21, 32, 37, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--graphite);
+      background:
+        radial-gradient(circle at top left, rgba(15,107,93,0.1), transparent 22%),
+        linear-gradient(180deg, var(--sand), var(--sand-2));
+      padding: 24px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font: 600 42px/0.95 Georgia, "Times New Roman", serif;
+      letter-spacing: -0.04em;
+      color: var(--forest);
+    }
+    p { margin: 0 0 20px; color: var(--graphite-soft); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: rgba(255,253,250,0.82);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 14px;
+      box-shadow: 0 18px 40px rgba(21,32,37,0.08);
+    }
+    .card strong {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--graphite-soft);
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    img {
+      width: 100%;
+      display: block;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Carrossel Feed Manifesto</h1>
+  <p>Arquivos renderizados do primeiro carrossel de posicionamento da Konig Systems em formato `1080x1350` para feed.</p>
+  <div class="grid">
+    <div class="card"><strong>Pagina 1</strong><img src="slide-01.svg" alt="Pagina 1 do carrossel"></div>
+    <div class="card"><strong>Pagina 2</strong><img src="slide-02.svg" alt="Pagina 2 do carrossel"></div>
+    <div class="card"><strong>Pagina 3</strong><img src="slide-03.svg" alt="Pagina 3 do carrossel"></div>
+    <div class="card"><strong>Pagina 4</strong><img src="slide-04.svg" alt="Pagina 4 do carrossel"></div>
+    <div class="card"><strong>Pagina 5</strong><img src="slide-05.svg" alt="Pagina 5 do carrossel"></div>
+    <div class="card"><strong>Pagina 6</strong><img src="slide-06.svg" alt="Pagina 6 do carrossel"></div>
+    <div class="card"><strong>Pagina 7</strong><img src="slide-07.svg" alt="Pagina 7 do carrossel"></div>
+  </div>
+</body>
+</html>

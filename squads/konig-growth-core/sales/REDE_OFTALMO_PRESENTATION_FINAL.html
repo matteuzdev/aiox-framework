@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONIG SYSTEMS | REDE OFTALMO V4 - AIDA CLOSER EDITION</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #050505; color: #E5E5E5; font-family: 'Inter', sans-serif; overflow: hidden; margin: 0; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .accent { color: #10B981; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .slide { height: 100vh; width: 100vw; position: absolute; top: 0; left: 0; display: flex; flex-direction: column; justify-content: center; padding: 0 10%; opacity: 0; transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out; transform: translateY(20px); pointer-events: none; }
+        .slide.active { opacity: 1; transform: translateY(0); pointer-events: auto; }
+        .nav-btn { position: fixed; bottom: 40px; z-index: 50; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); padding: 10px 24px; border-radius: 30px; cursor: pointer; transition: all 0.3s; backdrop-filter: blur(5px); font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; }
+        .nav-btn:hover { background: rgba(255,255,255,0.1); color: white; }
+        #prevBtn { right: 160px; }
+        #nextBtn { right: 40px; }
+        .indicators { position: fixed; bottom: 50px; left: 10%; z-index: 50; display: flex; gap: 8px; }
+        .dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.2); transition: 0.3s; }
+        .dot.active { background: #10B981; width: 24px; border-radius: 4px; }
+        .bg-iris { position: absolute; right: -10%; top: 50%; transform: translateY(-50%); width: 60%; height: 80%; background: url('https://images.unsplash.com/photo-1544473244-f6895e69ad8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center center; background-size: contain; opacity: 0.4; filter: grayscale(100%) contrast(120%); mask-image: radial-gradient(circle, black 30%, transparent 70%); z-index: -1;}
+        input[type=range] { -webkit-appearance: none; width: 100%; background: transparent; height: 30px; }
+        input[type=range]::-webkit-slider-runnable-track { width: 100%; height: 4px; cursor: pointer; background: rgba(255,255,255,0.2); border-radius: 2px; }
+        input[type=range]::-webkit-slider-thumb { height: 20px; width: 20px; border-radius: 50%; background: #10B981; cursor: pointer; -webkit-appearance: none; margin-top: -8px; box-shadow: 0 0 15px rgba(16, 185, 129, 0.8); border: 2px solid white; }
+    </style>
+</head>
+<body>
+    <div class="indicators" id="indicators"></div>
+    <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)">Anterior</button>
+    <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">Próximo</button>
+
+    <!-- SLIDE 1: ATENÇÃO -->
+    <div class="slide active">
+        <div class="bg-iris"></div>
+        <div class="max-w-3xl">
+            <p class="uppercase tracking-widest text-xs mb-6 opacity-50 text-emerald-500 font-bold">Konig Systems | Diagnóstico Exclusivo</p>
+            <h1 class="serif text-7xl md:text-8xl leading-tight mb-8">A Excelência Clínica que a sua <span class="italic accent">Agenda</span> merece.</h1>
+            <div class="w-16 h-1 bg-emerald-500 mb-8"></div>
+            <p class="text-xl opacity-70 leading-relaxed max-w-xl font-light">Um diagnóstico de alta fidelidade desenhado para a arquitetura da Rede Oftalmo.</p>
+        </div>
+    </div>
+
+    <!-- SLIDE 2: INTERESSE (DIAGNÓSTICO) -->
+    <div class="slide">
+        <div class="max-w-4xl">
+            <p class="uppercase tracking-widest text-xs mb-6 opacity-50 text-emerald-500 font-bold">O Diagnóstico</p>
+            <h2 class="serif text-6xl mb-12">Onde a sua estrutura <span class="italic accent">perde eficiência.</span></h2>
+            <div class="grid grid-cols-2 gap-8">
+                <div class="glass p-10 rounded-2xl text-center">
+                    <p class="text-xs uppercase tracking-widest mb-4 opacity-50">Vagas Fantasmas (Bolo)</p>
+                    <div class="text-6xl serif mb-4">23.5% <span class="text-xl opacity-40 italic">médio</span></div>
+                    <p class="text-sm opacity-60">Média de no-show em operações de alta densidade (MGMA 2025 / CBO).</p>
+                </div>
+                <div class="glass p-10 rounded-2xl border-l-2 border-l-emerald-500 text-center">
+                    <p class="text-xs uppercase tracking-widest mb-4 opacity-50">Hemorragia Financeira</p>
+                    <div class="text-6xl serif mb-4 accent">R$ 150k+</div>
+                    <p class="text-sm opacity-60">Receita potencial que deixa de ser preservada mensalmente por falhas na agenda.</p>
+                </div>
+            </div>
+            <p class="mt-12 text-lg italic opacity-50 font-light text-center">"Cada espaço vazio é um paciente que deixou de ser cuidado."</p>
+        </div>
+    </div>
+
+    <!-- SLIDE 3: DESEJO (O CONCIERGE) -->
+    <div class="slide">
+        <div class="max-w-4xl">
+            <p class="uppercase tracking-widest text-xs mb-6 opacity-50 text-emerald-500 font-bold">A Solução Invisível</p>
+            <h2 class="serif text-6xl mb-8">Um <span class="italic accent">Concierge Digital</span> de Alta Performance.</h2>
+            <p class="text-xl opacity-70 mb-12 max-w-2xl font-light">Nossa inteligência assume o cuidado de cada vaga, transformando a agenda em um organismo autônomo.</p>
+            <div class="glass p-8 rounded-2xl flex gap-6 items-center border-l-4 border-l-emerald-500">
+                <div class="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-500 flex-shrink-0">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Monitoramento Ativo 24/7</h3>
+                    <p class="text-sm opacity-60">Confirmação inteligente via WhatsApp, gestão de lista de espera e encaixe automático em milissegundos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 4: DESEJO (SIMULADOR) -->
+    <div class="slide">
+        <div class="max-w-5xl">
+            <p class="uppercase tracking-widest text-xs mb-6 opacity-50 text-emerald-500 font-bold">O Retorno</p>
+            <h2 class="serif text-6xl mb-12">A Receita <span class="italic accent">Preservada em dias.</span></h2>
+            <div class="grid grid-cols-12 gap-12 items-center">
+                <div class="col-span-7">
+                    <div class="glass p-10 rounded-3xl">
+                        <div class="mb-8"><div class="flex justify-between mb-4 text-xs font-bold"><span>CIRURGIAS REALIZADAS (MÊS)</span><span class="accent" id="cirVal">200</span></div><input type="range" min="10" max="1000" value="200" id="cirSlider" oninput="upROI()"></div>
+                        <div class="mb-8"><div class="flex justify-between mb-4 text-xs font-bold"><span>TAXA DE FALTAS (%)</span><span class="text-red-500" id="fVal">15%</span></div><input type="range" min="5" max="50" value="15" id="fSlider" oninput="upROI()"></div>
+                    </div>
+                </div>
+                <div class="col-span-5 text-center">
+                    <p class="text-xs opacity-50 mb-2 uppercase">Hemorragia Total</p>
+                    <div class="text-4xl serif text-red-500 mb-6" id="hAmt">R$ 150k</div>
+                    <p class="text-xs opacity-50 mb-2 uppercase accent font-bold">Resgate Konig</p>
+                    <div class="text-7xl serif accent mb-6" id="rAmt">R$ 75k<span class="text-2xl text-white/30 ml-2">/mês</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 5: DESEJO (GARANTIA) -->
+    <div class="slide">
+        <div class="max-w-4xl text-center mx-auto">
+            <p class="uppercase tracking-widest text-xs mb-6 opacity-50 text-emerald-500 font-bold">Confiança Radical</p>
+            <h2 class="serif text-7xl mb-12">Risco <span class="italic accent">Zero</span> Incondicional.</h2>
+            <div class="glass p-12 rounded-[40px] border-2 border-emerald-500/20">
+                <p class="text-2xl leading-relaxed font-light mb-8 italic">
+                    "Se em 30 dias a nossa inteligência não preservar o valor equivalente ao seu investimento de setup, a Konig Systems devolve 100% do aporte. Sem letras miúdas."
+                </p>
+                <p class="text-sm opacity-40 uppercase tracking-widest font-bold text-emerald-500">— Aprovado pelo Conselho Supremo Konig</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 6: AÇÃO (ESCASSEZ) -->
+    <div class="slide">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="uppercase tracking-widest text-xs mb-6 opacity-50 text-emerald-500 font-bold">Oportunidade</p>
+            <h2 class="serif text-7xl mb-12">O seu <span class="italic accent">Monopólio Territorial.</span></h2>
+            <div class="grid grid-cols-2 gap-10">
+                <div class="glass p-10 rounded-3xl">
+                    <h3 class="text-lg font-bold mb-4 accent uppercase">Exclusividade Regional</h3>
+                    <p class="text-sm opacity-60">Aceitamos apenas um parceiro por território para garantir a vantagem competitiva absoluta da rede.</p>
+                </div>
+                <div class="glass p-10 rounded-3xl">
+                    <h3 class="text-lg font-bold mb-4 accent uppercase">Vagas de Implantação</h3>
+                    <p class="text-sm opacity-60">Apenas 2 redes serão onboardadas neste ciclo para garantir a excelência da entrega técnica AIOX.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 7: AÇÃO (PIX) -->
+    <div class="slide text-center items-center justify-center flex">
+        <div class="max-w-3xl w-full">
+            <h2 class="serif text-8xl mb-8 text-white leading-tight">Garantir sua <br><span class="italic accent text-emerald-500">Exclusividade?</span></h2>
+            <p class="text-xl opacity-60 mb-16 font-light italic">Vamos oficializar a reserva do seu território nesta segunda-feira?</p>
+            <div class="flex gap-6 justify-center">
+                <button class="px-12 py-6 bg-emerald-500 text-black font-extrabold rounded-full hover:bg-emerald-400 transition-all uppercase tracking-widest text-sm shadow-[0_0_40px_rgba(16,185,129,0.4)]">
+                    Iniciar Implantação de Elite
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const dotsContainer = document.getElementById('indicators');
+        let current = 0;
+
+        slides.forEach((_, i) => {
+            const dot = document.createElement('div');
+            dot.className = 'dot' + (i === 0 ? ' active' : '');
+            dot.onclick = () => goToSlide(i);
+            dotsContainer.appendChild(dot);
+        });
+        const dots = document.querySelectorAll('.dot');
+
+        function changeSlide(dir) {
+            slides[current].classList.remove('active');
+            dots[current].classList.remove('active');
+            current = (current + dir + slides.length) % slides.length;
+            slides[current].classList.add('active');
+            dots[current].classList.add('active');
+        }
+
+        function goToSlide(index) {
+            slides[current].classList.remove('active');
+            dots[current].classList.remove('active');
+            current = index;
+            slides[current].classList.add('active');
+            dots[current].classList.add('active');
+        }
+
+        function upROI() {
+            const c = document.getElementById('cirSlider').value;
+            const f = document.getElementById('fSlider').value;
+            document.getElementById('cirVal').innerText = c;
+            document.getElementById('fVal').innerText = f + '%';
+            const h = Math.round(c * (f/100) * 5000);
+            const r = Math.round(h * 0.5);
+            document.getElementById('hAmt').innerHTML = 'R$ ' + (h/1000).toFixed(0) + 'k';
+            document.getElementById('rAmt').innerHTML = 'R$ ' + (r/1000).toFixed(0) + 'k<span class="text-2xl text-white/30 ml-2">/mês</span>';
+        }
+        upROI();
+
+        document.addEventListener('keydown', (e) => {
+            if(e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') changeSlide(1);
+            if(e.key === 'ArrowLeft' || e.key === 'ArrowUp') changeSlide(-1);
+        });
+    </script>
+</body>
+</html>

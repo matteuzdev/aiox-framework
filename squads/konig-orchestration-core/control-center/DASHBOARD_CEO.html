@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONIG COMMAND CENTER | CEO DASHBOARD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #09090b; color: #f8f3ea; font-family: 'Inter', sans-serif; overflow-x: hidden; margin: 0; padding: 2rem; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .accent { color: #10B981; }
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .pulse-green { animation: pulseG 2s infinite; }
+        .pulse-red { animation: pulseR 2s infinite; }
+        @keyframes pulseG { 0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); } 70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); } 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); } }
+        @keyframes pulseR { 0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); } 70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); } 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); } }
+        
+        .bg-grid { background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px); background-size: 40px 40px; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; }
+        .glow { position: fixed; top: -20%; left: -10%; width: 50%; height: 50%; background: radial-gradient(circle, rgba(16,185,129,0.05) 0%, transparent 70%); z-index: -1; filter: blur(40px); }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="glow"></div>
+
+    <header class="flex justify-between items-center mb-12 border-b border-white/10 pb-6">
+        <div>
+            <h1 class="serif text-3xl font-bold tracking-wider">KONIG <span class="italic text-emerald-500 font-light">Systems</span></h1>
+            <p class="text-xs uppercase tracking-[0.3em] opacity-40 mt-2 font-bold">Command Center | Nível: Soberano</p>
+        </div>
+        <div class="flex items-center gap-4">
+            <div class="text-right">
+                <p class="text-[10px] uppercase opacity-50 tracking-widest">Status do Império</p>
+                <p class="text-emerald-500 font-bold text-sm flex items-center gap-2 justify-end"><span class="w-2 h-2 rounded-full bg-emerald-500 pulse-green"></span> SISTEMAS ONLINE</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="grid grid-cols-12 gap-8">
+        
+        <!-- COLUNA ESQUERDA: PIPELINE SDR (O FRONT) -->
+        <div class="col-span-4 flex flex-col gap-6">
+            <h2 class="text-xs uppercase tracking-[0.2em] opacity-50 font-bold mb-2 flex items-center gap-2">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                Radar de Prospecção (SDR)
+            </h2>
+            
+            <div class="glass p-6 rounded-3xl border-t-2 border-t-emerald-500/50">
+                <div class="flex justify-between items-end mb-6">
+                    <p class="text-[10px] uppercase opacity-40 tracking-widest font-bold">Leads Ativos (Oftalmo)</p>
+                    <p class="text-3xl serif">124</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="opacity-60">Apresentações V4 Enviadas</span>
+                        <span class="font-bold">42</span>
+                    </div>
+                    <div class="w-full bg-white/5 rounded-full h-1.5"><div class="bg-emerald-500 h-1.5 rounded-full" style="width: 35%"></div></div>
+                    
+                    <div class="flex justify-between items-center text-sm mt-4">
+                        <span class="opacity-60">Em Simulação de ROI</span>
+                        <span class="font-bold text-emerald-400">18</span>
+                    </div>
+                    <div class="w-full bg-white/5 rounded-full h-1.5"><div class="bg-emerald-400 h-1.5 rounded-full" style="width: 15%"></div></div>
+                </div>
+            </div>
+
+            <!-- ALERTA DE FECHAMENTO -->
+            <div class="glass p-6 rounded-3xl bg-emerald-900/10 border border-emerald-500/30 relative overflow-hidden group hover:bg-emerald-900/20 cursor-pointer transition-all">
+                <div class="absolute right-0 top-0 w-24 h-24 bg-emerald-500/10 rounded-full blur-2xl group-hover:bg-emerald-500/20 transition-all"></div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 pulse-green"></span>
+                    <p class="text-[10px] uppercase text-emerald-500 tracking-widest font-bold">Ação Requerida: CEO</p>
+                </div>
+                <p class="text-lg serif italic mb-1">Rede Vision Eye Center</p>
+                <p class="text-xs opacity-60 mb-4">Lead interagiu com o Simulador (R$ 180k resgate). SDR agendou Call de Alinhamento.</p>
+                <div class="flex gap-2">
+                    <button class="flex-grow py-3 bg-emerald-500/20 text-emerald-400 text-[10px] uppercase tracking-widest font-bold rounded-xl border border-emerald-500/30 hover:bg-emerald-500 hover:text-black transition-all">
+                        Abrir Playbook
+                    </button>
+                    <a href="../../konig-ops-core/ONBOARDING_ELITE.html" class="flex-grow py-3 bg-white/10 text-white text-[10px] text-center uppercase tracking-widest font-bold rounded-xl border border-white/10 hover:bg-white/20 transition-all">
+                        Iniciar Onboarding
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLUNA MEIO: MÁQUINA DE DINHEIRO -->
+        <div class="col-span-5 flex flex-col gap-6">
+            <h2 class="text-xs uppercase tracking-[0.2em] opacity-50 font-bold mb-2 flex items-center gap-2">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                Tesouraria (Setup + Recorrência)
+            </h2>
+
+            <div class="glass p-8 rounded-[40px] relative overflow-hidden">
+                <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl"></div>
+                <p class="text-[10px] uppercase opacity-40 tracking-[0.2em] font-bold mb-2">Receita Projetada (Pipeline 30 dias)</p>
+                <div class="text-6xl serif text-emerald-400 mb-8 tracking-tighter">R$ 160k<span class="text-xl text-white/30 ml-2 font-sans font-light">/setup</span></div>
+                
+                <div class="grid grid-cols-2 gap-4 border-t border-white/10 pt-6">
+                    <div>
+                        <p class="text-[10px] uppercase opacity-40 tracking-widest mb-1">MRR (Recorrência)</p>
+                        <p class="text-2xl font-light">R$ 12.500</p>
+                    </div>
+                    <div>
+                        <p class="text-[10px] uppercase opacity-40 tracking-widest mb-1">Custo de Servidor (Zig)</p>
+                        <p class="text-2xl font-light text-white/50">R$ 340</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEPLOY FACTORY -->
+            <div class="glass p-6 rounded-3xl">
+                <div class="flex justify-between items-center mb-6">
+                    <p class="text-[10px] uppercase opacity-40 tracking-widest font-bold">Fábrica de Entrega (AIOX)</p>
+                    <span class="text-[10px] bg-white/10 px-3 py-1 rounded-full border border-white/10">3 Projetos na Forja</span>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between p-3 bg-white/5 rounded-xl border border-white/5">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-500 text-xs font-bold border border-emerald-500/30">CL</div>
+                            <div>
+                                <p class="text-sm font-bold">Clínica Visão Clara</p>
+                                <p class="text-[10px] opacity-50 uppercase tracking-wider">Treinamento RAG da IA</p>
+                            </div>
+                        </div>
+                        <span class="text-emerald-400 text-xs font-bold">85%</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-white/5 rounded-xl border border-white/5">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white/50 text-xs font-bold border border-white/10">IO</div>
+                            <div>
+                                <p class="text-sm font-bold text-white/70">Instituto Oftalmológico</p>
+                                <p class="text-[10px] opacity-40 uppercase tracking-wider">Deploy Vercel/AWS</p>
+                            </div>
+                        </div>
+                        <span class="text-white/50 text-xs font-bold">Iniciando</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLUNA DIREITA: GOVERNANÇA E ALERTAS -->
+        <div class="col-span-3 flex flex-col gap-6">
+            <h2 class="text-xs uppercase tracking-[0.2em] opacity-50 font-bold mb-2 flex items-center gap-2">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+                The Box (O que entregamos)
+            </h2>
+
+            <div class="glass p-6 rounded-3xl border-l-2 border-l-emerald-500">
+                <div class="space-y-6">
+                    <div>
+                        <p class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest mb-1">1. Agente IA Konig</p>
+                        <p class="text-xs font-bold mb-1 italic">"O Fim do Bolo"</p>
+                        <p class="text-[10px] opacity-50 leading-relaxed">Resolve a ociosidade. IA confirma, reagenda e reocupa vagas em milissegundos.</p>
+                    </div>
+                    <div>
+                        <p class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest mb-1">2. Interface de Elite (LP)</p>
+                        <p class="text-xs font-bold mb-1 italic">"O Status de Autoridade"</p>
+                        <p class="text-[10px] opacity-50 leading-relaxed">Resolve a conversão. Site minimalista que gera desejo e separa o médico da concorrência.</p>
+                    </div>
+                    <div>
+                        <p class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest mb-1">3. Dashboard do Médico</p>
+                        <p class="text-xs font-bold mb-1 italic">"A Prova do Lucro"</p>
+                        <p class="text-[10px] opacity-50 leading-relaxed">Resolve a insegurança. Painel onde o médico vê o dinheiro sendo recuperado em tempo real.</p>
+                    </div>
+                    <div>
+                        <p class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest mb-1">4. Blindagem ZKP</p>
+                        <p class="text-xs font-bold mb-1 italic">"A Imunidade Jurídica"</p>
+                        <p class="text-[10px] opacity-50 leading-relaxed">Resolve o medo da LGPD. Criptografia militar que protege o segredo médico.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHRONOS CHECKPOINTS -->
+            <div class="glass p-6 rounded-3xl border-t border-white/10 flex-grow">
+                <p class="text-[10px] uppercase opacity-40 tracking-widest font-bold mb-4 flex items-center justify-between">
+                    Chronos Log <span class="w-1.5 h-1.5 rounded-full bg-white/30"></span>
+                </p>
+                <div class="relative pl-4 border-l border-white/10 space-y-6">
+                    <div class="relative">
+                        <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-[#09090b]"></div>
+                        <p class="text-xs font-bold mb-1">Apresentação V4 (AIDA)</p>
+                        <p class="text-[10px] opacity-50">Deployed by Orion CTO</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-white/20 border-2 border-[#09090b]"></div>
+                        <p class="text-xs font-bold mb-1 opacity-70">Refinamento Brandcraft</p>
+                        <p class="text-[10px] opacity-40">Aprovado pelo Conselho</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-white/20 border-2 border-[#09090b]"></div>
+                        <p class="text-xs font-bold mb-1 opacity-70">Migração ZKP/Zig</p>
+                        <p class="text-[10px] opacity-40">Core AIOX Blindado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

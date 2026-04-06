@@ -1,0 +1,43 @@
+name: konig-planning-core
+version: 1.0.0
+description: "Planning e produto da Konig. Traduz brief em plano compreensível para o time de entrega."
+author: "Codex"
+license: UNLICENSED
+slashPrefix: planning
+
+aiox:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  tasks:
+    - frame-plan.md
+    - translate-to-delivery.md
+  agents:
+    - planning-chief.md
+    - technical-pm.md
+  workflows: []
+  checklists:
+    - planning-gate.md
+  templates: []
+  tools: []
+  scripts: []
+
+config:
+  extends: extend
+  coding-standards: config/coding-standards.md
+  tech-stack: config/tech-stack.md
+  source-tree: config/source-tree.md
+
+dependencies:
+  node: []
+  python: []
+  squads:
+    - konig-context-core
+    - company-strategic-core
+
+tags:
+  - planning
+  - product
+  - translation
+  - delivery

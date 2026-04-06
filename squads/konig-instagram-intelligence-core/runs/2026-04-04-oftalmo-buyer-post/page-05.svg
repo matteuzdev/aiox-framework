@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#f8f3ea"/>
+  <rect x="70" y="70" width="940" height="1210" rx="42" fill="#fffdfa" stroke="rgba(21,32,37,0.12)"/>
+  <text x="120" y="170" fill="#0a4b41" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="4">05</text>
+  <text x="120" y="360" fill="#152025" font-family="Georgia, Times New Roman, serif" font-size="78" font-weight="600">Quando a operação</text>
+  <text x="120" y="445" fill="#152025" font-family="Georgia, Times New Roman, serif" font-size="78" font-weight="600">depende demais</text>
+  <text x="120" y="530" fill="#152025" font-family="Georgia, Times New Roman, serif" font-size="78" font-weight="600">de correria,</text>
+  <rect x="120" y="670" width="840" height="300" rx="28" fill="#0a4b41"/>
+  <text x="170" y="790" fill="#fffdfa" font-family="Georgia, Times New Roman, serif" font-size="70" font-weight="600">o erro deixa</text>
+  <text x="170" y="870" fill="#fffdfa" font-family="Georgia, Times New Roman, serif" font-size="70" font-weight="600">de ser exceção.</text>
+  <text x="170" y="950" fill="#fffdfa" font-family="Georgia, Times New Roman, serif" font-size="70" font-weight="600">Vira sistema.</text>
+</svg>

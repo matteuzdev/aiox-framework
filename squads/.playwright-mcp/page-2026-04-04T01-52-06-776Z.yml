@@ -1,0 +1,1235 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link "SQUADS" [ref=e5] [cursor=pointer]:
+          - /url: /pt
+        - navigation [ref=e6]:
+          - link "Auditorias" [ref=e7] [cursor=pointer]:
+            - /url: /pt/audits
+          - link "Docs" [ref=e8] [cursor=pointer]:
+            - /url: /pt/docs
+      - generic [ref=e9]:
+        - button "Português" [ref=e11]:
+          - img [ref=e12]
+          - generic [ref=e15]: Português
+        - link "Entrar" [ref=e16] [cursor=pointer]:
+          - /url: /pt/login
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - navigation "Breadcrumb" [ref=e19]:
+        - link "Início" [ref=e20] [cursor=pointer]:
+          - /url: /pt
+        - generic [ref=e21]: /
+        - generic [ref=e22]: gutomec
+        - generic [ref=e23]: /
+        - generic [ref=e24]: instagram-intelligence-nirvana
+        - generic [ref=e25]: /
+        - generic [ref=e26]: instagram-intelligence-nirvana
+      - generic [ref=e27]:
+        - generic [ref=e29]:
+          - heading "instagram intelligence nirvana" [level=1] [ref=e30]
+          - paragraph [ref=e31]: "Squad NIRVANA ULTIMATE v5.1 — autossuficiente, sem dependências externas. Fusão definitiva de inteligência competitiva, estratégia de vendas, design system award-level e produção de conteúdo multi-plataforma. 21 agentes especializados em 7 divisões com DNA integrado de: BrandCraft (direção criativa, 10 efeitos CSS, catálogo de templates sociais, pipeline de renderização), Sales-Funnel-Masters (20 mind-clones de especialistas mundiais: Brunson, Hormozi, Halbert, Schwartz, Kennedy, Cialdini, Voss, Belfort, Walker, Miller, Godin, Rocha, Sobral, Carvalho, Suby, Campbell, Vaynerchuk, Eyal, Kahneman, Cardone), Awwwards-Singularity-Studio (OKLCH color engineering, APCA contrast, composition grammar Gestalt-quantified, section taxonomy 21 tipos, scroll animations CSS/GSAP, performance budget 60fps, amplificação semântica). Pipeline end-to-end: da coleta de dados à publicação multi-plataforma. 13 workflows, 131 tasks atômicas. Instagram, TikTok, YouTube, Reels, Shorts. Da estratégia ao carrinho fechado em um único squad — estado NIRVANA."
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - img [ref=e34]
+            - generic [ref=e37]: "12"
+            - generic [ref=e38]: installs
+          - generic [ref=e39]:
+            - img [ref=e40]
+            - text: PENDING
+        - button "Comprar por US$ 470,00" [ref=e43]:
+          - img [ref=e44]
+          - text: Comprar por US$ 470,00
+        - generic [ref=e48]:
+          - generic [ref=e49]: instagram
+          - generic [ref=e50]: competitive-intelligence
+          - generic [ref=e51]: ad-spy
+          - generic [ref=e52]: engagement-analytics
+          - generic [ref=e53]: profile-scraping
+          - generic [ref=e54]: content-strategy
+          - generic [ref=e55]: content-creation
+          - generic [ref=e56]: media-analysis
+          - generic [ref=e57]: gemini-ai
+          - generic [ref=e58]: trend-hunting
+          - generic [ref=e59]: influencer-research
+          - generic [ref=e60]: meta-ads
+          - generic [ref=e61]: ad-campaign-builder
+          - generic [ref=e62]: social-media
+          - generic [ref=e63]: marketing-intelligence
+          - generic [ref=e64]: swipe-file
+          - generic [ref=e65]: carousel-creator
+          - generic [ref=e66]: reel-scripts
+          - generic [ref=e67]: ai-image-generation
+          - generic [ref=e68]: caption-seo
+          - generic [ref=e69]: quality-assurance
+          - generic [ref=e70]: brand-system
+          - generic [ref=e71]: sales-funnel
+          - generic [ref=e72]: copywriting
+          - generic [ref=e73]: persuasion
+          - generic [ref=e74]: pricing
+          - generic [ref=e75]: product-launch
+          - generic [ref=e76]: brand-design
+          - generic [ref=e77]: video-creation
+          - generic [ref=e78]: multi-platform
+          - generic [ref=e79]: tiktok
+          - generic [ref=e80]: youtube
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - generic [ref=e84]:
+              - text: Squads são publicados por terceiros. O squads.sh não garante segurança nem funcionalidade. Use por sua conta e risco.
+              - link "Ler Termos" [ref=e85] [cursor=pointer]:
+                - /url: /pt/terms
+            - generic [ref=e86]:
+              - generic [ref=e87]:
+                - generic [ref=e88]: "21"
+                - generic [ref=e89]: 21 agentes
+              - generic [ref=e90]:
+                - generic [ref=e91]: "132"
+                - generic [ref=e92]: 132 tarefas
+              - generic [ref=e93]:
+                - generic [ref=e94]: "14"
+                - generic [ref=e95]: 14 workflows
+              - button "Visualizar" [ref=e96]:
+                - img [ref=e97]
+                - text: Visualizar
+            - generic [ref=e102]:
+              - generic [ref=e103]:
+                - button "README" [ref=e104]
+                - button "Agents(21)" [ref=e105]:
+                  - text: Agents
+                  - generic [ref=e106]: (21)
+                - button "Tasks(132)" [ref=e107]:
+                  - text: Tasks
+                  - generic [ref=e108]: (132)
+                - button "Workflows(14)" [ref=e109]:
+                  - text: Workflows
+                  - generic [ref=e110]: (14)
+              - generic [ref=e114]:
+                - paragraph:
+                  - figure
+                - heading "instagram-intelligence-nirvanaLink to section" [level=1] [ref=e115]:
+                  - text: instagram-intelligence-nirvana
+                  - link "Link to section" [ref=e116] [cursor=pointer]:
+                    - /url: "#instagram-intelligence-nirvana"
+                    - img [ref=e117]
+                - paragraph [ref=e120]:
+                  - strong [ref=e121]: Da ideia ao post publicado. Da estratégia ao carrinho fechado.
+                - paragraph [ref=e122]:
+                  - figure [ref=e123]:
+                    - img "Versão 5.2.0" [ref=e124]
+                  - figure [ref=e125]:
+                    - img "21 Agentes" [ref=e126]
+                  - figure [ref=e127]:
+                    - img "132 Capacidades" [ref=e128]
+                  - figure [ref=e129]:
+                    - img "13 Fluxos" [ref=e130]
+                  - figure [ref=e131]:
+                    - img "20 Especialistas DNA" [ref=e132]
+                  - figure [ref=e133]:
+                    - img "5 Plataformas" [ref=e134]
+                  - figure [ref=e135]:
+                    - img "MIT License" [ref=e136]
+                - paragraph [ref=e137]:
+                  - link "🇧🇷 Português" [ref=e138] [cursor=pointer]:
+                    - /url: README.md
+                    - strong [ref=e139]: 🇧🇷 Português
+                  - text: ·
+                  - link "🇺🇸 English" [ref=e140] [cursor=pointer]:
+                    - /url: README.en.md
+                  - text: ·
+                  - link "🇪🇸 Español" [ref=e141] [cursor=pointer]:
+                    - /url: README.es.md
+                  - text: ·
+                  - link "🇫🇷 Français" [ref=e142] [cursor=pointer]:
+                    - /url: README.fr.md
+                  - text: ·
+                  - link "🇩🇪 Deutsch" [ref=e143] [cursor=pointer]:
+                    - /url: README.de.md
+                  - text: ·
+                  - link "🇨🇳 中文" [ref=e144] [cursor=pointer]:
+                    - /url: README.zh.md
+                - paragraph [ref=e145]:
+                  - link "🌐 Ver a Landing Page" [ref=e146] [cursor=pointer]:
+                    - /url: https://gutomec.github.io/instagram-intelligence-nirvana-docs/
+                    - strong [ref=e147]: 🌐 Ver a Landing Page
+                - separator [ref=e148]
+                - heading "Você reconhece essa situação?Link to section" [level=2] [ref=e149]:
+                  - text: Você reconhece essa situação?
+                  - link "Link to section" [ref=e150] [cursor=pointer]:
+                    - /url: "#voc-reconhece-essa-situao"
+                    - img [ref=e151]
+                - paragraph [ref=e154]: É segunda-feira de manhã. Você abre o computador e a lista de tarefas já está gritando.
+                - paragraph [ref=e155]: Precisa criar posts para 3 clientes. Precisa espionar o que os concorrentes estão fazendo. Precisa escrever legendas que prendam atenção. Precisa gerar imagens que não pareçam banco de fotos genérico. Precisa pensar na estratégia de lançamento. Precisa montar a oferta. Precisa escrever os emails. Precisa criar a landing page.
+                - paragraph [ref=e156]: E o dia só tem 24 horas.
+                - paragraph [ref=e157]: Você contrata freelancers. Um faz o design, outro escreve os textos, outro cuida da estratégia. O resultado? Três visões diferentes, nenhuma consistência, e uma conta que não para de crescer.
+                - paragraph [ref=e158]: Ou então você faz tudo sozinho. Abre o Canva, tenta criar algo bonito, escreve uma legenda às pressas, publica e torce para que alguém se importe. No fundo, você sabe que o conteúdo ficou medíocre.
+                - paragraph [ref=e159]: "Enquanto isso, seu concorrente publica todo dia. Posts bonitos. Legendas que geram comentários. Stories que vendem. E você fica se perguntando: \"como essa pessoa tem tempo para tudo isso?\""
+                - paragraph [ref=e160]:
+                  - strong [ref=e161]: A resposta não é ter mais tempo. É ter o sistema certo.
+                - paragraph [ref=e162]: "A verdade é simples: produzir conteúdo profissional para redes sociais exige pelo menos 4 habilidades diferentes. Estratégia, design, copywriting e análise de dados. Nenhuma pessoa sozinha domina as 4. Nenhuma equipe pequena dá conta de 4 ao mesmo tempo."
+                - paragraph [ref=e163]: Você tem duas opções. Aceitar que o conteúdo vai sair medíocre. Ou encontrar um jeito de ter as 4 habilidades trabalhando juntas, sem precisar de 4 salários diferentes.
+                - separator [ref=e164]
+                - heading "O que é isso?Link to section" [level=2] [ref=e165]:
+                  - text: O que é isso?
+                  - link "Link to section" [ref=e166] [cursor=pointer]:
+                    - /url: "#o-que-isso"
+                    - img [ref=e167]
+                - paragraph [ref=e170]: O Nirvana é o seu departamento completo de marketing digital comprimido em um único sistema.
+                - paragraph [ref=e171]: Você descreve o que precisa em português simples. O sistema analisa, cria, escreve, renderiza e entrega tudo pronto para publicar.
+                - paragraph [ref=e172]: Não é um template. Não é um gerador de texto genérico. Não é mais um "assistente de IA" que entrega rascunho meia-boca para você ajustar por 3 horas.
+                - paragraph [ref=e173]: É um time de 21 especialistas que trabalham juntos, cada um cuidando de uma parte do processo. Um analisa seus concorrentes. Outro define a estratégia. Outro cria o visual. Outro escreve o texto. Outro gera as imagens. Outro verifica a qualidade. Do primeiro insight competitivo até o post finalizado com legenda, imagem e hashtags otimizadas.
+                - separator [ref=e174]
+                - heading "🎯 O que você consegue fazer com issoLink to section" [level=2] [ref=e175]:
+                  - text: 🎯 O que você consegue fazer com isso
+                  - link "Link to section" [ref=e176] [cursor=pointer]:
+                    - /url: "#-o-que-voc-consegue-fazer-com-isso"
+                    - img [ref=e177]
+                - heading "Espionar concorrentes em qualquer plataformaLink to section" [level=3] [ref=e180]:
+                  - text: Espionar concorrentes em qualquer plataforma
+                  - link "Link to section" [ref=e181] [cursor=pointer]:
+                    - /url: "#espionar-concorrentes-em-qualquer-plataforma"
+                    - img [ref=e182]
+                - paragraph [ref=e185]: "Você escolhe os perfis que quer analisar. O sistema vasculha tudo: posts, reels, stories, hashtags, comentários, anúncios pagos. Depois entrega um relatório mostrando o que funciona, o que não funciona, quais posts viralizaram e por quê."
+                - paragraph [ref=e186]: Funciona com Instagram, TikTok, YouTube e Facebook. Você vê o que seus concorrentes estão fazendo antes mesmo de eles perceberem que estão sendo observados.
+                - list [ref=e187]:
+                  - listitem [ref=e188]: "Análise completa de perfis: seguidores, frequência de posts, taxa de engajamento, crescimento"
+                  - listitem [ref=e189]: Detecção automática de posts virais e padrões que geram resultado
+                  - listitem [ref=e190]: Espionagem de anúncios pagos via Meta Ads Library com histórico de longevidade
+                  - listitem [ref=e191]: Transcrição e análise de vídeos e imagens usando visão computacional
+                  - listitem [ref=e192]: "Métricas atualizadas para 2026: Sends > Saves > Shares > Comments > Likes"
+                - heading "Criar posts prontos para publicarLink to section" [level=3] [ref=e193]:
+                  - text: Criar posts prontos para publicar
+                  - link "Link to section" [ref=e194] [cursor=pointer]:
+                    - /url: "#criar-posts-prontos-para-publicar"
+                    - img [ref=e195]
+                - paragraph [ref=e198]: Não é rascunho. Não é sugestão. São posts finalizados com design profissional, prontos para você abrir e publicar. Carrosséis de 5, 6, 8 slides. Infográficos. Posts únicos. Thumbnails para vídeo.
+                - paragraph [ref=e199]: Cada post sai com o design system da sua marca aplicado automaticamente. Suas cores. Suas fontes. Seu logo. Seu estilo. Ninguém olha e pensa "isso foi feito por robô".
+                - list [ref=e200]:
+                  - listitem [ref=e201]: Carrosséis em alta resolução (2160×2700px, retina @2x)
+                  - listitem [ref=e202]: Infográficos com dados reais extraídos da análise competitiva
+                  - listitem [ref=e203]: Templates reutilizáveis que mantêm a identidade visual consistente
+                  - listitem [ref=e204]: Renderização automática em PNG pronto para publicação
+                  - listitem [ref=e205]: Adaptação de dimensões por plataforma (feed, stories, reels, shorts)
+                - heading "Gerar imagens fotorrealistas com IALink to section" [level=3] [ref=e206]:
+                  - text: Gerar imagens fotorrealistas com IA
+                  - link "Link to section" [ref=e207] [cursor=pointer]:
+                    - /url: "#gerar-imagens-fotorrealistas-com-ia"
+                    - img [ref=e208]
+                - paragraph [ref=e211]: Chega de banco de imagens. O sistema gera fotos que parecem ter sido tiradas por um fotógrafo profissional. Capas para carrosséis. Hero shots para landing pages. Product shots para e-commerce.
+                - paragraph [ref=e212]: Você descreve o que precisa. O sistema cria a imagem em resolução alta, pronta para usar em qualquer material.
+                - list [ref=e213]:
+                  - listitem [ref=e214]: Imagens em 1K, 2K ou 4K conforme a necessidade
+                  - listitem [ref=e215]: Hero shots para capas de carrosséis e landing pages
+                  - listitem [ref=e216]: Product shots com fundo e iluminação profissional
+                  - listitem [ref=e217]: Lifestyle images com contexto e cenário realista
+                  - listitem [ref=e218]: Geração em lote para projetos com múltiplos posts
+                - heading "Escrever legendas que geram engajamentoLink to section" [level=3] [ref=e219]:
+                  - text: Escrever legendas que geram engajamento
+                  - link "Link to section" [ref=e220] [cursor=pointer]:
+                    - /url: "#escrever-legendas-que-geram-engajamento"
+                    - img [ref=e221]
+                - paragraph [ref=e224]: Legenda não é afterthought. É o que transforma visualização em ação. O sistema escreve legendas com hook que prende nos primeiros 125 caracteres, corpo que entrega valor, CTA que direciona e hashtags pesquisadas para alcance orgânico.
+                - paragraph [ref=e225]: "E mais: cada post recebe alt-text acessível para que seu conteúdo alcance todo mundo."
+                - list [ref=e226]:
+                  - listitem [ref=e227]: Hook otimizado com limite de 125 caracteres para não ser cortado no feed
+                  - listitem [ref=e228]: Corpo da legenda com até 300 palavras, estruturado para leitura
+                  - listitem [ref=e229]: 3 a 5 hashtags pesquisadas por relevância e volume de busca
+                  - listitem [ref=e230]: SEO keywords integradas naturalmente no texto
+                  - listitem [ref=e231]: Alt-text descritivo para acessibilidade e indexação por buscadores
+                  - listitem [ref=e232]: "Geração em lote: 50 legendas de uma vez"
+                - heading "Criar ofertas irresistíveis e funis de vendaLink to section" [level=3] [ref=e233]:
+                  - text: Criar ofertas irresistíveis e funis de venda
+                  - link "Link to section" [ref=e234] [cursor=pointer]:
+                    - /url: "#criar-ofertas-irresistveis-e-funis-de-venda"
+                    - img [ref=e235]
+                - paragraph [ref=e238]: Vender não é empurrar produto. É construir uma escada de valor onde cada degrau faz sentido para o cliente.
+                - paragraph [ref=e239]: "O sistema monta a oferta usando os frameworks de Alex Hormozi e Russell Brunson. Define o que entra no pacote, quais bônus fazem sentido, como apresentar o preço para que pareça ridiculamente barato pelo valor entregue. Depois projeta o funil completo: da primeira impressão até o carrinho fechado."
+                - list [ref=e240]:
+                  - listitem [ref=e241]: "Ofertas Grand Slam (Hormozi): core + bônus + garantia + escassez real"
+                  - listitem [ref=e242]: "Value Ladder completa: isca digital, tripwire, core offer, high ticket"
+                  - listitem [ref=e243]: "Funis de venda projetados fase a fase: awareness, consideração, conversão"
+                  - listitem [ref=e244]: Tratamento de objeções mapeado para cada etapa do funil
+                  - listitem [ref=e245]: Precificação baseada em valor, não em custo
+                - heading "Escrever copy de alta conversãoLink to section" [level=3] [ref=e246]:
+                  - text: Escrever copy de alta conversão
+                  - link "Link to section" [ref=e247] [cursor=pointer]:
+                    - /url: "#escrever-copy-de-alta-converso"
+                    - img [ref=e248]
+                - paragraph [ref=e251]: Sales letters que agarram pela gola e não soltam. Headlines magnéticas que param o scroll. Emails que abrem, leem e clicam. Landing pages que convertem visitante em cliente.
+                - paragraph [ref=e252]: A copy sai adaptada para o mercado brasileiro. Não é tradução de fórmula americana. É texto que fala a língua do seu público, com as dores, aspirações e referências culturais certas.
+                - list [ref=e253]:
+                  - listitem [ref=e254]: "Sales letters completas: headline, lead, body, oferta, CTA, PS"
+                  - listitem [ref=e255]: Packs de 25+ headlines categorizados por ângulo e fórmula comprovada
+                  - listitem [ref=e256]: "Sequências de email: soap opera, nutrição, venda, carrinho abandonado, pós-compra"
+                  - listitem [ref=e257]: Copy de landing page com estrutura de conversão testada
+                  - listitem [ref=e258]: BrandScript SB7 para clareza de mensagem antes de qualquer peça de copy
+                  - listitem [ref=e259]: "Tudo passa no Grunt Test: se não entende em 5 segundos, volta para reescrita"
+                - heading "Planejar lançamentos digitais completosLink to section" [level=3] [ref=e260]:
+                  - text: Planejar lançamentos digitais completos
+                  - link "Link to section" [ref=e261] [cursor=pointer]:
+                    - /url: "#planejar-lanamentos-digitais-completos"
+                    - img [ref=e262]
+                - paragraph [ref=e265]: Do seed launch ao JV launch. O sistema planeja cada fase do lançamento, define a sequência de CPLs (Conteúdos Pré-Lançamento), cria o calendário, monta a estratégia de tráfego e escreve os roteiros de cada etapa.
+                - paragraph [ref=e266]: Você não precisa ser especialista em Product Launch Formula. O sistema já é.
+                - list [ref=e267]:
+                  - listitem [ref=e268]: Lançamento semente, interno, JV e perpétuo
+                  - listitem [ref=e269]: Sequência de CPLs com roteiros completos
+                  - listitem [ref=e270]: Calendário com timeline e marcos definidos
+                  - listitem [ref=e271]: Estratégia de tráfego pago integrada ao lançamento
+                  - listitem [ref=e272]: Checklist de execução fase a fase
+                  - listitem [ref=e273]: Projeções de faturamento baseadas em benchmarks
+                - heading "Definir precificação baseada em valorLink to section" [level=3] [ref=e274]:
+                  - text: Definir precificação baseada em valor
+                  - link "Link to section" [ref=e275] [cursor=pointer]:
+                    - /url: "#definir-precificao-baseada-em-valor"
+                    - img [ref=e276]
+                - paragraph [ref=e279]: Preço não é conta de padaria. É percepção de valor. O sistema analisa seu mercado, pesquisa disposição a pagar, cria tiers de preço que maximizam receita e projeta a economia do negócio.
+                - list [ref=e280]:
+                  - listitem [ref=e281]: Pesquisa de willingness-to-pay do público
+                  - listitem [ref=e282]: Benchmark de preços contra concorrentes
+                  - listitem [ref=e283]: Tiers de preço otimizados (Starter, Pro, Enterprise)
+                  - listitem [ref=e284]: Projeção financeira com cenários conservador, realista e otimista
+                  - listitem [ref=e285]: Página de pricing com copy e framing otimizados
+                  - listitem [ref=e286]: "Purple Cow: diferenciação que justifica preço premium"
+                - heading "Criar design systems e materiais visuaisLink to section" [level=3] [ref=e287]:
+                  - text: Criar design systems e materiais visuais
+                  - link "Link to section" [ref=e288] [cursor=pointer]:
+                    - /url: "#criar-design-systems-e-materiais-visuais"
+                    - img [ref=e289]
+                - paragraph [ref=e292]: O sistema extrai os tokens de design de qualquer referência. Cores, fontes, espaçamentos, cantos. Depois aplica tudo automaticamente em cada peça criada. Posts, apresentações, PDFs, tudo sai com a mesma identidade visual.
+                - list [ref=e293]:
+                  - listitem [ref=e294]: Extração automática de design tokens de qualquer URL ou referência
+                  - listitem [ref=e295]: CSS custom properties geradas automaticamente
+                  - listitem [ref=e296]: "Renderização em múltiplos formatos: PNG, PDF, PPTX (16:9)"
+                  - listitem [ref=e297]: Apresentações profissionais com layout consistente
+                  - listitem [ref=e298]: Re-aplicação de marca em materiais existentes
+                - heading "Validar qualidade automaticamenteLink to section" [level=3] [ref=e299]:
+                  - text: Validar qualidade automaticamente
+                  - link "Link to section" [ref=e300] [cursor=pointer]:
+                    - /url: "#validar-qualidade-automaticamente"
+                    - img [ref=e301]
+                - paragraph [ref=e304]: Antes de qualquer peça ser entregue, o sistema faz uma inspeção visual automatizada. Verifica consistência de marca, legibilidade, alinhamento, qualidade de imagem. Cada post recebe uma nota de 0 a 100. Se não passar no padrão, volta para ajuste.
+                - list [ref=e305]:
+                  - listitem [ref=e306]: Inspeção visual automatizada via visão computacional
+                  - listitem [ref=e307]: Score de qualidade 0-100 por post
+                  - listitem [ref=e308]: Verificação de consistência de marca (cores, fontes, logo)
+                  - listitem [ref=e309]: "Validação cross-platform: dimensões corretas para cada rede"
+                  - listitem [ref=e310]: Checagem de legibilidade e contraste de texto
+                - separator [ref=e311]
+                - heading "💡 Exemplos de UsoLink to section" [level=2] [ref=e312]:
+                  - text: 💡 Exemplos de Uso
+                  - link "Link to section" [ref=e313] [cursor=pointer]:
+                    - /url: "#-exemplos-de-uso"
+                    - img [ref=e314]
+                - paragraph [ref=e317]: Esses não são cenários hipotéticos. Cada um abaixo é algo que o sistema faz hoje. Não é roadmap. Não é "em breve". Não é promessa futura.
+                - paragraph [ref=e318]: São situações reais que pessoas reais enfrentam todo dia. E o sistema resolve cada uma delas.
+                - heading "1. Agência gerenciando 10 clientesLink to section" [level=3] [ref=e319]:
+                  - text: 1. Agência gerenciando 10 clientes
+                  - link "Link to section" [ref=e320] [cursor=pointer]:
+                    - /url: "#1-agncia-gerenciando-10-clientes"
+                    - img [ref=e321]
+                - paragraph [ref=e324]:
+                  - strong [ref=e325]: "Situação:"
+                  - text: Você é uma agência de marketing digital. Tem 10 clientes que precisam de conteúdo semanal para Instagram. Cada cliente tem sua marca, seu tom de voz, seu público. Sua equipe de 3 pessoas está sobrecarregada e a qualidade está caindo. O designer vive atrasado. A copywriter não dá conta de 50 legendas por semana. E contratar mais gente vai comer a margem inteira.
+                - paragraph [ref=e326]:
+                  - strong [ref=e327]: "O que o sistema faz:"
+                  - text: "Você configura o design system de cada cliente uma vez: cores, fontes, estilo, tom de voz. Depois, toda semana, pede os posts. O sistema cria carrosséis com dados relevantes, gera imagens originais para as capas, escreve legendas com hooks testados, aplica a identidade visual de cada marca e entrega tudo renderizado em alta resolução. Ao mesmo tempo, monitora os concorrentes de cada cliente e entrega relatórios semanais com insights acionáveis."
+                - paragraph [ref=e328]:
+                  - strong [ref=e329]: "Resultado:"
+                  - text: "50 posts por semana para 10 clientes, cada um com sua identidade visual intacta. Sua equipe para de criar conteúdo e começa a fazer o que realmente importa: estratégia, relacionamento com o cliente e prospecção de novos contratos. A margem da agência sobe porque o custo por post despenca."
+                - heading "2. Médico que quer presença nas redesLink to section" [level=3] [ref=e330]:
+                  - text: 2. Médico que quer presença nas redes
+                  - link "Link to section" [ref=e331] [cursor=pointer]:
+                    - /url: "#2-mdico-que-quer-presena-nas-redes"
+                    - img [ref=e332]
+                - paragraph [ref=e335]:
+                  - strong [ref=e336]: "Situação:"
+                  - text: Dr. Paulo é cardiologista. Sabe que precisa estar nas redes sociais, mas não tem tempo nem sabe por onde começar. Já tentou contratar um social media, mas o conteúdo ficava genérico e sem autoridade. Seus pacientes merecem informação de qualidade, não post de template.
+                - paragraph [ref=e337]:
+                  - strong [ref=e338]: "O que o sistema faz:"
+                  - text: Analisa os 5 maiores perfis de cardiologistas do Instagram. Identifica quais assuntos geram mais engajamento, quais formatos funcionam melhor, qual tom de voz conecta. Depois cria 10 posts por semana com conteúdo educativo, carrosséis com dados relevantes, imagens fotorrealistas para as capas e legendas que posicionam o Dr. Paulo como autoridade na área.
+                - paragraph [ref=e339]:
+                  - strong [ref=e340]: "Resultado:"
+                  - text: Em um mês, Dr. Paulo tem 40 posts profissionais publicados. Seus pacientes compartilham o conteúdo. Colegas médicos começam a seguir. A agenda presencial começa a encher com pacientes que dizem "te encontrei pelo Instagram".
+                - heading "3. E-commerce lançando produto novoLink to section" [level=3] [ref=e341]:
+                  - text: 3. E-commerce lançando produto novo
+                  - link "Link to section" [ref=e342] [cursor=pointer]:
+                    - /url: "#3-e-commerce-lanando-produto-novo"
+                    - img [ref=e343]
+                - paragraph [ref=e346]:
+                  - strong [ref=e347]: "Situação:"
+                  - text: Uma marca de cosméticos naturais vai lançar sua nova linha de skincare. São 5 produtos novos. A equipe de marketing tem uma designer e um estagiário. Precisa de funil de vendas, landing page, sequência de emails, anúncios, posts de lançamento e uma oferta que faça as pessoas comprarem no primeiro dia. O prazo? Duas semanas.
+                - paragraph [ref=e348]:
+                  - strong [ref=e349]: "O que o sistema faz:"
+                  - text: "Começa montando a oferta Grand Slam: produto core + bônus complementares (guia de rotina skincare + acesso a grupo VIP) + garantia de 30 dias + escassez real (primeiras 200 unidades com desconto). Projeta o funil completo de 4 fases: awareness com posts educativos, consideração com depoimentos e antes/depois, decisão com oferta + urgência, pós-compra com onboarding. Escreve a sales letter da landing page. Cria a sequência de 7 emails soap opera para gerar conexão, seguida de 5 emails de venda com urgência progressiva. Gera product shots fotorrealistas dos 5 produtos e posts de aquecimento para as redes."
+                - paragraph [ref=e350]:
+                  - strong [ref=e351]: "Resultado:"
+                  - text: Um lançamento completo pronto para executar em uma semana de produção. Landing page com copy de conversão, 12 emails, 15 posts de aquecimento, 5 product shots profissionais. Tudo com visual consistente com a marca. O time só precisa agendar e apertar o botão de "publicar".
+                - heading "4. Criador de conteúdo escalando produçãoLink to section" [level=3] [ref=e352]:
+                  - text: 4. Criador de conteúdo escalando produção
+                  - link "Link to section" [ref=e353] [cursor=pointer]:
+                    - /url: "#4-criador-de-contedo-escalando-produo"
+                    - img [ref=e354]
+                - paragraph [ref=e357]:
+                  - strong [ref=e358]: "Situação:"
+                  - text: Marina é influenciadora de produtividade com 80k seguidores. Posta 5 vezes por semana, mas cada post leva 3 horas entre pesquisa, criação, texto e publicação. São 15 horas por semana só para manter a frequência. Ela quer dobrar a produção sem dobrar o tempo.
+                - paragraph [ref=e359]:
+                  - strong [ref=e360]: "O que o sistema faz:"
+                  - text: "Analisa os 50 posts mais recentes de Marina e dos top 10 perfis do nicho de produtividade. Identifica os temas que mais engajam, os formatos que geram mais saves e shares, os hooks que prendem nos primeiros 3 segundos. Depois cria 10 posts por semana: carrosséis com o estilo visual de Marina, legendas no tom de voz dela, imagens originais e hashtags pesquisadas."
+                - paragraph [ref=e361]:
+                  - strong [ref=e362]: "Resultado:"
+                  - text: Marina dobrou a frequência de posts sem adicionar uma hora sequer na agenda. O engajamento subiu porque o conteúdo agora é baseado em dados, não em intuição. Ela usa o tempo livre para gravar vídeos e criar produtos digitais.
+                - heading "5. SaaS planejando lançamento com PLFLink to section" [level=3] [ref=e363]:
+                  - text: 5. SaaS planejando lançamento com PLF
+                  - link "Link to section" [ref=e364] [cursor=pointer]:
+                    - /url: "#5-saas-planejando-lanamento-com-plf"
+                    - img [ref=e365]
+                - paragraph [ref=e368]:
+                  - strong [ref=e369]: "Situação:"
+                  - text: Uma startup de software de gestão financeira está pronta para lançar. O produto é bom, a equipe de dev é forte, mas ninguém ali sabe montar um lançamento digital. Já tentaram "só colocar no ar" duas vezes e o resultado foi um punhado de signups e muito silêncio. O investidor quer ver tração real.
+                - paragraph [ref=e370]:
+                  - strong [ref=e371]: "O que o sistema faz:"
+                  - text: "Planeja um lançamento completo usando Product Launch Formula. Define os 4 CPLs (Conteúdos Pré-Lançamento) com roteiros detalhados: CPL1 mostra a oportunidade, CPL2 apresenta a transformação, CPL3 dá um gostinho da experiência, CPL4 abre o carrinho. Cria a value ladder: trial gratuito de 14 dias, plano mensal a R$97, plano anual a R$897 (2 meses grátis), plano enterprise sob consulta. Monta a oferta de lançamento com bônus exclusivos para os primeiros 100 assinantes anuais: onboarding personalizado + template de fluxo de caixa + 30 minutos de consultoria. Escreve a sequência completa de emails de aquecimento (7 emails), a sales letter da página de vendas e os anúncios para tráfego pago com 3 variações de copy por público."
+                - paragraph [ref=e372]:
+                  - strong [ref=e373]: "Resultado:"
+                  - text: Um lançamento estruturado com timeline de 45 dias, 4 roteiros de CPL, 12 emails, landing page com sales letter, 6 variações de anúncio e projeção financeira com 3 cenários. A equipe técnica executa o plano passo a passo sem precisar virar especialista em marketing digital.
+                - heading "6. Social media monitorando concorrentes semanalmenteLink to section" [level=3] [ref=e374]:
+                  - text: 6. Social media monitorando concorrentes semanalmente
+                  - link "Link to section" [ref=e375] [cursor=pointer]:
+                    - /url: "#6-social-media-monitorando-concorrentes-semanalmente"
+                    - img [ref=e376]
+                - paragraph [ref=e379]:
+                  - strong [ref=e380]: "Situação:"
+                  - text: Gabriela gerencia as redes sociais de uma rede de academias. O dono cobra relatórios semanais de concorrência, mas ela gasta um dia inteiro toda semana abrindo perfil por perfil, anotando números, tentando identificar o que os concorrentes estão fazendo de diferente.
+                - paragraph [ref=e381]:
+                  - strong [ref=e382]: "O que o sistema faz:"
+                  - text: Todo domingo à noite, Gabriela roda o monitoramento semanal. O sistema analisa os 8 concorrentes cadastrados, coleta todos os posts da semana, calcula métricas de engajamento, detecta posts virais, identifica tendências e gera um relatório executivo com os insights mais importantes.
+                - paragraph [ref=e383]:
+                  - strong [ref=e384]: "Resultado:"
+                  - text: Na segunda de manhã, Gabriela chega com o relatório pronto. Apresenta para o dono em 10 minutos. Usa os insights para planejar o conteúdo da semana. O que levava um dia inteiro agora leva 15 minutos.
+                - heading "7. Consultor criando material de vendaLink to section" [level=3] [ref=e385]:
+                  - text: 7. Consultor criando material de venda
+                  - link "Link to section" [ref=e386] [cursor=pointer]:
+                    - /url: "#7-consultor-criando-material-de-venda"
+                    - img [ref=e387]
+                - paragraph [ref=e390]:
+                  - strong [ref=e391]: "Situação:"
+                  - text: Ricardo é consultor de vendas B2B. Vai fazer um pitch para uma rede de franquias. Precisa de uma apresentação profissional, uma proposta comercial em PDF e posts para LinkedIn que posicionem sua autoridade antes da reunião. Ele não tem designer. A última proposta que mandou foi em Word com formatação quebrada e o prospect nem respondeu.
+                - paragraph [ref=e392]:
+                  - strong [ref=e393]: "O que o sistema faz:"
+                  - text: "Extrai o design system da marca de Ricardo a partir do site dele (cores, fontes, estilo). Cria uma apresentação PPTX de 15 slides com a estrutura completa de pitch: problema do mercado, solução, diferenciais, cases, plano de ação, investimento. Renderiza uma proposta comercial em PDF de 8 páginas com layout profissional e dados personalizados. Gera 8 posts para LinkedIn com conteúdo que demonstra expertise em vendas B2B. Escreve a copy de uma one-page sales letter para enviar por email 3 dias antes da reunião, aquecendo o prospect."
+                - paragraph [ref=e394]:
+                  - strong [ref=e395]: "Resultado:"
+                  - text: Ricardo chega na reunião com material que parece ter sido feito por uma agência que cobra R$15 mil por mês. O prospect folheia a proposta e diz "vocês são profissionais". Os posts no LinkedIn, publicados na semana anterior, já tinham gerado 3 conexões no setor de franquias. O contrato de R$120 mil sai assinado na segunda reunião.
+                - heading "8. Nutricionista querendo 50 posts prontosLink to section" [level=3] [ref=e396]:
+                  - text: 8. Nutricionista querendo 50 posts prontos
+                  - link "Link to section" [ref=e397] [cursor=pointer]:
+                    - /url: "#8-nutricionista-querendo-50-posts-prontos"
+                    - img [ref=e398]
+                - paragraph [ref=e401]:
+                  - strong [ref=e402]: "Situação:"
+                  - text: "Dra. Camila é nutricionista funcional. Quer 50 posts educativos para 2 meses de conteúdo: carrosséis sobre alimentos, infográficos com dados nutricionais, dicas práticas. Mas não quer conteúdo genérico. Quer posts que reflitam seu posicionamento e se diferenciem dos milhares de nutricionistas no Instagram."
+                - paragraph [ref=e403]:
+                  - strong [ref=e404]: "O que o sistema faz:"
+                  - text: "Analisa os perfis dos maiores nutricionistas do Instagram. Identifica gaps de conteúdo (o que ninguém está falando). Cria 50 posts completos: 30 carrosséis de 6 slides + 20 infográficos. Gera 48 imagens fotorrealistas de alimentos e preparações para as capas. Escreve 50 legendas com linguagem acessível, hooks que prendem e CTAs que direcionam para o consultório. Aplica o design system da Dra. Camila em cada peça. Valida qualidade visual de cada post."
+                - paragraph [ref=e405]:
+                  - strong [ref=e406]: "Resultado:"
+                  - text: 50 posts profissionais, 250 PNGs em alta resolução, 48 imagens originais, 50 legendas otimizadas. Dois meses de conteúdo prontos para agendar. A Dra. Camila só precisa revisar e publicar. Esse cenário não é hipotético. É exatamente o que o Projeto NutroPosts entregou.
+                - separator [ref=e407]
+                - 'heading "🏆 Prova Real: Projeto NutroPostsLink to section" [level=2] [ref=e408]':
+                  - text: "🏆 Prova Real: Projeto NutroPosts"
+                  - link "Link to section" [ref=e409] [cursor=pointer]:
+                    - /url: "#-prova-real-projeto-nutroposts"
+                    - img [ref=e410]
+                - paragraph [ref=e413]: Números falam mais alto que promessas. Esse foi o primeiro grande teste do sistema em produção real.
+                - heading "O desafioLink to section" [level=3] [ref=e414]:
+                  - text: O desafio
+                  - link "Link to section" [ref=e415] [cursor=pointer]:
+                    - /url: "#o-desafio"
+                    - img [ref=e416]
+                - paragraph [ref=e419]:
+                  - text: Criar conteúdo profissional para um perfil médico de nutrição. Não 5 posts. Não 10.
+                  - strong [ref=e420]: 50 posts completos
+                  - text: ", cada um com múltiplos slides, imagem de capa original e legenda otimizada. E tudo precisava sair com identidade visual consistente, conteúdo com autoridade médica e qualidade visual de agência."
+                - heading "O que foi feitoLink to section" [level=3] [ref=e421]:
+                  - text: O que foi feito
+                  - link "Link to section" [ref=e422] [cursor=pointer]:
+                    - /url: "#o-que-foi-feito"
+                    - img [ref=e423]
+                - paragraph [ref=e426]:
+                  - strong [ref=e427]: "Fase 1: Inteligência"
+                - paragraph [ref=e428]: "O sistema analisou 5 dos maiores perfis de médicos do Instagram para entender o que funciona no nicho:"
+                - table [ref=e430]:
+                  - rowgroup [ref=e431]:
+                    - row "Perfil Seguidores Foco" [ref=e432]:
+                      - columnheader "Perfil" [ref=e433]
+                      - columnheader "Seguidores" [ref=e434]
+                      - columnheader "Foco" [ref=e435]
+                  - rowgroup [ref=e436]:
+                    - row "@drericberg 3M+ Nutrição e saúde funcional" [ref=e437]:
+                      - cell "@drericberg" [ref=e438]
+                      - cell "3M+" [ref=e439]
+                      - cell "Nutrição e saúde funcional" [ref=e440]
+                    - row "@dr.monteze — Endocrinologia e emagrecimento" [ref=e441]:
+                      - cell "@dr.monteze" [ref=e442]
+                      - cell "—" [ref=e443]
+                      - cell "Endocrinologia e emagrecimento" [ref=e444]
+                    - row "@drlazarolourenco — Medicina integrativa" [ref=e445]:
+                      - cell "@drlazarolourenco" [ref=e446]
+                      - cell "—" [ref=e447]
+                      - cell "Medicina integrativa" [ref=e448]
+                    - row "@dra.sarina — Dermatologia e nutrição" [ref=e449]:
+                      - cell "@dra.sarina" [ref=e450]
+                      - cell "—" [ref=e451]
+                      - cell "Dermatologia e nutrição" [ref=e452]
+                    - row "@doutorbarakat — Saúde integrativa" [ref=e453]:
+                      - cell "@doutorbarakat" [ref=e454]
+                      - cell "—" [ref=e455]
+                      - cell "Saúde integrativa" [ref=e456]
+                - paragraph [ref=e457]: "Resultado: 6 relatórios de inteligência competitiva com padrões de conteúdo, formatos que mais engajam, temas com maior potencial e gaps que nenhum concorrente estava explorando."
+                - paragraph [ref=e458]:
+                  - strong [ref=e459]: "Fase 2: Criação"
+                - paragraph [ref=e460]: "Com os insights em mãos, o sistema produziu:"
+                - table [ref=e462]:
+                  - rowgroup [ref=e463]:
+                    - row "Entrega Quantidade Detalhe" [ref=e464]:
+                      - columnheader "Entrega" [ref=e465]
+                      - columnheader "Quantidade" [ref=e466]
+                      - columnheader "Detalhe" [ref=e467]
+                  - rowgroup [ref=e468]:
+                    - row "Posts completos 50 Carrosséis de 6 slides + infográficos" [ref=e469]:
+                      - cell "Posts completos" [ref=e470]
+                      - cell "50" [ref=e471]
+                      - cell "Carrosséis de 6 slides + infográficos" [ref=e472]
+                    - row "PNGs renderizados 250 Alta resolução 2160×2700px, retina @2x" [ref=e473]:
+                      - cell "PNGs renderizados" [ref=e474]
+                      - cell "250" [ref=e475]
+                      - cell "Alta resolução 2160×2700px, retina @2x" [ref=e476]
+                    - row "Imagens IA 48 Hero shots fotorrealistas para capas" [ref=e477]:
+                      - cell "Imagens IA" [ref=e478]
+                      - cell "48" [ref=e479]
+                      - cell "Hero shots fotorrealistas para capas" [ref=e480]
+                    - row "Legendas 50 Hook + corpo + CTA + hashtags + alt-text" [ref=e481]:
+                      - cell "Legendas" [ref=e482]
+                      - cell "50" [ref=e483]
+                      - cell "Hook + corpo + CTA + hashtags + alt-text" [ref=e484]
+                    - row "Relatórios 6 Inteligência competitiva detalhada" [ref=e485]:
+                      - cell "Relatórios" [ref=e486]
+                      - cell "6" [ref=e487]
+                      - cell "Inteligência competitiva detalhada" [ref=e488]
+                - paragraph [ref=e489]:
+                  - strong [ref=e490]: "Fase 3: Design System"
+                - paragraph [ref=e491]: "Tudo saiu com identidade visual unificada, aplicada automaticamente em cada peça:"
+                - list [ref=e492]:
+                  - listitem [ref=e493]:
+                    - strong [ref=e494]: "Fonte:"
+                    - text: Montserrat (400 a 900)
+                  - listitem [ref=e495]:
+                    - strong [ref=e496]: "Cor primária:"
+                    - code [ref=e497]: "#7A288A"
+                  - listitem [ref=e498]:
+                    - strong [ref=e499]: "Formato:"
+                    - text: 1080×1350px (feed otimizado)
+                  - listitem [ref=e500]:
+                    - strong [ref=e501]: "Escala:"
+                    - text: Retina @2x (2160×2700px real)
+                  - listitem [ref=e502]:
+                    - strong [ref=e503]: "Marca:"
+                    - text: "@pauloalmeida.med em cada slide"
+                - paragraph [ref=e504]:
+                  - strong [ref=e505]: "Fase 4: Qualidade"
+                - paragraph [ref=e506]: Cada post passou por inspeção visual automatizada antes da entrega. Verificação de legibilidade, contraste, alinhamento, consistência de marca e adequação de dimensões.
+                - heading "O resultadoLink to section" [level=3] [ref=e507]:
+                  - text: O resultado
+                  - link "Link to section" [ref=e508] [cursor=pointer]:
+                    - /url: "#o-resultado"
+                    - img [ref=e509]
+                - blockquote [ref=e512]:
+                  - paragraph [ref=e513]:
+                    - strong [ref=e514]: 50 posts. 250 PNGs. 48 imagens originais. 50 legendas. 6 relatórios. Menos de 2 horas.
+                - paragraph [ref=e515]: Dois meses de conteúdo profissional, pronto para agendar e publicar. Conteúdo que levaria uma equipe de 4 pessoas (estrategista, designer, copywriter, social media) pelo menos 2 semanas para produzir.
+                - paragraph [ref=e516]: "Para colocar em perspectiva: uma agência cobraria entre R$8.000 e R$15.000 para produzir esse volume com essa qualidade. Um freelancer levaria de 3 a 4 semanas. Uma equipe interna gastaria pelo menos 80 horas de trabalho combinadas."
+                - paragraph [ref=e517]: O Nirvana fez em menos de 2 horas.
+                - separator [ref=e518]
+                - heading "⚡ 13 fluxos automatizados prontos para usarLink to section" [level=2] [ref=e519]:
+                  - text: ⚡ 13 fluxos automatizados prontos para usar
+                  - link "Link to section" [ref=e520] [cursor=pointer]:
+                    - /url: "#-13-fluxos-automatizados-prontos-para-usar"
+                    - img [ref=e521]
+                - paragraph [ref=e524]: Além de pedidos avulsos, o sistema tem 13 fluxos completos que executam processos inteiros do começo ao fim. Você ativa, configura os parâmetros e recebe o resultado completo.
+                - heading "Produção e conteúdoLink to section" [level=3] [ref=e525]:
+                  - text: Produção e conteúdo
+                  - link "Link to section" [ref=e526] [cursor=pointer]:
+                    - /url: "#produo-e-contedo"
+                    - img [ref=e527]
+                - paragraph [ref=e530]:
+                  - strong [ref=e531]: Produção completa de conteúdo.
+                  - text: O fluxo mais poderoso. Você informa os perfis de referência, o tema e a quantidade. O sistema analisa os concorrentes, extrai insights, cria os posts, gera imagens, escreve legendas, aplica o design system e valida qualidade. É o fluxo que produziu os 50 posts do Projeto NutroPosts.
+                - paragraph [ref=e532]:
+                  - strong [ref=e533]: Conteúdo multi-plataforma.
+                  - text: Um conteúdo, múltiplas plataformas. Cria posts para Instagram, adapta para TikTok, gera versão para YouTube Shorts e formata para Facebook. Cada versão respeita as dimensões e boas práticas da plataforma.
+                - paragraph [ref=e534]:
+                  - strong [ref=e535]: Refresh de marca.
+                  - text: Mudou a identidade visual? Esse fluxo re-aplica os novos tokens de design em todos os materiais existentes. Cores, fontes, espaçamentos. Tudo atualizado de uma vez.
+                - heading "Inteligência competitivaLink to section" [level=3] [ref=e536]:
+                  - text: Inteligência competitiva
+                  - link "Link to section" [ref=e537] [cursor=pointer]:
+                    - /url: "#inteligncia-competitiva"
+                    - img [ref=e538]
+                - paragraph [ref=e541]:
+                  - strong [ref=e542]: Análise semanal profunda.
+                  - text: O fluxo mais completo de inteligência. Analisa múltiplos perfis, calcula métricas, detecta posts virais, identifica tendências e gera relatório executivo. Rode toda segunda-feira e comece a semana sabendo exatamente o que seus concorrentes fizeram.
+                - paragraph [ref=e543]:
+                  - strong [ref=e544]: Scan rápido de concorrentes.
+                  - text: Precisa de um panorama rápido? Esse fluxo faz uma varredura express e entrega os destaques em minutos.
+                - paragraph [ref=e545]:
+                  - strong [ref=e546]: Monitoramento semanal.
+                  - text: Versão enxuta da análise profunda. Acompanha métricas-chave e alerta sobre mudanças relevantes. Ideal para manutenção contínua.
+                - paragraph [ref=e547]:
+                  - strong [ref=e548]: Ciclo mensal de inteligência.
+                  - text: Análise aprofundada com visão de longo prazo. Tendências de crescimento, evolução de engajamento, mudanças de estratégia dos concorrentes.
+                - paragraph [ref=e549]:
+                  - strong [ref=e550]: Deep dive orgânico.
+                  - text: Mergulho profundo no conteúdo orgânico. Analisa cada post, cada comentário, cada interação para encontrar padrões que não aparecem na superfície. Ideal para entender de verdade o que faz um perfil crescer.
+                - paragraph [ref=e551]:
+                  - strong [ref=e552]: Análise de anúncios pagos.
+                  - text: Vasculha a Meta Ads Library e analisa os anúncios ativos dos concorrentes. Identifica formatos vencedores, estimativas de investimento e testes A/B em andamento.
+                - paragraph [ref=e553]:
+                  - strong [ref=e554]: Construtor de swipe file.
+                  - text: Coleta os melhores anúncios do seu nicho e organiza em um arquivo de referência. Cada anúncio com análise de hook, copy, CTA e estimativa de performance.
+                - heading "Estratégia e vendasLink to section" [level=3] [ref=e555]:
+                  - text: Estratégia e vendas
+                  - link "Link to section" [ref=e556] [cursor=pointer]:
+                    - /url: "#estratgia-e-vendas"
+                    - img [ref=e557]
+                - paragraph [ref=e560]:
+                  - strong [ref=e561]: Sala de guerra estratégica.
+                  - text: Reúne todos os especialistas em estratégia para uma sessão intensiva. Análise de mercado, posicionamento, mensagem, oferta, canais. Sai com um plano de ação completo e priorizado. É como ter uma reunião de diretoria do seu marketing, mas sem precisar contratar os diretores.
+                - paragraph [ref=e562]:
+                  - strong [ref=e563]: Criação completa de funil.
+                  - text: "Monta o funil inteiro: pesquisa de mercado, criação da oferta, copy da landing page, sequência de emails, anúncios. Do topo ao fundo do funil, tudo conectado e coerente. Cada etapa alimenta a próxima."
+                - paragraph [ref=e564]:
+                  - strong [ref=e565]: Lançamento digital.
+                  - text: Planejamento e produção completos de um lançamento usando Product Launch Formula. Timeline, CPLs com roteiros detalhados, emails de aquecimento e venda, posts para redes sociais, estratégia de tráfego pago, projeção financeira com cenários. Tudo pronto para executar fase a fase.
+                - separator [ref=e566]
+                - heading "🌐 PlataformasLink to section" [level=2] [ref=e567]:
+                  - text: 🌐 Plataformas
+                  - link "Link to section" [ref=e568] [cursor=pointer]:
+                    - /url: "#-plataformas"
+                    - img [ref=e569]
+                - paragraph [ref=e572]: O sistema não é exclusivo para Instagram. Funciona com as principais redes sociais e formatos digitais.
+                - table [ref=e574]:
+                  - rowgroup [ref=e575]:
+                    - row "Plataforma O que você consegue fazer" [ref=e576]:
+                      - columnheader "Plataforma" [ref=e577]
+                      - columnheader "O que você consegue fazer" [ref=e578]
+                  - rowgroup [ref=e579]:
+                    - row "Instagram Posts, carrosséis, stories, reels, análise de perfis, espionagem de concorrentes" [ref=e580]:
+                      - cell "Instagram" [ref=e581]:
+                        - strong [ref=e582]: Instagram
+                      - cell "Posts, carrosséis, stories, reels, análise de perfis, espionagem de concorrentes" [ref=e583]
+                    - row "TikTok Scripts de vídeo, análise de tendências, adaptação de conteúdo para formato curto" [ref=e584]:
+                      - cell "TikTok" [ref=e585]:
+                        - strong [ref=e586]: TikTok
+                      - cell "Scripts de vídeo, análise de tendências, adaptação de conteúdo para formato curto" [ref=e587]
+                    - row "YouTube Thumbnails, scripts para Shorts, análise de canais e vídeos concorrentes" [ref=e588]:
+                      - cell "YouTube" [ref=e589]:
+                        - strong [ref=e590]: YouTube
+                      - cell "Thumbnails, scripts para Shorts, análise de canais e vídeos concorrentes" [ref=e591]
+                    - row "Facebook Análise de anúncios via Meta Ads Library, posts adaptados, espionagem" [ref=e592]:
+                      - cell "Facebook" [ref=e593]:
+                        - strong [ref=e594]: Facebook
+                      - cell "Análise de anúncios via Meta Ads Library, posts adaptados, espionagem" [ref=e595]
+                    - row "Web Landing pages, sales letters, emails, PDFs, apresentações PPTX" [ref=e596]:
+                      - cell "Web" [ref=e597]:
+                        - strong [ref=e598]: Web
+                      - cell "Landing pages, sales letters, emails, PDFs, apresentações PPTX" [ref=e599]
+                - paragraph [ref=e600]: Cada conteúdo é adaptado para as dimensões e boas práticas de cada plataforma. Um carrossel de Instagram vira um script de TikTok. Um post educativo vira um Short para YouTube. Uma análise profunda vira uma thread para LinkedIn. O conteúdo se multiplica sem perder qualidade.
+                - paragraph [ref=e601]: "O sistema também entende as métricas que importam em 2026. Não adianta mais olhar só para likes. A ordem de importância real é: Sends (compartilhamentos via DM) > Saves > Shares > Comments > Likes. Toda estratégia de conteúdo é calibrada para gerar as ações que o algoritmo realmente valoriza."
+                - separator [ref=e602]
+                - heading "📊 Em númerosLink to section" [level=2] [ref=e603]:
+                  - text: 📊 Em números
+                  - link "Link to section" [ref=e604] [cursor=pointer]:
+                    - /url: "#-em-nmeros"
+                    - img [ref=e605]
+                - table [ref=e609]:
+                  - rowgroup [ref=e610]:
+                    - row "21Link to section Agentes 132Link to section Capacidades 13Link to section Fluxos automatizados 20Link to section Especialistas DNA" [ref=e611]:
+                      - cell "21Link to section Agentes" [ref=e612]:
+                        - heading "21Link to section" [level=3] [ref=e613]:
+                          - text: "21"
+                          - link "Link to section" [ref=e614] [cursor=pointer]:
+                            - /url: "#21"
+                            - img [ref=e615]
+                        - paragraph [ref=e618]: Agentes
+                      - cell "132Link to section Capacidades" [ref=e619]:
+                        - heading "132Link to section" [level=3] [ref=e620]:
+                          - text: "132"
+                          - link "Link to section" [ref=e621] [cursor=pointer]:
+                            - /url: "#132"
+                            - img [ref=e622]
+                        - paragraph [ref=e625]: Capacidades
+                      - cell "13Link to section Fluxos automatizados" [ref=e626]:
+                        - heading "13Link to section" [level=3] [ref=e627]:
+                          - text: "13"
+                          - link "Link to section" [ref=e628] [cursor=pointer]:
+                            - /url: "#13"
+                            - img [ref=e629]
+                        - paragraph [ref=e632]: Fluxos automatizados
+                      - cell "20Link to section Especialistas DNA" [ref=e633]:
+                        - heading "20Link to section" [level=3] [ref=e634]:
+                          - text: "20"
+                          - link "Link to section" [ref=e635] [cursor=pointer]:
+                            - /url: "#20"
+                            - img [ref=e636]
+                        - paragraph [ref=e639]: Especialistas DNA
+                - heading "7 divisões especializadasLink to section" [level=3] [ref=e640]:
+                  - text: 7 divisões especializadas
+                  - link "Link to section" [ref=e641] [cursor=pointer]:
+                    - /url: "#7-divises-especializadas"
+                    - img [ref=e642]
+                - paragraph [ref=e645]:
+                  - strong [ref=e646]: 🕵️ Inteligência.
+                  - text: 5 especialistas que vasculham perfis, anúncios, comentários, vídeos e imagens. Sabem tudo o que seus concorrentes estão fazendo, quanto estão gastando e o que está funcionando.
+                - paragraph [ref=e647]:
+                  - strong [ref=e648]: 🧠 Estratégia.
+                  - text: 6 especialistas que transformam dados em plano de ação. Análise de mercado, funis de venda, persuasão, copy e posicionamento. Cada decisão é baseada em dados, não em achismo.
+                - paragraph [ref=e649]:
+                  - strong [ref=e650]: 🎨 Criação de Conteúdo.
+                  - text: 4 especialistas que produzem o material visual e textual. Posts, carrosséis, imagens, legendas, scripts de vídeo. Tudo pronto para publicar.
+                - paragraph [ref=e651]:
+                  - strong [ref=e652]: 🖌️ Design System.
+                  - text: 2 especialistas que garantem identidade visual consistente. Extraem tokens de marca, criam templates e renderizam em PNG, PDF e PPTX.
+                - paragraph [ref=e653]:
+                  - strong [ref=e654]: 💰 Vendas e Monetização.
+                  - text: 2 especialistas em precificação e lançamentos. Definem quanto cobrar, como apresentar a oferta e qual estratégia de lançamento usar para maximizar receita.
+                - paragraph [ref=e655]:
+                  - strong [ref=e656]: 🔍 Qualidade.
+                  - text: 1 especialista dedicado a inspecionar cada peça antes da entrega. Score visual, consistência de marca, legibilidade. Nada sai sem aprovação.
+                - paragraph [ref=e657]:
+                  - strong [ref=e658]: 📋 Relatórios.
+                  - text: 1 especialista que transforma dados e entregas em relatórios executivos. Dashboards, resumos semanais, análises mensais. Informação organizada para tomada de decisão.
+                - heading "Frameworks de quem entende do assuntoLink to section" [level=3] [ref=e659]:
+                  - text: Frameworks de quem entende do assunto
+                  - link "Link to section" [ref=e660] [cursor=pointer]:
+                    - /url: "#frameworks-de-quem-entende-do-assunto"
+                    - img [ref=e661]
+                - paragraph [ref=e664]: O sistema não inventa método. Aplica o que já foi testado e comprovado por quem vendeu bilhões de dólares em produtos e serviços digitais.
+                - table [ref=e666]:
+                  - rowgroup [ref=e667]:
+                    - row "Área Referências" [ref=e668]:
+                      - columnheader "Área" [ref=e669]
+                      - columnheader "Referências" [ref=e670]
+                  - rowgroup [ref=e671]:
+                    - row "Ofertas e funis Alex Hormozi, Russell Brunson, Sabri Suby, Jeff Walker" [ref=e672]:
+                      - cell "Ofertas e funis" [ref=e673]
+                      - cell "Alex Hormozi, Russell Brunson, Sabri Suby, Jeff Walker" [ref=e674]
+                    - row "Persuasão e psicologia Robert Cialdini, Daniel Kahneman, Eugene Schwartz, Jordan Belfort, Chris Voss, Nir Eyal" [ref=e675]:
+                      - cell "Persuasão e psicologia" [ref=e676]
+                      - cell "Robert Cialdini, Daniel Kahneman, Eugene Schwartz, Jordan Belfort, Chris Voss, Nir Eyal" [ref=e677]
+                    - row "Copy e vendas Gary Halbert, Dan Kennedy, Ícaro de Carvalho, Donald Miller" [ref=e678]:
+                      - cell "Copy e vendas" [ref=e679]
+                      - cell "Gary Halbert, Dan Kennedy, Ícaro de Carvalho, Donald Miller" [ref=e680]
+                    - row "Marketing e posicionamento Seth Godin, Gary Vaynerchuk, Grant Cardone" [ref=e681]:
+                      - cell "Marketing e posicionamento" [ref=e682]
+                      - cell "Seth Godin, Gary Vaynerchuk, Grant Cardone" [ref=e683]
+                    - row "Lançamentos Érico Rocha, Jeff Walker, Pedro Sobral" [ref=e684]:
+                      - cell "Lançamentos" [ref=e685]
+                      - cell "Érico Rocha, Jeff Walker, Pedro Sobral" [ref=e686]
+                    - row "Precificação Patrick Campbell, Alex Hormozi" [ref=e687]:
+                      - cell "Precificação" [ref=e688]
+                      - cell "Patrick Campbell, Alex Hormozi" [ref=e689]
+                    - row "Design e produção BrandCraft DNA, Awwwards Singularity DNA (OKLCH, APCA, Gestalt, scroll animations)" [ref=e690]:
+                      - cell "Design e produção" [ref=e691]
+                      - cell "BrandCraft DNA, Awwwards Singularity DNA (OKLCH, APCA, Gestalt, scroll animations)" [ref=e692]
+                - separator [ref=e693]
+                - heading "🚀 Comece agoraLink to section" [level=2] [ref=e694]:
+                  - text: 🚀 Comece agora
+                  - link "Link to section" [ref=e695] [cursor=pointer]:
+                    - /url: "#-comece-agora"
+                    - img [ref=e696]
+                - heading "3 passos para seu primeiro resultadoLink to section" [level=3] [ref=e699]:
+                  - text: 3 passos para seu primeiro resultado
+                  - link "Link to section" [ref=e700] [cursor=pointer]:
+                    - /url: "#3-passos-para-seu-primeiro-resultado"
+                    - img [ref=e701]
+                - paragraph [ref=e704]:
+                  - strong [ref=e705]: 1. Ative o squad
+                - generic [ref=e706]:
+                  - generic [ref=e707]:
+                    - generic [ref=e712]: bash
+                    - button "Copy" [ref=e713]:
+                      - img [ref=e714]
+                      - generic [ref=e717]: Copy
+                  - code [ref=e721]:
+                    - generic [ref=e722]: squad_activate instagram-intelligence-nirvana
+                - paragraph [ref=e723]:
+                  - strong [ref=e724]: 2. Descreva o que você precisa
+                - paragraph [ref=e725]: Fale em português simples. Sem comandos técnicos. Sem sintaxe especial. O sistema entende contexto, interpreta sua intenção e executa o que for necessário.
+                - paragraph [ref=e726]: "Alguns exemplos do que você pode pedir:"
+                - code [ref=e728]: "\"Analise os 5 maiores perfis de nutricionistas do Instagram e crie 10 carrosséis educativos sobre alimentação saudável para o perfil @dracamila.nutri\""
+                - code [ref=e730]: "\"Monte um funil de venda completo para um curso online de fotografia, incluindo oferta, landing page, sequência de emails e posts de lançamento\""
+                - code [ref=e732]: "\"Espione os anúncios ativos dos meus 3 principais concorrentes no Facebook e crie um relatório com os padrões vencedores\""
+                - paragraph [ref=e733]:
+                  - strong [ref=e734]: 3. Receba tudo pronto
+                - paragraph [ref=e735]: Posts renderizados em alta resolução. Legendas escritas. Imagens geradas. Relatórios completos. Funis projetados. Copy escrita. Tudo organizado em pastas, nomeado com clareza e pronto para usar.
+                - paragraph [ref=e736]: Não tem aprovação intermediária. Não tem vai-e-volta com freelancer. Não tem "manda o briefing que eu respondo em 48 horas". Você pede, o sistema entrega. Se quiser ajustar algo, pede o ajuste e recebe a versão nova.
+                - separator [ref=e737]
+                - heading "O que mais você pode pedirLink to section" [level=3] [ref=e738]:
+                  - text: O que mais você pode pedir
+                  - link "Link to section" [ref=e739] [cursor=pointer]:
+                    - /url: "#o-que-mais-voc-pode-pedir"
+                    - img [ref=e740]
+                - paragraph [ref=e743]:
+                  - strong [ref=e744]: "Inteligência competitiva:"
+                - code [ref=e746]: "\"Faça uma análise semanal profunda dos perfis @concorrente1, @concorrente2 e @concorrente3\" \"Monte um swipe file dos melhores anúncios do meu nicho no Facebook\" \"Analise os últimos 30 reels do @perfil e identifique os padrões de viralização\""
+                - paragraph [ref=e747]:
+                  - strong [ref=e748]: "Produção de conteúdo:"
+                - code [ref=e750]: "\"Crie 20 posts para Instagram sobre skincare para pele oleosa\" \"Gere imagens fotorrealistas de pratos saudáveis para capas de carrossel\" \"Escreva 15 legendas com hooks que prendam nos primeiros 3 segundos\" \"Adapte meus 10 melhores posts de Instagram para TikTok e YouTube Shorts\""
+                - paragraph [ref=e751]:
+                  - strong [ref=e752]: "Estratégia de vendas:"
+                - code [ref=e754]: "\"Crie uma oferta irresistível para minha mentoria de 12 semanas\" \"Projete o funil completo: lead magnet → tripwire → core offer → upsell\" \"Escreva a sales letter da minha página de vendas\" \"Monte uma sequência de 7 emails para o lançamento do meu curso\""
+                - paragraph [ref=e755]:
+                  - strong [ref=e756]: "Design e apresentações:"
+                - code [ref=e758]: "\"Extraia o design system do site meunegocio.com.br e aplique nos posts\" \"Crie uma apresentação PPTX de 15 slides para meu pitch de vendas\" \"Renderize meus 30 posts em PDF para enviar como portfólio\""
+                - paragraph [ref=e759]:
+                  - strong [ref=e760]: "Lançamento digital:"
+                - code [ref=e762]: "\"Planeje um lançamento semente para meu curso de R$997\" \"Crie os 4 CPLs com roteiros completos para o aquecimento\" \"Monte a timeline do lançamento com todas as fases e marcos\" \"Escreva os emails de abertura e fechamento de carrinho\""
+                - separator [ref=e763]
+                - heading "📁 O que o sistema entregaLink to section" [level=2] [ref=e764]:
+                  - text: 📁 O que o sistema entrega
+                  - link "Link to section" [ref=e765] [cursor=pointer]:
+                    - /url: "#-o-que-o-sistema-entrega"
+                    - img [ref=e766]
+                - paragraph [ref=e769]: Cada execução gera arquivos organizados em pastas, prontos para uso ou publicação imediata.
+                - table [ref=e771]:
+                  - rowgroup [ref=e772]:
+                    - row "Tipo Formato Uso" [ref=e773]:
+                      - columnheader "Tipo" [ref=e774]
+                      - columnheader "Formato" [ref=e775]
+                      - columnheader "Uso" [ref=e776]
+                  - rowgroup [ref=e777]:
+                    - row "Posts e carrosséis PNG (alta resolução, retina) Publicação direta no Instagram, TikTok, LinkedIn" [ref=e778]:
+                      - cell "Posts e carrosséis" [ref=e779]
+                      - cell "PNG (alta resolução, retina)" [ref=e780]
+                      - cell "Publicação direta no Instagram, TikTok, LinkedIn" [ref=e781]
+                    - row "Imagens IA PNG/JPG (1K, 2K, 4K) Capas, hero shots, product shots" [ref=e782]:
+                      - cell "Imagens IA" [ref=e783]
+                      - cell "PNG/JPG (1K, 2K, 4K)" [ref=e784]
+                      - cell "Capas, hero shots, product shots" [ref=e785]
+                    - row "Legendas Markdown Copiar e colar na hora de publicar" [ref=e786]:
+                      - cell "Legendas" [ref=e787]
+                      - cell "Markdown" [ref=e788]
+                      - cell "Copiar e colar na hora de publicar" [ref=e789]
+                    - row "Relatórios Markdown / JSON Análise e tomada de decisão" [ref=e790]:
+                      - cell "Relatórios" [ref=e791]
+                      - cell "Markdown / JSON" [ref=e792]
+                      - cell "Análise e tomada de decisão" [ref=e793]
+                    - row "Apresentações PPTX (16:9) Pitches, reuniões, propostas" [ref=e794]:
+                      - cell "Apresentações" [ref=e795]
+                      - cell "PPTX (16:9)" [ref=e796]
+                      - cell "Pitches, reuniões, propostas" [ref=e797]
+                    - row "Documentos PDF Propostas comerciais, portfólios" [ref=e798]:
+                      - cell "Documentos" [ref=e799]
+                      - cell "PDF" [ref=e800]
+                      - cell "Propostas comerciais, portfólios" [ref=e801]
+                    - row "Sales letters Markdown Landing pages, páginas de venda" [ref=e802]:
+                      - cell "Sales letters" [ref=e803]
+                      - cell "Markdown" [ref=e804]
+                      - cell "Landing pages, páginas de venda" [ref=e805]
+                    - row "Email sequences Markdown Automação de email marketing" [ref=e806]:
+                      - cell "Email sequences" [ref=e807]
+                      - cell "Markdown" [ref=e808]
+                      - cell "Automação de email marketing" [ref=e809]
+                    - row "Design tokens CSS / JSON Identidade visual codificada" [ref=e810]:
+                      - cell "Design tokens" [ref=e811]
+                      - cell "CSS / JSON" [ref=e812]
+                      - cell "Identidade visual codificada" [ref=e813]
+                    - row "Funis de venda Markdown Blueprint para implementação" [ref=e814]:
+                      - cell "Funis de venda" [ref=e815]
+                      - cell "Markdown" [ref=e816]
+                      - cell "Blueprint para implementação" [ref=e817]
+                - separator [ref=e818]
+                - heading "❓ Perguntas frequentesLink to section" [level=2] [ref=e819]:
+                  - text: ❓ Perguntas frequentes
+                  - link "Link to section" [ref=e820] [cursor=pointer]:
+                    - /url: "#-perguntas-frequentes"
+                    - img [ref=e821]
+                - paragraph [ref=e824]:
+                  - strong [ref=e825]: Preciso saber programar?
+                - paragraph [ref=e826]: Não. Você escreve o que precisa em português simples e o sistema executa.
+                - paragraph [ref=e827]:
+                  - strong [ref=e828]: Funciona para qualquer nicho?
+                - paragraph [ref=e829]: Sim. Saúde, fitness, finanças, educação, e-commerce, SaaS, consultoria, gastronomia, moda, beleza, tecnologia. O sistema se adapta ao nicho porque começa analisando o mercado específico antes de criar qualquer conteúdo.
+                - paragraph [ref=e830]:
+                  - strong [ref=e831]: A qualidade é boa de verdade?
+                - paragraph [ref=e832]: O Projeto NutroPosts gerou 250 PNGs em resolução retina (2160×2700px) com design system profissional aplicado. Cada post passou por inspeção automatizada de qualidade. O resultado é indistinguível de material produzido por uma agência premium.
+                - paragraph [ref=e833]:
+                  - strong [ref=e834]: Posso usar minha identidade visual?
+                - paragraph [ref=e835]: Sim. Você configura seu design system uma vez (cores, fontes, logo, estilo) e o sistema aplica automaticamente em tudo que produz.
+                - paragraph [ref=e836]:
+                  - strong [ref=e837]: Quanto tempo leva para produzir conteúdo?
+                - paragraph [ref=e838]: Depende do volume. 50 posts completos com imagens IA e legendas otimizadas levaram menos de 2 horas no Projeto NutroPosts. Um lote de 10 posts simples sai em minutos.
+                - paragraph [ref=e839]:
+                  - strong [ref=e840]: Serve para além do Instagram?
+                - paragraph [ref=e841]: Sim. Instagram, TikTok, YouTube, Facebook e Web. O conteúdo é adaptado para as dimensões e boas práticas de cada plataforma.
+                - paragraph [ref=e842]:
+                  - strong [ref=e843]: Dá para espionar concorrentes?
+                - paragraph [ref=e844]: Sim. O sistema analisa perfis, posts, reels, stories, hashtags, comentários e até anúncios pagos via Meta Ads Library. Entrega relatórios com tudo que seus concorrentes estão fazendo e o que está gerando resultado.
+                - paragraph [ref=e845]:
+                  - strong [ref=e846]: E se eu precisar só de copy, sem design?
+                - paragraph [ref=e847]: O sistema é modular. Você pode pedir só headlines, só uma sales letter, só uma sequência de emails, só um funil de vendas. Usa o que precisar.
+                - paragraph [ref=e848]:
+                  - strong [ref=e849]: Os posts ficam todos iguais?
+                - paragraph [ref=e850]: Não. Cada post é criado com base em dados reais do nicho e do público. O sistema varia formatos (carrossel, infográfico, post único), ângulos (educativo, inspiracional, polêmico, prático) e abordagens. A identidade visual é consistente, mas o conteúdo é diverso.
+                - paragraph [ref=e851]:
+                  - strong [ref=e852]: Preciso de alguma chave de API ou serviço?
+                - paragraph [ref=e853]:
+                  - text: Sim. O sistema usa a API do Google Gemini para geração de imagens e análise de mídia. Você precisa de uma
+                  - code [ref=e854]: GOOGLE_API_KEY
+                  - text: . É a única dependência externa obrigatória.
+                - paragraph [ref=e855]:
+                  - strong [ref=e856]: Quanto conteúdo consigo produzir de uma vez?
+                - paragraph [ref=e857]: Não tem limite prático. O Projeto NutroPosts produziu 50 posts com 250 PNGs em uma única execução. Você pode pedir 10, 30, 50 ou 100 posts. O sistema escala com o tamanho do pedido.
+                - paragraph [ref=e858]:
+                  - strong [ref=e859]: A copy vem em que idioma?
+                - paragraph [ref=e860]: Português brasileiro por padrão. Toda a copy é adaptada para o mercado BR, com referências culturais, expressões naturais e tom de voz adequado. Se precisar em outro idioma, é só especificar.
+                - paragraph [ref=e861]:
+                  - strong [ref=e862]: Posso usar para clientes diferentes com marcas diferentes?
+                - paragraph [ref=e863]: Sim. Cada execução pode usar um design system diferente. Você configura as cores, fontes e estilo de cada cliente e o sistema aplica automaticamente. Ideal para agências que gerenciam múltiplas marcas.
+                - separator [ref=e864]
+                - heading "🔮 Para quem é issoLink to section" [level=2] [ref=e865]:
+                  - text: 🔮 Para quem é isso
+                  - link "Link to section" [ref=e866] [cursor=pointer]:
+                    - /url: "#-para-quem-isso"
+                    - img [ref=e867]
+                - paragraph [ref=e870]:
+                  - strong [ref=e871]: Agências de marketing digital
+                  - text: que precisam escalar produção de conteúdo sem escalar o time na mesma proporção.
+                - paragraph [ref=e872]:
+                  - strong [ref=e873]: Profissionais de saúde
+                  - text: (médicos, nutricionistas, dentistas, psicólogos) que sabem que precisam estar nas redes mas não têm tempo nem expertise para produzir conteúdo de qualidade.
+                - paragraph [ref=e874]:
+                  - strong [ref=e875]: E-commerces
+                  - text: que precisam de funis de venda, product shots e campanhas de lançamento sem contratar uma agência de R$20 mil/mês.
+                - paragraph [ref=e876]:
+                  - strong [ref=e877]: Criadores de conteúdo
+                  - text: que querem dobrar ou triplicar a frequência de publicação sem multiplicar o esforço na mesma medida.
+                - paragraph [ref=e878]:
+                  - strong [ref=e879]: Empresas SaaS
+                  - text: que precisam de estratégia de lançamento, precificação e materiais de venda mas não têm um departamento de marketing estruturado.
+                - paragraph [ref=e880]:
+                  - strong [ref=e881]: Social media managers
+                  - text: que gerenciam múltiplos clientes e precisam de inteligência competitiva e produção em escala para manter a qualidade sem enlouquecer com prazos.
+                - paragraph [ref=e882]:
+                  - strong [ref=e883]: Consultores e freelancers
+                  - text: que precisam de materiais profissionais (propostas, apresentações, sales letters) mas não têm orçamento para designer e copywriter.
+                - paragraph [ref=e884]:
+                  - strong [ref=e885]: Empreendedores digitais
+                  - text: que estão lançando cursos, mentorias ou produtos digitais e precisam de todo o arsenal de marketing sem montar uma equipe inteira.
+                - paragraph [ref=e886]: Se você leu até aqui e se identificou com pelo menos uma dessas descrições, o Nirvana foi feito para você.
+                - paragraph [ref=e887]: Se você se identificou com mais de uma, ele foi feito especialmente para você.
+                - separator [ref=e888]
+                - heading "📜 LicençaLink to section" [level=2] [ref=e889]:
+                  - text: 📜 Licença
+                  - link "Link to section" [ref=e890] [cursor=pointer]:
+                    - /url: "#-licena"
+                    - img [ref=e891]
+                - paragraph [ref=e894]: MIT. Use, modifique e distribua livremente.
+                - separator [ref=e895]
+                - paragraph [ref=e896]:
+                  - strong [ref=e897]:
+                    - text: Pare de criar conteúdo na força bruta.
+                    - text: Ative o squad. Descreva o que precisa. Receba tudo pronto.
+                - paragraph [ref=e898]:
+                  - code [ref=e899]: squad_activate instagram-intelligence-nirvana
+                  - link "👉 Adquirir no Marketplace" [ref=e900] [cursor=pointer]:
+                    - /url: https://squads.sh/pt/gutomec/instagram-intelligence-nirvana/instagram-intelligence-nirvana
+                    - strong [ref=e901]: 👉 Adquirir no Marketplace
+                  - text: "|"
+                  - link "🌐 Ver Landing Page" [ref=e902] [cursor=pointer]:
+                    - /url: https://gutomec.github.io/instagram-intelligence-nirvana-docs/
+                - separator [ref=e903]
+                - paragraph [ref=e904]:
+                  - subscript [ref=e905]: Feito com obsessão por resultados. Versão 5.2.0 NIRVANA ULTIMATE — autossuficiente, DNA de 20 especialistas integrado.
+          - generic [ref=e907]:
+            - generic [ref=e908]:
+              - heading "Avaliações" [level=2] [ref=e909]
+              - generic [ref=e910]: 0 avaliações
+            - generic [ref=e911]:
+              - paragraph [ref=e912]: Escrever avaliação
+              - generic [ref=e913]:
+                - button [ref=e914] [cursor=pointer]:
+                  - img [ref=e915]
+                - button [ref=e917] [cursor=pointer]:
+                  - img [ref=e918]
+                - button [ref=e920] [cursor=pointer]:
+                  - img [ref=e921]
+                - button [ref=e923] [cursor=pointer]:
+                  - img [ref=e924]
+                - button [ref=e926] [cursor=pointer]:
+                  - img [ref=e927]
+              - textbox "Título (opcional)" [ref=e929]
+              - textbox "Sua avaliação..." [ref=e930]
+              - button "Enviar avaliação" [disabled] [ref=e931]
+            - paragraph [ref=e932]: Nenhuma avaliação ainda. Seja o primeiro a avaliar este squad!
+        - complementary [ref=e933]:
+          - generic [ref=e934]:
+            - button "Favoritar 3" [ref=e935]:
+              - img [ref=e936]
+              - text: Favoritar
+              - generic [ref=e938]: "3"
+            - generic [ref=e939]:
+              - heading "Autor" [level=3] [ref=e940]
+              - link "gutomec Luiz Rodrigues Nv 4 — Mestre" [ref=e941] [cursor=pointer]:
+                - /url: /pt/u/gutomec
+                - img "gutomec" [ref=e942]
+                - generic [ref=e943]:
+                  - generic [ref=e944]: Luiz Rodrigues
+                  - generic [ref=e946]: Nv 4 — Mestre
+              - generic [ref=e947]:
+                - generic "Publicou seu primeiro squad no marketplace" [ref=e948]:
+                  - img [ref=e949]
+                  - generic [ref=e954]: First Squad
+                - generic "Publicou 5 squads no marketplace" [ref=e955]:
+                  - img [ref=e956]
+                  - generic [ref=e959]: Prolific Creator
+                - generic "Publicou 20 squads no marketplace" [ref=e960]:
+                  - img [ref=e961]
+                  - generic [ref=e963]: Squad Factory
+                - link "+2" [ref=e964] [cursor=pointer]:
+                  - /url: /pt/u/gutomec
+              - link "Ver perfil →" [ref=e965] [cursor=pointer]:
+                - /url: /pt/u/gutomec
+            - generic [ref=e966]:
+              - heading "Estatísticas" [level=3] [ref=e967]
+              - generic [ref=e968]:
+                - generic [ref=e969]:
+                  - generic [ref=e970]:
+                    - img [ref=e971]
+                    - text: Preço
+                  - generic [ref=e974]: US$ 470,00
+                - generic [ref=e975]:
+                  - generic [ref=e976]:
+                    - img [ref=e977]
+                    - text: Instalações semanais
+                  - generic [ref=e980]: "1"
+                - generic [ref=e981]:
+                  - generic [ref=e982]:
+                    - img [ref=e983]
+                    - text: Total de instalações
+                  - generic [ref=e986]: "12"
+                - generic [ref=e987]:
+                  - generic [ref=e988]:
+                    - img [ref=e989]
+                    - text: Estrelas
+                  - generic [ref=e991]: "3"
+            - generic [ref=e992]:
+              - heading "Segurança" [level=3] [ref=e993]
+              - generic [ref=e994]:
+                - img [ref=e995]
+                - text: PENDING
+            - generic [ref=e997]:
+              - heading "Informações" [level=3] [ref=e998]
+              - generic [ref=e1000]:
+                - generic [ref=e1001]:
+                  - img [ref=e1002]
+                  - text: Primeira aparição
+                - generic [ref=e1004]: Mar 20, 2026
+      - generic [ref=e1006]:
+        - generic [ref=e1007]:
+          - heading "More from Luiz Rodrigues" [level=2] [ref=e1008]
+          - generic [ref=e1009]:
+            - button "Scroll left" [ref=e1010]:
+              - img [ref=e1011]
+            - button "Scroll right" [ref=e1013]:
+              - img [ref=e1014]
+        - generic [ref=e1016]:
+          - link "aios forge squad Squad supremo de desenvolvimento, otimização e evolução do AIOS — domínio total do framework, Claude Code e auto-atualização contínua. Capaz de criar, validar, otimizar e modernizar qualquer artefato AIOS. 148 2 View →" [ref=e1017] [cursor=pointer]:
+            - /url: /pt/gutomec/squads-sh-aios/aios-forge-squad
+            - generic [ref=e1018]:
+              - generic [ref=e1019]:
+                - heading "aios forge squad" [level=3] [ref=e1020]
+                - paragraph [ref=e1021]: Squad supremo de desenvolvimento, otimização e evolução do AIOS — domínio total do framework, Claude Code e auto-atualização contínua. Capaz de criar, validar, otimizar e modernizar qualquer artefato AIOS.
+              - generic [ref=e1023]:
+                - img [ref=e1024]
+                - generic [ref=e1027]: "148"
+              - generic [ref=e1028]:
+                - generic [ref=e1029]:
+                  - img [ref=e1030]
+                  - text: "2"
+                - generic [ref=e1032]: View →
+          - 'link "ultimate landingpage Squad fullstack para criação de landing pages de ultra-alta conversão. Pipeline end-to-end com 9 agentes especializados: discovery de produto, pesquisa de mercado e experts de copywriting, design system atômico com contraste WCAG AAA e light/dark, geração de imagens por IA, frontend Next.js com SEO perfeito e acessibilidade WCAG AAA, backend Python FastAPI com admin panel e exportação CSV, integrações com WhatsApp (evolution-api) e email (MCP), e QA multi-dimensional com score por dimensão. 141 3 View →" [ref=e1033] [cursor=pointer]':
+            - /url: /pt/gutomec/squads-sh-aios/ultimate-landingpage
+            - generic [ref=e1034]:
+              - generic [ref=e1035]:
+                - heading "ultimate landingpage" [level=3] [ref=e1036]
+                - paragraph [ref=e1037]: "Squad fullstack para criação de landing pages de ultra-alta conversão. Pipeline end-to-end com 9 agentes especializados: discovery de produto, pesquisa de mercado e experts de copywriting, design system atômico com contraste WCAG AAA e light/dark, geração de imagens por IA, frontend Next.js com SEO perfeito e acessibilidade WCAG AAA, backend Python FastAPI com admin panel e exportação CSV, integrações com WhatsApp (evolution-api) e email (MCP), e QA multi-dimensional com score por dimensão."
+              - generic [ref=e1039]:
+                - img [ref=e1040]
+                - generic [ref=e1043]: "141"
+              - generic [ref=e1044]:
+                - generic [ref=e1045]:
+                  - img [ref=e1046]
+                  - text: "3"
+                - generic [ref=e1048]: View →
+          - link "nirvana squad creator Gera squads AIOS otimizados a partir de linguagem natural — pipeline de 9 fases com análise, geração, otimização, validação, README multi-idioma, deploy e publicação no squads.sh 53 3 View →" [ref=e1049] [cursor=pointer]:
+            - /url: /pt/gutomec/nirvana-squad-creator/nirvana-squad-creator
+            - generic [ref=e1050]:
+              - generic [ref=e1051]:
+                - heading "nirvana squad creator" [level=3] [ref=e1052]
+                - paragraph [ref=e1053]: Gera squads AIOS otimizados a partir de linguagem natural — pipeline de 9 fases com análise, geração, otimização, validação, README multi-idioma, deploy e publicação no squads.sh
+              - generic [ref=e1055]:
+                - img [ref=e1056]
+                - generic [ref=e1059]: "53"
+              - generic [ref=e1060]:
+                - generic [ref=e1061]:
+                  - img [ref=e1062]
+                  - text: "3"
+                - generic [ref=e1064]: View →
+          - 'link "brandcraft Squad para extração de design systems de URLs, criação de documentos brand-consistent (PDF, PPTX, carousels, social cards, vídeos programáticos) e melhoria de PDFs existentes. Pipeline com 9 agentes especializados: orquestração, extração de tokens visuais, gerenciamento de templates, renderização HTML→PDF/PNG via Puppeteer, criação de PPTX via PptxGenJS, composição de vídeos via Remotion (React→MP4/WebM), geração de imagens por IA, refinamento de PDFs existentes e validação de consistência de marca. 51 3 View →" [ref=e1065] [cursor=pointer]':
+            - /url: /pt/gutomec/private-squads-sh-aios/brandcraft
+            - generic [ref=e1066]:
+              - generic [ref=e1067]:
+                - heading "brandcraft" [level=3] [ref=e1068]
+                - paragraph [ref=e1069]: "Squad para extração de design systems de URLs, criação de documentos brand-consistent (PDF, PPTX, carousels, social cards, vídeos programáticos) e melhoria de PDFs existentes. Pipeline com 9 agentes especializados: orquestração, extração de tokens visuais, gerenciamento de templates, renderização HTML→PDF/PNG via Puppeteer, criação de PPTX via PptxGenJS, composição de vídeos via Remotion (React→MP4/WebM), geração de imagens por IA, refinamento de PDFs existentes e validação de consistência de marca."
+              - generic [ref=e1071]:
+                - img [ref=e1072]
+                - generic [ref=e1075]: "51"
+              - generic [ref=e1076]:
+                - generic [ref=e1077]:
+                  - img [ref=e1078]
+                  - text: "3"
+                - generic [ref=e1080]: View →
+          - link "data quality guardian Squad especialista em qualidade de dados — profiling de datasets, detecção de anomalias, validação de schemas, geração de relatórios de qualidade e sugestão de remediações automatizadas para pipelines de dados 50 1 View →" [ref=e1081] [cursor=pointer]:
+            - /url: /pt/gutomec/squads-sh-aios/data-quality-guardian
+            - generic [ref=e1082]:
+              - generic [ref=e1083]:
+                - heading "data quality guardian" [level=3] [ref=e1084]
+                - paragraph [ref=e1085]: Squad especialista em qualidade de dados — profiling de datasets, detecção de anomalias, validação de schemas, geração de relatórios de qualidade e sugestão de remediações automatizadas para pipelines de dados
+              - generic [ref=e1087]:
+                - img [ref=e1088]
+                - generic [ref=e1091]: "50"
+              - generic [ref=e1092]:
+                - generic [ref=e1093]:
+                  - img [ref=e1094]
+                  - text: "1"
+                - generic [ref=e1096]: View →
+          - link "notebooklm automation Automação programática completa do Google NotebookLM — da criação de notebooks à geração de podcasts, vídeos, slides e quizzes, orquestrada por pipeline inteligente 42 1 View →" [ref=e1097] [cursor=pointer]:
+            - /url: /pt/gutomec/notebooklm-automation/notebooklm-automation
+            - generic [ref=e1098]:
+              - generic [ref=e1099]:
+                - heading "notebooklm automation" [level=3] [ref=e1100]
+                - paragraph [ref=e1101]: Automação programática completa do Google NotebookLM — da criação de notebooks à geração de podcasts, vídeos, slides e quizzes, orquestrada por pipeline inteligente
+              - generic [ref=e1103]:
+                - img [ref=e1104]
+                - generic [ref=e1107]: "42"
+              - generic [ref=e1108]:
+                - generic [ref=e1109]:
+                  - img [ref=e1110]
+                  - text: "1"
+                - generic [ref=e1112]: View →
+          - link "incident response squad Squad especialista em resposta a incidentes para DevOps/SRE — análise de logs, correlação de causa raiz, execução de runbooks, comunicação de status e geração de post-mortems blameless 42 1 View →" [ref=e1113] [cursor=pointer]:
+            - /url: /pt/gutomec/squads-sh-aios/incident-response-squad
+            - generic [ref=e1114]:
+              - generic [ref=e1115]:
+                - heading "incident response squad" [level=3] [ref=e1116]
+                - paragraph [ref=e1117]: Squad especialista em resposta a incidentes para DevOps/SRE — análise de logs, correlação de causa raiz, execução de runbooks, comunicação de status e geração de post-mortems blameless
+              - generic [ref=e1119]:
+                - img [ref=e1120]
+                - generic [ref=e1123]: "42"
+              - generic [ref=e1124]:
+                - generic [ref=e1125]:
+                  - img [ref=e1126]
+                  - text: "1"
+                - generic [ref=e1128]: View →
+          - link "adaptive tutor k12 Squad especialista em tutoria adaptativa K-12 — avaliação diagnóstica, mapeamento curricular personalizado, sessões de tutoria com dificuldade adaptativa, rastreamento de progresso e relatórios para pais e educadores 34 2 View →" [ref=e1129] [cursor=pointer]:
+            - /url: /pt/gutomec/squads-sh-aios/adaptive-tutor-k12
+            - generic [ref=e1130]:
+              - generic [ref=e1131]:
+                - heading "adaptive tutor k12" [level=3] [ref=e1132]
+                - paragraph [ref=e1133]: Squad especialista em tutoria adaptativa K-12 — avaliação diagnóstica, mapeamento curricular personalizado, sessões de tutoria com dificuldade adaptativa, rastreamento de progresso e relatórios para pais e educadores
+              - generic [ref=e1135]:
+                - img [ref=e1136]
+                - generic [ref=e1139]: "34"
+              - generic [ref=e1140]:
+                - generic [ref=e1141]:
+                  - img [ref=e1142]
+                  - text: "2"
+                - generic [ref=e1144]: View →
+          - link "nirvana readme architect Squad de geração de README.md perfeito e impecável, combinando análise profunda de codebase, seleção de template por tipo de projeto, todas as features do GitHub Flavored Markdown, validação com checklist de 25+ pontos e polimento final com badges e TOC. 34 1 View →" [ref=e1145] [cursor=pointer]:
+            - /url: /pt/gutomec/nirvana-readme-architect/nirvana-readme-architect
+            - generic [ref=e1146]:
+              - generic [ref=e1147]:
+                - heading "nirvana readme architect" [level=3] [ref=e1148]
+                - paragraph [ref=e1149]: Squad de geração de README.md perfeito e impecável, combinando análise profunda de codebase, seleção de template por tipo de projeto, todas as features do GitHub Flavored Markdown, validação com checklist de 25+ pontos e polimento final com badges e TOC.
+              - generic [ref=e1151]:
+                - img [ref=e1152]
+                - generic [ref=e1155]: "34"
+              - generic [ref=e1156]:
+                - generic [ref=e1157]:
+                  - img [ref=e1158]
+                  - text: "1"
+                - generic [ref=e1160]: View →
+          - link "soc alert triage Squad especialista em triagem de alertas SOC para cybersecurity — classificação automatizada, filtragem de falsos positivos, priorização de ameaças, enriquecimento com threat intel e geração de briefs para analistas 33 1 View →" [ref=e1161] [cursor=pointer]:
+            - /url: /pt/gutomec/squads-sh-aios/soc-alert-triage
+            - generic [ref=e1162]:
+              - generic [ref=e1163]:
+                - heading "soc alert triage" [level=3] [ref=e1164]
+                - paragraph [ref=e1165]: Squad especialista em triagem de alertas SOC para cybersecurity — classificação automatizada, filtragem de falsos positivos, priorização de ameaças, enriquecimento com threat intel e geração de briefs para analistas
+              - generic [ref=e1167]:
+                - img [ref=e1168]
+                - generic [ref=e1171]: "33"
+              - generic [ref=e1172]:
+                - generic [ref=e1173]:
+                  - img [ref=e1174]
+                  - text: "1"
+                - generic [ref=e1176]: View →
+          - link "resume screener squad Squad especialista em triagem de currículos para recrutamento — parsing automatizado de CVs, matching de skills com requisitos da vaga, auditoria de vieses, ranking de candidatos e geração de resumos executivos para hiring managers 32 2 View →" [ref=e1177] [cursor=pointer]:
+            - /url: /pt/gutomec/squads-sh-aios/resume-screener-squad
+            - generic [ref=e1178]:
+              - generic [ref=e1179]:
+                - heading "resume screener squad" [level=3] [ref=e1180]
+                - paragraph [ref=e1181]: Squad especialista em triagem de currículos para recrutamento — parsing automatizado de CVs, matching de skills com requisitos da vaga, auditoria de vieses, ranking de candidatos e geração de resumos executivos para hiring managers
+              - generic [ref=e1183]:
+                - img [ref=e1184]
+                - generic [ref=e1187]: "32"
+              - generic [ref=e1188]:
+                - generic [ref=e1189]:
+                  - img [ref=e1190]
+                  - text: "2"
+                - generic [ref=e1192]: View →
+          - link "automated code review squad Squad especialista em code review automatizado — revisão de segurança, análise lógica, verificação de padrões arquiteturais, enforcement de coding standards e geração de review summaries priorizados para PRs e commits 22 1 View →" [ref=e1193] [cursor=pointer]:
+            - /url: /pt/gutomec/squads-sh-aios/automated-code-review-squad
+            - generic [ref=e1194]:
+              - generic [ref=e1195]:
+                - heading "automated code review squad" [level=3] [ref=e1196]
+                - paragraph [ref=e1197]: Squad especialista em code review automatizado — revisão de segurança, análise lógica, verificação de padrões arquiteturais, enforcement de coding standards e geração de review summaries priorizados para PRs e commits
+              - generic [ref=e1199]:
+                - img [ref=e1200]
+                - generic [ref=e1203]: "22"
+              - generic [ref=e1204]:
+                - generic [ref=e1205]:
+                  - img [ref=e1206]
+                  - text: "1"
+                - generic [ref=e1208]: View →
+  - contentinfo [ref=e1209]:
+    - generic [ref=e1211]:
+      - generic [ref=e1212]:
+        - link "SQUADS" [ref=e1213] [cursor=pointer]:
+          - /url: /pt
+        - generic [ref=e1214]: Marketplace gamificado para AI agent squads
+      - generic [ref=e1215]:
+        - link "Docs" [ref=e1216] [cursor=pointer]:
+          - /url: /pt/docs
+        - link "CLI" [ref=e1217] [cursor=pointer]:
+          - /url: /pt/docs/cli
+        - link "FAQ" [ref=e1218] [cursor=pointer]:
+          - /url: /pt/docs/faq
+        - link "Termos" [ref=e1219] [cursor=pointer]:
+          - /url: /pt/terms
+        - link "GitHub" [ref=e1220] [cursor=pointer]:
+          - /url: https://github.com/squads-sh
+  - alert [ref=e1221]

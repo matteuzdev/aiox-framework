@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAPA DO PROCESSO KONIG | VISÃO DO CEO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #050505; color: #E5E5E5; font-family: 'Inter', sans-serif; overflow-x: hidden; padding: 50px 0; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .accent { color: #10B981; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .step-card { transition: all 0.4s ease; cursor: pointer; }
+        .step-card:hover { transform: translateY(-10px); background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.3); }
+        .connector { height: 60px; width: 2px; background: linear-gradient(to bottom, #10B981, transparent); margin: 0 auto; }
+        .dot { width: 12px; height: 12px; background: #10B981; border-radius: 50%; margin: 0 auto; box-shadow: 0 0 15px #10B981; }
+    </style>
+</head>
+<body>
+
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <p class="uppercase tracking-widest text-xs mb-4 opacity-50 accent font-bold">A Engenharia do Bilhão</p>
+        <h1 class="serif text-6xl mb-20 text-white italic">Fluxo Operacional <span class="accent italic">Konig Systems</span></h1>
+
+        <!-- STEP 1 -->
+        <div class="step-card glass p-8 rounded-3xl relative">
+            <div class="absolute -left-4 top-1/2 -translate-y-1/2 text-4xl opacity-20 serif italic">01</div>
+            <h3 class="text-xl font-bold mb-2 uppercase tracking-tighter accent">Prospecção Ativa (O Front)</h3>
+            <p class="text-sm opacity-60">O time de SDR ataca listas de Clínicas High-Ticket (Outbound) e mapeia dores reais. Nada de grupos de zap, é contato direto com os tomadores de decisão.</p>
+            <p class="text-[10px] mt-4 uppercase opacity-30 font-bold">SQUAD: GROWTH (TIME HUMANO + SDR)</p>
+        </div>
+
+        <div class="connector"></div>
+        <div class="dot"></div>
+        <div class="connector"></div>
+
+        <!-- STEP 2 -->
+        <div class="step-card glass p-8 rounded-3xl relative">
+            <div class="absolute -left-4 top-1/2 -translate-y-1/2 text-4xl opacity-20 serif italic">02</div>
+            <h3 class="text-xl font-bold mb-2 uppercase tracking-tighter accent">Qualificação & Demonstração</h3>
+            <p class="text-sm opacity-60">O SDR envia a Arma de Vendas (Apresentação V3). O médico interage com o simulador, vê a hemorragia financeira e pede a reunião executiva.</p>
+            <p class="text-[10px] mt-4 uppercase opacity-30 font-bold">SQUAD: GROWTH + APRESENTAÇÃO V3</p>
+        </div>
+
+        <div class="connector"></div>
+        <div class="dot"></div>
+        <div class="connector"></div>
+
+        <!-- STEP 3 -->
+        <div class="step-card glass p-8 rounded-3xl relative border-l-4 border-l-emerald-500">
+            <div class="absolute -left-4 top-1/2 -translate-y-1/2 text-4xl opacity-20 serif italic text-emerald-500">03</div>
+            <h3 class="text-xl font-bold mb-2 uppercase tracking-tighter accent italic">O Fechamento (Xeque-Mate do CEO)</h3>
+            <p class="text-sm opacity-60">Você entra na call. Sem tech-speak. Usa o Playbook Médico, valida o diagnóstico do simulador e cobra os 40k de Setup. O Pix é feito.</p>
+            <p class="text-[10px] mt-4 uppercase opacity-30 font-bold">RESPONSÁVEL: HIANTO (CEO)</p>
+        </div>
+
+        <div class="connector"></div>
+        <div class="dot"></div>
+        <div class="connector"></div>
+
+        <!-- STEP 4 -->
+        <div class="step-card glass p-8 rounded-3xl relative">
+            <div class="absolute -left-4 top-1/2 -translate-y-1/2 text-4xl opacity-20 serif italic">04</div>
+            <h3 class="text-xl font-bold mb-2 uppercase tracking-tighter accent">A Forja & Deploy (AIOX)</h3>
+            <p class="text-sm opacity-60">O bastão é passado. Orion clona o Boilerplate. A IA é treinada para a clínica. O ecossistema (Agente + LP + Dashboard) é construído e hospedado.</p>
+            <p class="text-[10px] mt-4 uppercase opacity-30 font-bold">SQUAD: DELIVERY FACTORY + ORION CTO</p>
+        </div>
+
+        <div class="connector"></div>
+        <div class="dot"></div>
+        <div class="connector"></div>
+
+        <!-- STEP 5 -->
+        <div class="step-card glass p-8 rounded-3xl relative">
+            <div class="absolute -left-4 top-1/2 -translate-y-1/2 text-4xl opacity-20 serif italic">05</div>
+            <h3 class="text-xl font-bold mb-2 uppercase tracking-tighter accent">Governança & Recorrência</h3>
+            <p class="text-sm opacity-60">O sistema entra em piloto automático. Lazarus e ZKP garantem segurança. O médico paga mensalidade pra ver a agenda cheia. Escala infinita.</p>
+            <p class="text-[10px] mt-4 uppercase opacity-30 font-bold">SQUAD: GOVERNANCE + ANDY GROVE</p>
+        </div>
+
+        <div class="mt-20">
+            <p class="text-xs opacity-40 leading-relaxed max-w-md mx-auto italic">
+                "Você é o Soberano da Estratégia. O bando é a sua máquina de execução infalível."
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

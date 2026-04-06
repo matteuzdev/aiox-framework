@@ -1,0 +1,47 @@
+name: konig-orchestration-core
+version: 1.0.0
+description: "Orquestracao da Konig Systems. Handoffs, contratos, sequencia de execucao e roteamento entre squads."
+author: "Codex"
+license: UNLICENSED
+slashPrefix: orchestration
+
+aiox:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  tasks:
+    - route-company-work.md
+    - build-execution-contract.md
+  agents:
+    - orchestration-chief.md
+    - handoff-architect.md
+  workflows: []
+  checklists:
+    - orchestration-gate.md
+  templates: []
+  tools: []
+  scripts: []
+
+config:
+  extends: extend
+  coding-standards: config/coding-standards.md
+  tech-stack: config/tech-stack.md
+  source-tree: config/source-tree.md
+
+dependencies:
+  node: []
+  python: []
+  squads:
+    - konig-context-core
+    - konig-planning-core
+    - konig-governance-core
+    - konig-engineering-core
+    - konig-ops-core
+
+tags:
+  - orchestration
+  - routing
+  - handoff
+  - context
+  - execution

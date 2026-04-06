@@ -1,0 +1,49 @@
+name: konig-media-authority-core
+version: 1.0.0
+description: "Midia e autoridade digital da Konig. Scripts de video, estrategia de conteudo, distribuicao e posicionamento de marca."
+author: "Codex"
+license: UNLICENSED
+slashPrefix: media
+
+aiox:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  tasks:
+    - script-authority-video.md
+    - design-content-strategy.md
+    - plan-distribution-channels.md
+  agents:
+    - media-authority-chief.md
+    - media-director.md
+    - script-architect.md
+  workflows:
+    - media-authority-pipeline.md
+  checklists:
+    - media-publish-gate.md
+  templates: []
+  tools: []
+  scripts: []
+
+config:
+  extends: extend
+  coding-standards: config/coding-standards.md
+  tech-stack: config/tech-stack.md
+  source-tree: config/source-tree.md
+
+dependencies:
+  node: []
+  python: []
+  squads:
+    - konig-instagram-intelligence-core
+    - konig-growth-core
+    - konig-experience-core
+
+tags:
+  - media
+  - authority
+  - scripts
+  - video
+  - distribution
+  - content-strategy

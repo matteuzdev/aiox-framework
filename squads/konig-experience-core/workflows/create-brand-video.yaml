@@ -1,0 +1,40 @@
+name: create-brand-video
+description: Cria vídeos programáticos com Remotion
+autoActivate: true
+
+steps:
+  - name: Load Template
+    agent: brandcraft-orchestrator
+    command: "*load-template --name={template_name}"
+    
+  - name: Create Composition
+    agent: brandcraft-filmmaker
+    command: "*create-reel --content={content} --duration={duration}"
+    
+  - name: Render Video
+    agent: brandcraft-filmmaker
+    command: "*render-video --compositionId={id}"
+    
+  - name: Validate
+    agent: brandcraft-inspector
+    command: "*validate-tokens --document={video_file}"
+
+inputs:
+  - name: template_name
+    type: string
+    required: true
+  - name: content
+    type: string
+    required: true
+  - name: duration
+    type: number
+    default: 15
+  - name: format
+    type: string
+    default: reel
+
+outputs:
+  - name: video
+    type: file
+  - name: quality_report
+    type: file

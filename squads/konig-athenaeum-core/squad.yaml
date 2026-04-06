@@ -1,0 +1,64 @@
+name: konig-athenaeum-core
+version: 1.0.0
+description: "Inteligencia estrategica da Konig. Sensemaking, analise sistemica, cenarios, narrativa e transformacao organizacional."
+author: "Codex"
+license: UNLICENSED
+slashPrefix: athenaeum
+
+aiox:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  tasks:
+    - frame-strategic-brief.md
+    - map-stakeholder-tensions.md
+    - build-systems-reading.md
+    - assess-human-and-cultural-factors.md
+    - run-ethics-and-reputation-check.md
+    - generate-strategic-scenarios.md
+    - detect-invisible-patterns.md
+    - consolidate-strategic-narrative.md
+    - produce-executive-synthesis.md
+  agents:
+    - chief-strategist.md
+    - intake-analyst.md
+    - war-room-facilitator.md
+    - systems-analyst.md
+    - emotional-mediator.md
+    - cultural-analyst.md
+    - ethics-consultant.md
+    - creative-ideator.md
+    - invisible-patterns-analyst.md
+    - communication-specialist.md
+    - report-synthesizer.md
+  workflows:
+    - athenaeum-cycle.md
+  checklists:
+    - strategic-sensemaking-gate.md
+  templates: []
+  tools: []
+  scripts: []
+
+config:
+  extends: extend
+  coding-standards: config/coding-standards.md
+  tech-stack: config/tech-stack.md
+  source-tree: config/source-tree.md
+
+dependencies:
+  node: []
+  python: []
+  squads:
+    - company-strategic-core
+    - konig-context-core
+    - konig-governance-core
+    - konig-orchestration-core
+
+tags:
+  - strategic-intelligence
+  - sensemaking
+  - systems-thinking
+  - scenario-planning
+  - transformation
+  - reputation

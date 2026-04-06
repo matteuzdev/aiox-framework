@@ -1,0 +1,33 @@
+name: create-brand-document
+description: Cria documentos PDF/PNG a partir de conteúdo
+autoActivate: true
+
+steps:
+  - name: Load Template
+    agent: brandcraft-orchestrator
+    command: "*load-template --name={template_name}"
+    
+  - name: Render Document
+    agent: brandcraft-renderer
+    command: "*render-pdf --content={content_file} --format={format}"
+    
+  - name: Validate
+    agent: brandcraft-inspector
+    command: "*validate-layout --document={output}"
+
+inputs:
+  - name: template_name
+    type: string
+    required: true
+  - name: content_file
+    type: file
+    required: true
+  - name: format
+    type: string
+    default: report-a4
+
+outputs:
+  - name: pdf
+    type: file
+  - name: quality_report
+    type: file

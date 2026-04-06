@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konig Systems | Slides Oftalmo</title>
+  <style>
+    :root {
+      --bg: #efe8dc;
+      --ink: #132026;
+      --muted: #5d696f;
+      --accent: #0a6a5b;
+      --accent-dark: #07493f;
+      --warm: #ab6720;
+      --line: rgba(19, 32, 38, 0.14);
+      --card: rgba(255, 250, 242, 0.84);
+      --shadow: 0 18px 60px rgba(19, 32, 38, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(10,106,91,0.12), transparent 25%),
+        linear-gradient(180deg, #f6f1e8, #efe8dc);
+    }
+    .wrap {
+      width: min(1180px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 20px 0 40px;
+    }
+    .deck-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 16px;
+      color: var(--muted);
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .brand { color: var(--accent-dark); }
+    .controls {
+      position: sticky;
+      top: 10px;
+      z-index: 20;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(255, 250, 242, 0.78);
+      backdrop-filter: blur(8px);
+      box-shadow: var(--shadow);
+    }
+    .controls button {
+      min-height: 42px;
+      padding: 0 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--muted);
+      font: 700 13px/1 Arial, Helvetica, sans-serif;
+      cursor: pointer;
+    }
+    .controls button.active {
+      background: var(--accent-dark);
+      color: #fff;
+      border-color: var(--accent-dark);
+    }
+    .slide {
+      display: none;
+      min-height: calc(100svh - 120px);
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      padding: 28px;
+      background:
+        linear-gradient(140deg, rgba(255,255,255,0.86), rgba(245,239,229,0.94)),
+        linear-gradient(160deg, #dceadf, #faf6ee 65%);
+      box-shadow: var(--shadow);
+    }
+    .slide.active { display: grid; }
+    .hero-slide {
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      gap: 22px;
+      align-items: end;
+    }
+    .kicker {
+      margin-bottom: 14px;
+      color: var(--accent);
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    h1, h2, h3 { margin: 0; line-height: 0.98; letter-spacing: -0.05em; }
+    h1 { font-size: clamp(52px, 10vw, 96px); max-width: 9ch; }
+    h2 { font-size: clamp(36px, 6vw, 60px); max-width: 13ch; }
+    h3 { font-size: 28px; }
+    p, li {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--muted);
+      line-height: 1.68;
+      font-size: 16px;
+    }
+    .big { font-size: 18px; max-width: 60ch; }
+    .grid, .stats, .two {
+      display: grid;
+      gap: 16px;
+    }
+    .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 18px;
+      background: var(--card);
+    }
+    .card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--ink);
+      font: 700 15px/1.4 Arial, Helvetica, sans-serif;
+    }
+    .stat strong {
+      font-size: 38px;
+      letter-spacing: -0.05em;
+      color: var(--accent-dark);
+    }
+    .bar {
+      height: 12px;
+      border-radius: 999px;
+      background: rgba(19,32,38,0.08);
+      overflow: hidden;
+      margin: 14px 0 8px;
+    }
+    .fill-a, .fill-b {
+      height: 100%;
+      border-radius: inherit;
+    }
+    .fill-a { width: 18%; background: var(--accent); }
+    .fill-b { width: 59%; background: var(--warm); }
+    .quote {
+      padding: 18px;
+      border-left: 4px solid var(--accent);
+      background: rgba(255,255,255,0.64);
+      border-radius: 0 18px 18px 0;
+      color: var(--ink);
+      font: 16px/1.7 Arial, Helvetica, sans-serif;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      margin-top: 14px;
+      color: var(--muted);
+      font: 13px/1.6 Arial, Helvetica, sans-serif;
+    }
+    .sources ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    @media (max-width: 920px) {
+      .slide.hero-slide, .grid, .two, .stats { grid-template-columns: 1fr; }
+      h1, h2 { max-width: 100%; }
+      .deck-head, .footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="deck-head">
+      <div class="brand">Konig Systems</div>
+      <div>Deck para call comercial | Oftalmologia privada</div>
+    </div>
+
+    <div class="controls" id="controls">
+      <button class="nav active" data-slide="0">01</button>
+      <button class="nav" data-slide="1">02</button>
+      <button class="nav" data-slide="2">03</button>
+      <button class="nav" data-slide="3">04</button>
+      <button class="nav" data-slide="4">05</button>
+      <button class="nav" data-slide="5">06</button>
+      <button class="nav" data-slide="6">07</button>
+      <button class="nav" data-slide="7">08</button>
+    </div>
+
+    <section class="slide hero-slide active">
+      <div>
+        <div class="kicker">Slide 01</div>
+        <h1>Recuperação de agenda para oftalmo.</h1>
+        <p class="big">A Konig Systems ajuda operações de oftalmologia a reduzir no-show, reaproveitar cancelamentos e recuperar receita que hoje se perde entre marcação, confirmação e comparecimento.</p>
+      </div>
+      <div class="stats">
+        <div class="card stat"><strong>1</strong><p>dor principal: agenda vazando receita</p></div>
+        <div class="card stat"><strong>30d</strong><p>janela para provar resultado operacional</p></div>
+        <div class="card stat"><strong>v1</strong><p>confirmação, remarcação e waitlist</p></div>
+        <div class="card stat"><strong>0</strong><p>necessidade de trocar prontuário para começar</p></div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">Slide 02</div>
+      <h2>O problema não é falta de demanda. É perda operacional.</h2>
+      <div class="grid" style="margin-top:22px;">
+        <div class="card"><strong>Confirmação falha</strong><p>consultas e exames marcados sem confirmação ativa têm mais chance de virar cadeira vazia.</p></div>
+        <div class="card"><strong>Cancelamento sem reposição</strong><p>quando uma vaga abre perto da data, muitas operações não conseguem encaixar outro paciente a tempo.</p></div>
+        <div class="card"><strong>Dependência de telefone e WhatsApp</strong><p>a agenda fica presa em atendimento manual, fila, erro humano e perda de velocidade.</p></div>
+      </div>
+      <div class="quote" style="margin-top:20px;">Em oftalmologia, cada espaço vazio não é só uma falta. É perda de consulta, exame, retorno, procedimento e ociosidade da equipe.</div>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">Slide 03</div>
+      <h2>Os dados sustentam a tese.</h2>
+      <div class="stats" style="margin-top:22px;">
+        <div class="card stat"><strong>23%</strong><p>no-show médio em revisão sistemática de saúde.</p></div>
+        <div class="card stat"><strong>72,1%</strong><p>dos pacientes relataram uso de telefone para marcar consulta.</p></div>
+        <div class="card stat"><strong>1,8%</strong><p>no-show online em estudo de prática oftalmológica.</p></div>
+        <div class="card stat"><strong>5,9%</strong><p>no-show offline no mesmo estudo.</p></div>
+      </div>
+      <div class="card" style="margin-top:16px;">
+        <strong>Leitura da Konig Systems</strong>
+        <p>Em operações de oftalmologia, o dinheiro já está entrando pela demanda. O vazamento aparece na etapa em que a agenda depende de confirmação manual, remarcação lenta e encaixe desorganizado.</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">Slide 04</div>
+      <h2>Em oftalmo, o online e a confirmação melhoram o uso da agenda.</h2>
+      <div class="two" style="margin-top:22px;">
+        <div class="card">
+          <strong>Estudo em oftalmologia</strong>
+          <p>Em prática oftalmológica privada, o no-show em marcações online foi menor do que no fluxo offline.</p>
+          <div class="bar"></div>
+          <p><strong style="font:700 15px Arial;">online: 1,8%</strong></p>
+          <div class="bar"><div class="fill-a"></div></div>
+          <p><strong style="font:700 15px Arial;">offline: 5,9%</strong></p>
+          <div class="bar"><div class="fill-b"></div></div>
+        </div>
+        <div class="card">
+          <strong>Outro ganho importante</strong>
+          <p>No mesmo estudo, a implantação reduziu a taxa de slots não utilizados de 22,7% para 10,3%.</p>
+          <p>Isso reforça uma tese simples: confirmação, cancelamento estruturado e reocupação da agenda melhoram o uso da capacidade já existente.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">Slide 05</div>
+      <h2>O wedge da Konig Systems é estreito e mensurável.</h2>
+      <div class="grid" style="margin-top:22px;">
+        <div class="card"><strong>1. Confirmar</strong><p>acionar pacientes com antecedência e reduzir não comparecimento.</p></div>
+        <div class="card"><strong>2. Reagendar</strong><p>tratar remarcações sem atrito e evitar perda por demora operacional.</p></div>
+        <div class="card"><strong>3. Preencher</strong><p>usar lista de espera e regras de encaixe para reaproveitar vagas abertas.</p></div>
+      </div>
+      <div class="quote" style="margin-top:20px;">Nós não vendemos “IA para clínica”. Vendemos ocupação melhor da agenda com impacto financeiro rastreável.</div>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">Slide 06</div>
+      <h2>Como a implantação começa.</h2>
+      <div class="two" style="margin-top:22px;">
+        <div class="card">
+          <strong>Escopo inicial</strong>
+          <ul>
+            <li>mapear jornada de marcação, confirmação e encaixe</li>
+            <li>implantar confirmação ativa por WhatsApp ou SMS</li>
+            <li>tratar cancelamento e remarcação</li>
+            <li>ativar waitlist para vagas abertas</li>
+            <li>expor métricas em painel enxuto</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>O que fica fora do v1</strong>
+          <ul>
+            <li>troca de prontuário</li>
+            <li>CRM completo</li>
+            <li>chatbot amplo</li>
+            <li>app do paciente</li>
+            <li>BI genérico sem relação com agenda</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">Slide 07</div>
+      <h2>Como o cliente enxerga valor em 30 dias.</h2>
+      <div class="grid" style="margin-top:22px;">
+        <div class="card"><strong>Taxa de no-show</strong><p>queda em faltas por confirmação melhor.</p></div>
+        <div class="card"><strong>Cancelamentos reaproveitados</strong><p>quantas vagas abertas voltaram a gerar atendimento.</p></div>
+        <div class="card"><strong>Ocupação da agenda</strong><p>mais uso da capacidade já disponível.</p></div>
+        <div class="card"><strong>Tempo de confirmação</strong><p>menos lentidão operacional.</p></div>
+        <div class="card"><strong>Vagas recuperadas</strong><p>visão semanal do que deixou de morrer.</p></div>
+        <div class="card"><strong>Receita preservada</strong><p>estimativa ligada à agenda, não a vaidade.</p></div>
+      </div>
+    </section>
+
+    <section class="slide sources">
+      <div class="kicker">Slide 08</div>
+      <h2>Por que vale avançar agora.</h2>
+      <div class="two" style="margin-top:22px;">
+        <div class="card">
+          <strong>Próximo passo sugerido</strong>
+          <p>Rodar um diagnóstico curto da operação, identificar onde a agenda vaza hoje e validar um escopo inicial da Konig Systems para um piloto focado em confirmação, remarcação e waitlist.</p>
+        </div>
+        <div class="card">
+          <strong>Base usada neste deck</strong>
+          <ul>
+            <li>ANS: vínculos médico-hospitalares em dezembro de 2025.</li>
+            <li>Revisão sistemática de no-show em saúde.</li>
+            <li>Estudo sobre métodos de marcação e dependência de telefone.</li>
+            <li>Estudo de oftalmologia com 1,8% online vs 5,9% offline.</li>
+            <li>Estudo com autoagendamento e menor no-show.</li>
+            <li>Case UCSF com preenchimento de vagas abertas.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer">
+        <div>Konig Systems | deck de fechamento para call comercial</div>
+        <div>Use este deck em tela cheia e avance com setas ou botões</div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const buttons = [...document.querySelectorAll('.nav')];
+    const slides = [...document.querySelectorAll('.slide')];
+    let current = 0;
+
+    function show(index) {
+      current = index;
+      buttons.forEach((btn) => btn.classList.toggle('active', Number(btn.dataset.slide) === index));
+      slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+    }
+
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => show(Number(btn.dataset.slide)));
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowRight' || event.key === 'PageDown') {
+        show((current + 1) % slides.length);
+      }
+      if (event.key === 'ArrowLeft' || event.key === 'PageUp') {
+        show((current - 1 + slides.length) % slides.length);
+      }
+    });
+  </script>
+</body>
+</html>

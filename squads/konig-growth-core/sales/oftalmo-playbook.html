@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konig Systems | Playbook Oftalmo</title>
+  <style>
+    :root {
+      --bg: #f4efe7;
+      --surface: #fffaf3;
+      --ink: #162025;
+      --muted: #5a666d;
+      --line: rgba(22, 32, 37, 0.12);
+      --accent: #0a6b5c;
+      --accent-dark: #074c41;
+      --sand: #e8dcc8;
+      --warn: #8a5318;
+      --radius: 22px;
+      --shadow: 0 20px 60px rgba(22, 32, 37, 0.08);
+      --max: 1120px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(10, 107, 92, 0.12), transparent 28%),
+        linear-gradient(180deg, #f7f1e8, #f2ece2);
+    }
+    a { color: inherit; }
+    .page { width: min(var(--max), calc(100% - 28px)); margin: 0 auto; }
+    .hero, .panel, .proposal, .targets, .tabs-wrap {
+      border: 1px solid var(--line);
+      background: rgba(255, 250, 243, 0.8);
+      box-shadow: var(--shadow);
+      border-radius: 28px;
+    }
+    .hero {
+      margin: 24px 0 18px;
+      padding: 28px;
+      min-height: 88svh;
+      display: grid;
+      align-items: center;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.78), rgba(245,239,231,0.9)),
+        linear-gradient(160deg, #dbe9df, #f9f5ec 65%);
+    }
+    .top {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 22px;
+      margin-bottom: 26px;
+      border-bottom: 1px solid var(--line);
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+    }
+    .brand { color: var(--accent-dark); }
+    .hero-grid, .proposal-grid, .two {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      gap: 22px;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.8);
+      border: 1px solid rgba(10,107,92,0.16);
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent-dark);
+      margin-bottom: 18px;
+    }
+    h1, h2, h3 { margin: 0; letter-spacing: -0.05em; line-height: 0.98; }
+    h1 { font-size: clamp(56px, 11vw, 102px); max-width: 10ch; }
+    h2 { font-size: clamp(34px, 5vw, 54px); }
+    h3 { font-size: 28px; }
+    p, li, td, th, button {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .hero p, .head p, .sheet p, .sheet li, .proposal p, .proposal li, td {
+      color: var(--muted);
+      line-height: 1.68;
+      font-size: 15px;
+    }
+    .hero p { max-width: 62ch; font-size: 17px; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .btn, .btn-ghost {
+      display: inline-flex;
+      min-height: 46px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      font: 700 13px/1 Arial, Helvetica, sans-serif;
+      letter-spacing: 0.04em;
+      border: 1px solid var(--line);
+    }
+    .btn { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .btn-ghost { background: rgba(255,255,255,0.72); }
+    .stats, .cards { display: grid; gap: 12px; }
+    .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .stat, .sheet {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fffdf8;
+      padding: 18px;
+    }
+    .stat strong {
+      display: block;
+      font-size: 34px;
+      color: var(--accent-dark);
+      letter-spacing: -0.05em;
+    }
+    .stat span { display: block; margin-top: 6px; color: var(--muted); font: 14px/1.55 Arial, Helvetica, sans-serif; }
+    section { padding: 12px 0; }
+    .head { margin: 10px 0 16px; }
+    .kicker {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+      margin-bottom: 10px;
+    }
+    .panel, .targets, .tabs-wrap, .proposal { padding: 20px; margin-bottom: 18px; }
+    .note {
+      background: linear-gradient(120deg, rgba(10,107,92,0.1), rgba(255,255,255,0.7));
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 18px;
+      margin-bottom: 18px;
+    }
+    .note p { margin: 0; }
+    .filter-row, .tab-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .filter-row button, .tab-row button {
+      min-height: 40px;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .filter-row button.active, .tab-row button.active {
+      background: var(--accent-dark);
+      border-color: var(--accent-dark);
+      color: #fff;
+    }
+    .table-wrap { overflow: auto; border-radius: 18px; border: 1px solid var(--line); }
+    table { width: 100%; min-width: 820px; border-collapse: collapse; background: #fff; }
+    th, td { padding: 14px 12px; text-align: left; border-bottom: 1px solid rgba(22,32,37,0.08); vertical-align: top; }
+    th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); background: #faf6ee; }
+    td strong { display: block; color: var(--ink); margin-bottom: 5px; }
+    .pill {
+      display: inline-flex;
+      min-height: 26px;
+      align-items: center;
+      padding: 0 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .a { background: rgba(10,107,92,0.12); color: var(--accent-dark); }
+    .b { background: rgba(138,83,24,0.12); color: var(--warn); }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+    .script {
+      margin-top: 14px;
+      padding: 16px;
+      border-radius: 18px;
+      border: 1px dashed rgba(22,32,37,0.2);
+      background: #fbf8f2;
+      white-space: pre-line;
+      color: var(--ink);
+      font: 15px/1.7 Arial, Helvetica, sans-serif;
+    }
+    .price {
+      display: grid;
+      gap: 12px;
+    }
+    .price div {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+      padding: 16px;
+    }
+    .price strong {
+      display: block;
+      color: var(--muted);
+      text-transform: uppercase;
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+      letter-spacing: 0.08em;
+      margin-bottom: 7px;
+    }
+    .price span {
+      display: block;
+      font-size: 30px;
+      color: var(--accent-dark);
+      letter-spacing: -0.05em;
+    }
+    .footer {
+      padding: 16px 0 40px;
+      color: var(--muted);
+      font: 13px/1.6 Arial, Helvetica, sans-serif;
+    }
+    @media (max-width: 920px) {
+      .hero-grid, .proposal-grid, .two { grid-template-columns: 1fr; }
+      h1 { max-width: 100%; }
+      .top { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="top">
+        <div class="brand">Konig Systems</div>
+        <div>Playbook comercial | Oftalmologia privada | 03/04/2026</div>
+      </div>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Receita recuperada. Não chatbot.</div>
+          <h1>Playbook Oftalmo.</h1>
+          <p>A Konig Systems entra em oftalmo com uma tese estreita: recuperar receita perdida entre marcação, confirmação, cancelamento e preenchimento da agenda.</p>
+          <p>Este material foi desenhado para o seu perfil. Você não precisa vender no improviso. Você precisa diagnosticar vazamento operacional, mostrar uma implantação objetiva e conduzir o próximo passo com cadência.</p>
+          <div class="cta-row">
+            <a class="btn" href="#targets">Alvos</a>
+            <a class="btn-ghost" href="#approach">Abordagem</a>
+            <a class="btn-ghost" href="#proposal">Proposta</a>
+          </div>
+        </div>
+        <aside class="cards">
+          <div class="stats">
+            <div class="stat"><strong>23%</strong><span>no-show médio em revisão sistemática de saúde.</span></div>
+            <div class="stat"><strong>72,1%</strong><span>uso de telefone para marcação em estudo recente.</span></div>
+            <div class="stat"><strong>1,8%</strong><span>no-show online em estudo de oftalmologia.</span></div>
+            <div class="stat"><strong>5,9%</strong><span>no-show offline no mesmo estudo.</span></div>
+          </div>
+          <div class="sheet">
+            <strong>Founder mode</strong>
+            <p>Seu sotaque não é a trava. O que fecha ticket alto é clareza, segurança, leitura de operação e processo. O risco maior para você é conversa solta. Este playbook corrige isso.</p>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <section>
+      <div class="head">
+        <div class="kicker">Leitura</div>
+        <h2>Seu papel não é vendedor tradicional.</h2>
+        <p>Você entra como fundador que identifica onde a agenda está vazando dinheiro. Isso é mais forte e combina melhor com quem constrói SaaS, backoffice, sites, LPs e agentes.</p>
+      </div>
+      <div class="note">
+        <p><strong>Regra central:</strong> a primeira interação não existe para explicar a solução inteira. Ela existe para identificar o responsável por agenda ou operações e conquistar uma conversa de diagnóstico de 15 minutos.</p>
+      </div>
+    </section>
+
+    <section id="targets">
+      <div class="head">
+        <div class="kicker">Targets</div>
+        <h2>Alvos priorizados em oftalmologia.</h2>
+        <p>Os alvos abaixo favorecem grupos com sinais de escala, agendamento online, múltiplos fluxos de agenda ou estrutura relevante para justificar implantação da Konig Systems.</p>
+      </div>
+      <div class="targets">
+        <div class="filter-row">
+          <button class="filter active" data-filter="all">Todos</button>
+          <button class="filter" data-filter="A">Prioridade A</button>
+          <button class="filter" data-filter="B">Prioridade B</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Prioridade</th>
+                <th>Alvo</th>
+                <th>Sinal público</th>
+                <th>Leitura comercial</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody id="rows">
+              <tr data-priority="A"><td><span class="pill a">A</span></td><td><strong>HMO</strong>grupo com LP de agendamento.</td><td>captação e marcação em página dedicada.</td><td>boa chance de central de atendimento e volume.</td><td><a href="https://lp.oftalmo.com.br/agendamento/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="A"><td><span class="pill a">A</span></td><td><strong>EyeCenter</strong>consulta e exame no fluxo digital.</td><td>agendamento online explícito.</td><td>boa aderência para confirmação e remarcação.</td><td><a href="https://lp.eyecenter.com.br/agendamento/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="A"><td><span class="pill a">A</span></td><td><strong>Oftalmax</strong>marca ligada a grupo grande.</td><td>estrutura institucional forte.</td><td>bom alvo para vender padronização e ocupação.</td><td><a href="https://lp.opty.com.br/oftalmax/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="A"><td><span class="pill a">A</span></td><td><strong>HOB</strong>marca forte em oftalmo.</td><td>presença digital madura.</td><td>provável operação com agenda complexa.</td><td><a href="https://lp.opty.com.br/hob/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="A"><td><span class="pill a">A</span></td><td><strong>Rede Oftalmo</strong>rede com hospitais e clínicas.</td><td>várias unidades e estrutura cirúrgica.</td><td>boa escala para wedge por unidade.</td><td><a href="https://www.redeoftalmo.com.br/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="A"><td><span class="pill a">A</span></td><td><strong>Centro de Oftalmologia Brasil</strong>atuação regional forte.</td><td>presença institucional consolidada.</td><td>boa tese para rede especializada.</td><td><a href="https://centrodeoftalmologiabrasil.com.br/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="A"><td><span class="pill a">A</span></td><td><strong>Instituto de Olhos de Goiânia</strong>instituto consolidado.</td><td>marca e provável alto volume.</td><td>bom alvo para exames e retornos.</td><td><a href="https://www.iog.net.br/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="A"><td><span class="pill a">A</span></td><td><strong>Clínica Catarinense de Olhos</strong>clínica tradicional.</td><td>marca regional forte.</td><td>boa expansão fora do Nordeste.</td><td><a href="https://www.ccolhos.med.br/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="A"><td><span class="pill a">A</span></td><td><strong>HOPE</strong>hospital de olhos de Pernambuco.</td><td>complexidade assistencial e reputação.</td><td>próximo geograficamente e comercialmente forte.</td><td><a href="https://hope.com.br/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="A"><td><span class="pill a">A</span></td><td><strong>HOFTALON</strong>hospital oftalmológico.</td><td>subespecialidades e agenda densa.</td><td>potencial alto para ocupação por jornada.</td><td><a href="https://hoftalon.com.br/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="B"><td><span class="pill b">B</span></td><td><strong>Olho Fácil</strong>proposta de agilidade.</td><td>marca alinhada a conveniência.</td><td>boa prova de caso com tese simples.</td><td><a href="https://olhofacil.com.br/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="B"><td><span class="pill b">B</span></td><td><strong>CDA Oftalmologia</strong>telefone e WhatsApp visíveis.</td><td>múltiplos canais de atendimento.</td><td>ótimo para tese de centralização da agenda.</td><td><a href="https://www.cdaoftalmologia.com.br/agendamento/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="B"><td><span class="pill b">B</span></td><td><strong>Visu Clinic</strong>contato privado direto.</td><td>fluxo digital simples.</td><td>boa para validação comercial rápida.</td><td><a href="https://visuclinic.com.br/contato/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="B"><td><span class="pill b">B</span></td><td><strong>Adriane Brasil</strong>posicionamento premium.</td><td>marca com percepção elevada.</td><td>boa para narrativa de agenda premium.</td><td><a href="https://adrianebrasil.com.br/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="B"><td><span class="pill b">B</span></td><td><strong>Clínica Dr. Paulo</strong>CTA direto de agendamento.</td><td>fluxo comercial explícito.</td><td>entrada simples via operação.</td><td><a href="https://oftalmologiadrpaulo.com.br/agende-sua-consulta/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="B"><td><span class="pill b">B</span></td><td><strong>Rede Bioclínica</strong>multiespecialidade com oftalmo.</td><td>oftalmologia dentro de estrutura maior.</td><td>bom teste via gerente operacional.</td><td><a href="https://redebioclinica.med.br/servico/oftamologista-oftalmologia/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="B"><td><span class="pill b">B</span></td><td><strong>COBRA</strong>centro de olhos na Bahia.</td><td>especialização e marca regional.</td><td>bom alvo Nordeste.</td><td><a href="https://www.cobraclinica.com.br/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="B"><td><span class="pill b">B</span></td><td><strong>COI</strong>clínica de olhos integrada.</td><td>operação privada especializada.</td><td>boa para exames, retorno e encaixe.</td><td><a href="https://coioftalmologia.com.br/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="B"><td><span class="pill b">B</span></td><td><strong>IOCP</strong>instituto de olhos.</td><td>cara de operação organizada.</td><td>boa para outbound consultivo.</td><td><a href="https://iocp.com.br/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+              <tr data-priority="B"><td><span class="pill b">B</span></td><td><strong>CEMA</strong>hospital especializado.</td><td>marca conhecida e escala.</td><td>mais difícil, mas ótimo benchmark.</td><td><a href="https://www.cemahospital.com.br/" target="_blank" rel="noreferrer">abrir</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach">
+      <div class="head">
+        <div class="kicker">Approach</div>
+        <h2>Abordagem completa.</h2>
+        <p>Você vai usar a mesma estrutura em toda conta: entrada curta, acesso ao decisor, call de 15 minutos, proposta visual e follow-up com ação única.</p>
+      </div>
+      <div class="tabs-wrap">
+        <div class="tab-row">
+          <button class="tab active" data-tab="entry">Entrada</button>
+          <button class="tab" data-tab="gate">Gatekeeper</button>
+          <button class="tab" data-tab="objections">Objeções</button>
+          <button class="tab" data-tab="call">Call</button>
+          <button class="tab" data-tab="tdah">Anti-caos</button>
+        </div>
+
+        <div class="tab-panel active" data-panel="entry">
+          <div class="two">
+            <div class="sheet">
+              <strong>Objetivo</strong>
+              <p>Chegar na pessoa responsável por agenda, operações ou performance. Não explicar a solução inteira. Não pedir reunião longa.</p>
+            </div>
+            <div class="sheet">
+              <strong>Canais</strong>
+              <p>WhatsApp institucional, ligação curta, e-mail ou LinkedIn do decisor quando encontrado.</p>
+            </div>
+          </div>
+          <div class="script">Abertura-base:
+
+"Falo da Konig Systems. A gente está estudando operações de oftalmologia que perdem agenda entre confirmação, cancelamento e encaixe. Não quero tomar tempo da recepção com software. Quero falar com quem cuida de agenda ou operações por 15 minutos. Quem seria?"</div>
+        </div>
+
+        <div class="tab-panel" data-panel="gate">
+          <div class="two">
+            <div class="sheet">
+              <strong>O que dizer</strong>
+              <ul>
+                <li>o assunto é agenda e operação</li>
+                <li>você não quer trocar prontuário</li>
+                <li>você quer falar com o responsável certo</li>
+              </ul>
+            </div>
+            <div class="sheet">
+              <strong>Quem pedir</strong>
+              <ul>
+                <li>gerente operacional</li>
+                <li>coordenador da central</li>
+                <li>diretor administrativo</li>
+                <li>dono ou sócio</li>
+              </ul>
+            </div>
+          </div>
+          <div class="script">Se o gatekeeper disser "manda no WhatsApp":
+
+"Mando sem problema. Só quero colocar aos cuidados da pessoa certa. Quem responde por agenda, faltas ou ocupação dos horários aí?"</div>
+          <div class="script">Se o gatekeeper disser "manda no e-mail geral":
+
+"Pode ser. Só me ajuda a direcionar certo: esse tema fica melhor com operações, administrativo ou diretoria?"</div>
+        </div>
+
+        <div class="tab-panel" data-panel="objections">
+          <div class="two">
+            <div class="sheet">
+              <strong>"Já temos sistema."</strong>
+              <p>"Perfeito. A Konig Systems não entra para trocar prontuário ou agenda principal. A gente entra para reduzir perda entre marcação, confirmação e reaproveitamento."</p>
+            </div>
+            <div class="sheet">
+              <strong>"Não temos interesse."</strong>
+              <p>"Tudo bem. Só para eu não insistir errado: vocês já medem no-show, cancelamento reaproveitado e ocupação por tipo de agenda?"</p>
+            </div>
+            <div class="sheet">
+              <strong>"Quanto custa?"</strong>
+              <p>"Depende do volume e da implantação. Antes de falar preço, preciso validar se o problema tem tamanho para fazer sentido aí."</p>
+            </div>
+            <div class="sheet">
+              <strong>"Manda material."</strong>
+              <p>"Mando um resumo visual da tese e, se fizer sentido, alinhamos 15 minutos para ver aderência real."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" data-panel="call">
+          <div class="two">
+            <div class="sheet">
+              <strong>Estrutura da call</strong>
+              <ol>
+                <li>1 min de contexto</li>
+                <li>8 min de perguntas</li>
+                <li>4 min de devolutiva</li>
+                <li>2 min de próximo passo</li>
+              </ol>
+            </div>
+            <div class="sheet">
+              <strong>Perguntas base</strong>
+              <ol>
+                <li>Como vocês confirmam consulta e exame?</li>
+                <li>O que acontece quando alguém cancela perto da data?</li>
+                <li>Vocês medem no-show por médico ou tipo de agenda?</li>
+                <li>O gargalo maior é telefone, WhatsApp ou encaixe?</li>
+                <li>Existe waitlist estruturada?</li>
+              </ol>
+            </div>
+          </div>
+          <div class="script">Fechamento:
+
+"O que eu vejo aqui não é falta de demanda. É perda entre marcação, confirmação e reaproveitamento. Se fizer sentido, eu te devolvo isso em uma proposta objetiva da Konig Systems com escopo inicial, prazo e métricas de 30 dias."</div>
+        </div>
+
+        <div class="tab-panel" data-panel="tdah">
+          <div class="two">
+            <div class="sheet">
+              <strong>Fazer</strong>
+              <ul>
+                <li>usar roteiro impresso</li>
+                <li>fazer perguntas curtas</li>
+                <li>anotar 1 linha por resposta</li>
+                <li>encerrar com próximo passo único</li>
+              </ul>
+            </div>
+            <div class="sheet">
+              <strong>Evitar</strong>
+              <ul>
+                <li>explicar todos os módulos</li>
+                <li>falar de IA cedo demais</li>
+                <li>negociar preço sem diagnóstico</li>
+                <li>atropelar silêncio</li>
+              </ul>
+            </div>
+          </div>
+          <div class="script">Frase de segurança:
+
+"Deixa eu resumir em uma linha para não te tomar tempo."</div>
+          <div class="script">Outra frase:
+
+"Antes de eu te mostrar qualquer coisa, eu quero validar se o problema existe aí de verdade."</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proposal">
+      <div class="head">
+        <div class="kicker">Proposal</div>
+        <h2>Proposta-base da Konig Systems.</h2>
+        <p>A proposta só entra depois da conversa de diagnóstico. Ela mantém a call ancorada em agenda, receita e implantação.</p>
+      </div>
+      <div class="proposal">
+        <div class="proposal-grid">
+          <div class="sheet">
+            <strong>Konig Systems | Recuperação de Agenda para Oftalmo</strong>
+            <p><strong>Promessa:</strong> reduzir perda de receita causada por confirmação falha, cancelamento sem reposição e baixa ocupação de agenda em operações de oftalmologia.</p>
+            <p><strong>Escopo inicial:</strong></p>
+            <ul>
+              <li>mapeamento da jornada de marcação, confirmação e encaixe</li>
+              <li>implantação de confirmação ativa por WhatsApp ou SMS</li>
+              <li>tratamento de cancelamento e remarcação</li>
+              <li>fila de espera para reaproveitar vagas abertas</li>
+              <li>painel com vagas recuperadas, comparecimento e receita preservada</li>
+            </ul>
+            <p><strong>Fora do v1:</strong> prontuário, CRM completo, chatbot genérico, app do paciente e BI amplo sem relação direta com agenda.</p>
+          </div>
+          <div class="sheet">
+            <strong>Modelo comercial</strong>
+            <div class="price">
+              <div><strong>Setup</strong><span>R$ 15k a R$ 40k</span></div>
+              <div><strong>Mensalidade</strong><span>R$ 4k a R$ 12k</span></div>
+              <div><strong>Success fee opcional</strong><span>5% a 10%</span></div>
+            </div>
+            <p style="margin-top:14px;"><strong>Métricas de 30 dias:</strong></p>
+            <ul>
+              <li>taxa de no-show</li>
+              <li>taxa de ocupação da agenda</li>
+              <li>cancelamentos reaproveitados</li>
+              <li>tempo de confirmação</li>
+              <li>vagas recuperadas por semana</li>
+              <li>receita estimada preservada</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="head">
+        <div class="kicker">Sources</div>
+        <h2>Base da tese.</h2>
+      </div>
+      <div class="panel">
+        <ul>
+          <li>ANS: 53,18 milhões de vínculos médico-hospitalares em dezembro de 2025. <a href="https://www.gov.br/ans/pt-br/assuntos/noticias/numeros-do-setor/planos-de-assistencia-medica-chegam-a-53-2-milhoes-de-beneficiarios-em-dezembro-de-2025" target="_blank" rel="noreferrer">fonte</a></li>
+          <li>Revisão sistemática: no-show médio em saúde perto de 23%. <a href="https://pubmed.ncbi.nlm.nih.gov/29482948/" target="_blank" rel="noreferrer">fonte</a></li>
+          <li>Uso de telefone ainda dominante em marcação. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12086685/" target="_blank" rel="noreferrer">fonte</a></li>
+          <li>Estudo em oftalmologia: 1,8% online vs 5,9% offline; slots não utilizados de 22,7% para 10,3%. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12081397/" target="_blank" rel="noreferrer">fonte</a></li>
+          <li>Autoagendamento com menor no-show em grande sistema. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9382371/" target="_blank" rel="noreferrer">fonte</a></li>
+          <li>Preenchimento de vagas abertas com ganho financeiro na UCSF. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10988365/" target="_blank" rel="noreferrer">fonte</a></li>
+          <li>Mensagem pós-no-show em oftalmologia com reengajamento superior. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11162931/" target="_blank" rel="noreferrer">fonte</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="footer">Konig Systems | Material interno de prospecção e fechamento | Foco: oftalmologia privada</div>
+  </div>
+
+  <script>
+    const filterButtons = document.querySelectorAll('.filter');
+    const rows = document.querySelectorAll('#rows tr');
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        filterButtons.forEach((item) => item.classList.remove('active'));
+        button.classList.add('active');
+        const value = button.dataset.filter;
+        rows.forEach((row) => {
+          row.style.display = value === 'all' || row.dataset.priority === value ? '' : 'none';
+        });
+      });
+    });
+
+    const tabs = document.querySelectorAll('.tab');
+    const panels = document.querySelectorAll('.tab-panel');
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        tabs.forEach((item) => item.classList.remove('active'));
+        panels.forEach((panel) => panel.classList.remove('active'));
+        tab.classList.add('active');
+        document.querySelector(`[data-panel="${tab.dataset.tab}"]`).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

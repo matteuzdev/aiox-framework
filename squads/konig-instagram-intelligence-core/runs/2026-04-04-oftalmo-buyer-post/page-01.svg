@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#f8f3ea"/>
+  <circle cx="900" cy="200" r="220" fill="#dfe9e4"/>
+  <rect x="70" y="70" width="940" height="1210" rx="42" fill="#fffdfa" stroke="rgba(21,32,37,0.12)"/>
+  <text x="120" y="170" fill="#0a4b41" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="4">KONIG SYSTEMS</text>
+  <text x="120" y="395" fill="#152025" font-family="Georgia, Times New Roman, serif" font-size="92" font-weight="600">Sua clínica</text>
+  <text x="120" y="500" fill="#152025" font-family="Georgia, Times New Roman, serif" font-size="92" font-weight="600">pode estar</text>
+  <text x="120" y="605" fill="#152025" font-family="Georgia, Times New Roman, serif" font-size="92" font-weight="600">perdendo</text>
+  <text x="120" y="710" fill="#0a4b41" font-family="Georgia, Times New Roman, serif" font-size="92" font-weight="600">dinheiro</text>
+  <text x="120" y="815" fill="#0a4b41" font-family="Georgia, Times New Roman, serif" font-size="92" font-weight="600">sem perceber.</text>
+  <text x="120" y="1110" fill="#314047" font-family="Arial, Helvetica, sans-serif" font-size="34">Nem sempre o problema é falta de paciente.</text>
+</svg>

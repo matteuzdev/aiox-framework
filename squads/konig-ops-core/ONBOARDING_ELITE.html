@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONIG | FORMULÁRIO DE ADMISSÃO ELITE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #09090b; color: #f8f3ea; font-family: 'Inter', sans-serif; padding: 4rem; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .accent { color: #10B981; }
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        input, select, textarea { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 12px; color: white; width: 100%; margin-top: 8px; }
+        label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; opacity: 0.5; }
+    </style>
+</head>
+<body>
+
+    <div class="max-w-3xl mx-auto">
+        <header class="mb-16">
+            <p class="accent uppercase text-[10px] font-bold tracking-[0.4em] mb-4">Onboarding Protocol</p>
+            <h1 class="serif text-5xl italic text-white leading-tight">Coleta de Inteligência <br> para a <span class="accent">Forja AIOX</span></h1>
+        </header>
+
+        <form class="space-y-12">
+            <!-- SEÇÃO 1: ESTRUTURA -->
+            <section class="glass p-10 rounded-[40px]">
+                <h2 class="serif text-2xl mb-8 accent italic underline decoration-emerald-500/30 underline-offset-8">01. Arquitetura da Rede</h2>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <label>Nome da Instituição</label>
+                        <input type="text" placeholder="Ex: Vision Hospital">
+                    </div>
+                    <div>
+                        <label>Responsável Técnico</label>
+                        <input type="text" placeholder="Nome do Médico Diretor">
+                    </div>
+                    <div>
+                        <label>Número de Médicos</label>
+                        <input type="number" placeholder="Ex: 15">
+                    </div>
+                    <div>
+                        <label>Consultórios Ativos</label>
+                        <input type="number" placeholder="Ex: 30">
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEÇÃO 2: TREINAMENTO IA -->
+            <section class="glass p-10 rounded-[40px]">
+                <h2 class="serif text-2xl mb-8 accent italic underline decoration-emerald-500/30 underline-offset-8">02. Cérebro da Inteligência</h2>
+                <div class="space-y-8">
+                    <div>
+                        <label>Especialidades Foco (High-Ticket)</label>
+                        <textarea placeholder="Liste as cirurgias e exames que mais geram receita..."></textarea>
+                    </div>
+                    <div>
+                        <label>Tom de Voz da IA</label>
+                        <select>
+                            <option>Acolhedor e Empático (Jobs Style)</option>
+                            <option>Formal e Clínico (Hospitalar)</option>
+                            <option>Direto e Eficiente (Executivo)</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEÇÃO 3: REGRAS DE NEGÓCIO -->
+            <section class="glass p-10 rounded-[40px]">
+                <h2 class="serif text-2xl mb-8 accent italic underline decoration-emerald-500/30 underline-offset-8">03. Protocolos de Resgate</h2>
+                <div class="space-y-8">
+                    <div>
+                        <label>Gatilho de Reocupação</label>
+                        <p class="text-[10px] opacity-40 mt-1">Quanto tempo antes do horário a IA deve considerar como vaga perdida?</p>
+                        <input type="text" placeholder="Ex: 24h de antecedência">
+                    </div>
+                    <div>
+                        <label>Prioridade de Lista de Espera</label>
+                        <select>
+                            <option>Ordem Cronológica</option>
+                            <option>Ticket de Procedimento (Mais caro primeiro)</option>
+                            <option>Pacientes Particulares</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <button type="button" class="w-full py-6 bg-emerald-500 text-black font-extrabold rounded-full hover:bg-emerald-400 transition-all uppercase tracking-widest text-sm shadow-[0_0_40px_rgba(16,185,129,0.3)]">
+                Enviar Dados para a Forja Técnica
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>

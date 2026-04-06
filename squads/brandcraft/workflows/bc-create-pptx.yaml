@@ -1,0 +1,39 @@
+name: bc-create-pptx
+description: Workflow para criar apresentações PPTX profissionais
+pipeline: "Maestro → Vault → Canvas (PPTX) → Brush (images) → Gauge (QA)"
+
+steps:
+  - name: Load Template
+    description: Carrega design tokens
+    agent: Vault
+    command: "*load-template --name={template_name}"
+    
+  - name: Create Slides
+    description: Cria slides com PptxGenJS
+    agent: Canvas
+    command: "*create-pptx --content={deck_file}"
+    
+  - name: Generate Images
+    description: Gera imagens para slides
+    agent: Brush
+    command: "*generate-image --prompt={slide_theme}"
+    
+  - name: Validate Quality
+    description: Valida consistência visual
+    agent: Gauge
+    command: "*validate-tokens --document={pptx_file}"
+
+inputs:
+  - name: template_name
+    type: string
+    required: true
+  - name: deck_file
+    type: file
+    required: true
+    
+outputs:
+  - name: pptx
+    type: file
+    description: Arquivo PPTX editável
+  - name: quality_report
+    type: file

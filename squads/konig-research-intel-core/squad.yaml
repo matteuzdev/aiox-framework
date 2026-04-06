@@ -1,0 +1,45 @@
+name: konig-research-intel-core
+version: 1.0.0
+description: "Deep research e inteligência de mercado da Konig. Descobre se há dinheiro real, ICP real e dor real."
+author: "Codex"
+license: UNLICENSED
+slashPrefix: research
+
+aiox:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  tasks:
+    - research-market-reality.md
+    - build-money-brief.md
+  agents:
+    - market-research-chief.md
+    - web-intelligence-analyst.md
+  workflows: []
+  checklists:
+    - research-gate.md
+  templates: []
+  tools: []
+  scripts: []
+
+config:
+  extends: extend
+  coding-standards: config/coding-standards.md
+  tech-stack: config/tech-stack.md
+  source-tree: config/source-tree.md
+
+dependencies:
+  node: []
+  python: []
+  squads:
+    - konig-context-core
+    - company-strategic-core
+
+tags:
+  - research
+  - intel
+  - icp
+  - persona
+  - niche
+  - monetization

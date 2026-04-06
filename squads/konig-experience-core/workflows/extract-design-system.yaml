@@ -1,0 +1,28 @@
+name: extract-design-system
+description: Extrai design system de URL e salva como template
+autoActivate: true
+
+steps:
+  - name: Analyze URL
+    agent: brandcraft-extractor
+    command: "*analyze-url --url={url}"
+    
+  - name: Extract Tokens
+    agent: brandcraft-extractor
+    command: "*extract-tokens"
+    
+  - name: Save Template
+    agent: brandcraft-orchestrator
+    command: "*save-template --name={template_name}"
+
+inputs:
+  - name: url
+    type: string
+    required: true
+  - name: template_name
+    type: string
+    required: false
+
+outputs:
+  - name: template
+    type: file

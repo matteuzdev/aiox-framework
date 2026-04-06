@@ -1,0 +1,44 @@
+name: konig-growth-core
+version: 1.0.0
+description: "Crescimento da Konig. Aquisicao, ativacao, retencao e loops de escala."
+author: "Codex"
+license: UNLICENSED
+slashPrefix: growth
+
+aiox:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  tasks:
+    - plan-growth-loops.md
+    - analyze-channel-performance.md
+  agents:
+    - growth-chief.md
+    - acquisition-operator.md
+  workflows: []
+  checklists:
+    - growth-gate.md
+  templates: []
+  tools: []
+  scripts: []
+
+config:
+  extends: extend
+  coding-standards: config/coding-standards.md
+  tech-stack: config/tech-stack.md
+  source-tree: config/source-tree.md
+
+dependencies:
+  node: []
+  python: []
+  squads:
+    - konig-revenue-core
+    - konig-product-core
+    - konig-research-intel-core
+
+tags:
+  - growth
+  - acquisition
+  - retention
+  - loops

@@ -1,0 +1,43 @@
+name: konig-context-core
+version: 1.0.0
+description: "Memoria operacional e contexto da Konig. Transforma caos em brief curto e utilizável."
+author: "Codex"
+license: UNLICENSED
+slashPrefix: context
+
+aiox:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  tasks:
+    - sync-context.md
+    - build-context-brief.md
+  agents:
+    - context-chief.md
+    - context-master.md
+    - domain-translator.md
+  workflows: []
+  checklists:
+    - context-gate.md
+  templates: []
+  tools: []
+  scripts: []
+
+config:
+  extends: extend
+  coding-standards: config/coding-standards.md
+  tech-stack: config/tech-stack.md
+  source-tree: config/source-tree.md
+
+dependencies:
+  node: []
+  python: []
+  squads:
+    - company-strategic-core
+
+tags:
+  - context
+  - memory
+  - briefing
+  - translation

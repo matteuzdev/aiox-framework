@@ -1,0 +1,28 @@
+name: bc-extract-and-save
+description: Workflow para extrair design system de URL e salvar como template reutilizável
+steps:
+  - name: Analyze URL
+    description: Recebe URL do website e executa Prober para análise
+    agent: Prober
+    command: "*analyze-url --url={url}"
+    
+  - name: Extract Tokens
+    description: Extrai cores, tipografia, espaçamento e logos
+    agent: Prober
+    command: "*extract-tokens"
+    
+  - name: Save Template
+    description: Cria YAML com frontmatter e salva em templates/
+    agent: Vault
+    command: "*save-template --name={template_name}"
+
+inputs:
+  - name: url
+    type: string
+    required: true
+    description: URL do website para extração
+    
+outputs:
+  - name: template
+    type: file
+    description: Template salvo em templates/

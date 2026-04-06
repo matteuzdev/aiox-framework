@@ -1,0 +1,141 @@
+{
+  "id": "2026-04-04-manual-run",
+  "squad": "konig-instagram-intelligence-core",
+  "workflow": "instagram-content-pipeline",
+  "tasks": [
+    {
+      "task": "Analyze Instagram Competition",
+      "agent": "competitor-intel-analyst",
+      "status": "completed",
+      "inputs": {
+        "niche": "oftalmo",
+        "objective": "criar conteudo de autoridade"
+      },
+      "outputs": {
+        "competitor_map": "competitor_map.md",
+        "viral_patterns": "viral_patterns.md",
+        "content_gaps": "content_gaps.md"
+      },
+      "startedAt": "2026-04-04T22:25:00.000Z",
+      "completedAt": "2026-04-04T22:26:00.000Z",
+      "checklistResult": {
+        "passed": true,
+        "details": [
+          "[x] Compare positioning, cadence and format mix",
+          "[x] Note likely save/share/comment drivers",
+          "[x] Separate evidence from inference",
+          "[x] Highlight usable gaps, not generic observations"
+        ]
+      }
+    },
+    {
+      "task": "Build Editorial War Map",
+      "agent": "content-pattern-strategist",
+      "status": "completed",
+      "inputs": {
+        "artifacts_from": "competitor_map.md, viral_patterns.md, content_gaps.md"
+      },
+      "outputs": {
+        "editorial_pillars": "editorial_pillars.md",
+        "post_backlog": "post_backlog.md",
+        "platform_rules": "platform_rules.md"
+      },
+      "startedAt": "2026-04-04T22:26:00.000Z",
+      "completedAt": "2026-04-04T22:27:00.000Z",
+      "checklistResult": {
+        "passed": true,
+        "details": [
+          "[x] Turn findings into a system, not random ideas",
+          "[x] Prioritize by authority and commercial relevance",
+          "[x] Assign a format to each post angle",
+          "[x] Keep the backlog realistic for production"
+        ]
+      }
+    },
+    {
+      "task": "Produce Carousel Batch",
+      "agent": "carousel-factory",
+      "status": "completed",
+      "inputs": {
+        "artifacts_from": "post_backlog.md, editorial_pillars.md"
+      },
+      "outputs": {
+        "carousel_batch": "carousel_batch.md",
+        "slide_logic": "slide_logic.md"
+      },
+      "startedAt": "2026-04-04T22:27:00.000Z",
+      "completedAt": "2026-04-04T22:28:00.000Z",
+      "checklistResult": {
+        "passed": true,
+        "details": [
+          "[x] Open strong on slide 1",
+          "[x] Keep each slide doing one job",
+          "[x] Maintain visual consistency without repetition",
+          "[x] End with a clear action or retention move"
+        ]
+      }
+    },
+    {
+      "task": "Write Caption Batch",
+      "agent": "caption-engineer",
+      "status": "completed",
+      "inputs": {
+        "artifacts_from": "carousel_batch.md, slide_logic.md"
+      },
+      "outputs": {
+        "caption_batch": "caption_batch.md",
+        "accessibility_notes": "accessibility_notes.md"
+      },
+      "startedAt": "2026-04-04T22:28:00.000Z",
+      "completedAt": "2026-04-04T22:29:00.000Z",
+      "checklistResult": {
+        "passed": true,
+        "details": [
+          "[x] Open with a hook that earns the click on more",
+          "[x] Write for saves, shares and comments",
+          "[x] Keep CTA aligned with the business objective",
+          "[x] Avoid generic hashtag stuffing"
+        ]
+      }
+    },
+    {
+      "task": "Run Social Quality Gate",
+      "agent": "social-quality-auditor",
+      "status": "completed",
+      "inputs": {
+        "artifacts_from": "carousel_batch.md, caption_batch.md, platform_rules.md"
+      },
+      "outputs": {
+        "qa_report": "qa_report.md",
+        "publish_verdict": "CONDITIONAL_PASS"
+      },
+      "startedAt": "2026-04-04T22:29:00.000Z",
+      "completedAt": "2026-04-04T22:30:00.000Z",
+      "checklistResult": {
+        "passed": true,
+        "details": [
+          "[x] Check hook quality and message clarity",
+          "[x] Check brand coherence and readability",
+          "[x] Check CTA and post objective alignment",
+          "[x] Reject weak or redundant posts"
+        ]
+      }
+    }
+  ],
+  "status": "completed",
+  "startedAt": "2026-04-04T22:25:00.000Z",
+  "completedAt": "2026-04-04T22:30:00.000Z",
+  "artifacts": {
+    "competitor_map": "competitor_map.md",
+    "viral_patterns": "viral_patterns.md",
+    "content_gaps": "content_gaps.md",
+    "editorial_pillars": "editorial_pillars.md",
+    "post_backlog": "post_backlog.md",
+    "platform_rules": "platform_rules.md",
+    "carousel_batch": "carousel_batch.md",
+    "slide_logic": "slide_logic.md",
+    "caption_batch": "caption_batch.md",
+    "accessibility_notes": "accessibility_notes.md",
+    "qa_report": "qa_report.md"
+  }
+}

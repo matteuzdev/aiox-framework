@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#f8f3ea"/>
+  <rect x="70" y="70" width="940" height="1210" rx="42" fill="#fffdfa" stroke="rgba(21,32,37,0.12)"/>
+  <text x="120" y="170" fill="#0a4b41" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="4">03</text>
+  <text x="120" y="305" fill="#152025" font-family="Georgia, Times New Roman, serif" font-size="82" font-weight="600">Quando você posta</text>
+  <text x="120" y="395" fill="#152025" font-family="Georgia, Times New Roman, serif" font-size="82" font-weight="600">só dica genérica</text>
+  <text x="120" y="485" fill="#152025" font-family="Georgia, Times New Roman, serif" font-size="82" font-weight="600">de IA, você atrai:</text>
+  <rect x="120" y="610" width="820" height="106" rx="18" fill="#f1eadf"/>
+  <text x="165" y="678" fill="#152025" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">curioso</text>
+  <rect x="120" y="760" width="820" height="106" rx="18" fill="#f1eadf"/>
+  <text x="165" y="828" fill="#152025" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">estudante</text>
+  <rect x="120" y="910" width="820" height="106" rx="18" fill="#f1eadf"/>
+  <text x="165" y="978" fill="#152025" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">gente que acha legal</text>
+  <text x="120" y="1140" fill="#0a4b41" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700">Não necessariamente comprador.</text>
+</svg>

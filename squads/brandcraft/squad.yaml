@@ -1,0 +1,23 @@
+name: brandcraft
+version: 1.1.0
+description: Squad para extração de design systems de URLs, criação de documentos brand-consistent (PDF, PPTX, carousels, social cards, vídeos programáticos) e melhoria de PDFs existentes. Pipeline com 9 agentes especializados.
+author: gutomec
+tags:
+  - brand-extraction
+  - design-system
+  - pdf-generation
+  - pptx-generation
+  - video-generation
+  - remotion
+  - motion-graphics
+  - reels
+  - carousel
+  - social-cards
+  - puppeteer
+  - image-generation
+  - brand-consistency
+  - document-creation
+  - template-management
+agents: 9
+tasks: 37
+workflows: 5

@@ -1,0 +1,50 @@
+name: konig-prospecting-core
+version: 1.0.0
+description: "Prospeccao automatizada de leads via scraping (Google Maps, LinkedIn, web)"
+author: "Konig"
+license: UNLICENSED
+slashPrefix: prospecting
+
+aiox:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  tasks:
+    - scrape-google-maps.md
+    - scrape-linkedin.md
+    - enrich-lead-data.md
+    - feed-crm.md
+  agents:
+    - prospecting-chief.md
+    - prospector-agent.md
+    - data-enricher-agent.md
+  workflows:
+    - prospecting-cycle.md
+  checklists:
+    - prospecting-gate.md
+  templates: []
+  tools: []
+  scripts: []
+
+config:
+  extends: extend
+  coding-standards: config/coding-standards.md
+  tech-stack: config/tech-stack.md
+  source-tree: config/source-tree.md
+
+dependencies:
+  node: []
+  python:
+    - playwright
+    - beautifulsoup4
+    - httpx
+  squads:
+    - konig-revenue-core
+
+tags:
+  - prospecting
+  - scraping
+  - lead-generation
+  - google-maps
+  - linkedin

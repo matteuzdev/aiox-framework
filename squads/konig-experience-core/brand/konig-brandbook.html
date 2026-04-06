@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konig Systems | Brandbook</title>
+  <style>
+    :root {
+      --sand-050: #f8f3ea;
+      --sand-100: #f1eadf;
+      --sand-200: #e5dac7;
+      --graphite-700: #314047;
+      --graphite-900: #152025;
+      --forest-500: #0f6b5d;
+      --forest-700: #0a4b41;
+      --copper-500: #9e6731;
+      --mist-100: #dfe9e4;
+      --white: #fffdfa;
+      --line: rgba(21, 32, 37, 0.12);
+      --shadow: 0 24px 80px rgba(21, 32, 37, 0.08);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --max: 1240px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--graphite-900);
+      background:
+        radial-gradient(circle at top left, rgba(15, 107, 93, 0.12), transparent 24%),
+        linear-gradient(180deg, var(--sand-050), var(--sand-100));
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    a { color: inherit; text-decoration: none; }
+    .page { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; padding: 22px 0 48px; }
+    .topbar {
+      display: flex; justify-content: space-between; gap: 16px; align-items: center;
+      margin-bottom: 16px; color: var(--graphite-700);
+      font: 700 12px/1 Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 0.12em;
+    }
+    .brand-mini { color: var(--forest-700); }
+    .hero, .section-shell, .application, .specimen, .logo-card, .voice-card, .color-card, .token-card {
+      border: 1px solid var(--line); border-radius: var(--radius-xl); background: rgba(255, 253, 250, 0.82); box-shadow: var(--shadow);
+    }
+    .hero {
+      position: relative; overflow: hidden; min-height: 92svh; padding: 28px; display: grid; align-items: end;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.86), rgba(245,239,229,0.94)),
+        linear-gradient(160deg, #dfe9e4, #f9f4ea 68%);
+    }
+    .hero::before {
+      content: ""; position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 84% 18%, rgba(15, 107, 93, 0.18), transparent 22%),
+        linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.34) 32%, transparent 60%);
+      pointer-events: none;
+    }
+    .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr); gap: 24px; align-items: end; }
+    .eyebrow {
+      display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 999px;
+      border: 1px solid rgba(15, 107, 93, 0.16); background: rgba(255,255,255,0.74); color: var(--forest-700);
+      font: 700 12px/1 Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 20px;
+    }
+    h1, h2, h3, h4 { margin: 0; line-height: 0.98; letter-spacing: -0.05em; font-weight: 600; }
+    h1 { font-size: clamp(64px, 11vw, 116px); max-width: 9ch; }
+    h2 { font-size: clamp(38px, 6vw, 62px); max-width: 12ch; }
+    h3 { font-size: 30px; }
+    h4 { font-size: 24px; }
+    p, li, td, th, button, code, .label { font-family: Arial, Helvetica, sans-serif; }
+    .hero-copy p, .section-head p, .voice-card p, .logo-card p, .specimen p, .token-card p, .application p {
+      color: var(--graphite-700); line-height: 1.72; font-size: 16px;
+    }
+    .hero-copy p { max-width: 62ch; font-size: 18px; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .btn, .ghost {
+      display: inline-flex; min-height: 46px; align-items: center; justify-content: center; padding: 0 16px;
+      border-radius: 999px; border: 1px solid var(--line); font: 700 13px/1 Arial, Helvetica, sans-serif; letter-spacing: 0.04em;
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+    }
+    .btn { background: var(--forest-500); color: var(--white); border-color: var(--forest-500); }
+    .ghost { background: rgba(255,255,255,0.72); color: var(--graphite-900); }
+    .btn:hover, .ghost:hover { transform: translateY(-1px); }
+    .hero-side { display: grid; gap: 14px; }
+    .metric-box, .quote-box {
+      padding: 20px; border-radius: var(--radius-lg); border: 1px solid var(--line); background: rgba(255,255,255,0.74);
+    }
+    .metric-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+    .metric-grid div { padding-top: 14px; border-top: 1px solid var(--line); }
+    .metric-grid strong { display: block; font-size: 34px; letter-spacing: -0.05em; color: var(--forest-700); }
+    nav.sticky-nav {
+      position: sticky; top: 10px; z-index: 20; display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0; padding: 12px;
+      border: 1px solid var(--line); border-radius: 20px; background: rgba(255,253,250,0.82); backdrop-filter: blur(8px); box-shadow: var(--shadow);
+    }
+    nav.sticky-nav a {
+      min-height: 40px; display: inline-flex; align-items: center; justify-content: center; padding: 0 14px; border-radius: 999px;
+      border: 1px solid var(--line); font: 700 13px/1 Arial, Helvetica, sans-serif; color: var(--graphite-700); background: #fff;
+    }
+    nav.sticky-nav a:hover, nav.sticky-nav a.active { background: var(--forest-700); border-color: var(--forest-700); color: var(--white); }
+    section { padding: 14px 0; }
+    .section-shell { padding: 24px; }
+    .section-head { display: grid; gap: 10px; margin-bottom: 18px; }
+    .kicker { color: var(--forest-500); font: 700 12px/1 Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 0.12em; }
+    .grid-2, .grid-3, .grid-4 { display: grid; gap: 16px; }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .voice-card, .logo-card, .color-card, .token-card, .application, .specimen { padding: 20px; border-radius: var(--radius-lg); }
+    .voice-card strong, .logo-card strong, .color-card strong, .token-card strong, .application strong, .specimen strong {
+      display: block; margin-bottom: 8px; color: var(--graphite-900); font: 700 15px/1.5 Arial, Helvetica, sans-serif;
+    }
+    .tag {
+      display: inline-flex; min-height: 28px; align-items: center; padding: 0 10px; border-radius: 999px;
+      background: rgba(15, 107, 93, 0.1); color: var(--forest-700); font: 700 12px/1 Arial, Helvetica, sans-serif; margin-bottom: 10px;
+    }
+    .logo-stage {
+      display: grid; place-items: center; min-height: 210px; border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.72), rgba(247,242,234,0.96));
+      border: 1px solid var(--line); margin-bottom: 14px; overflow: hidden;
+    }
+    .wordmark { font-size: clamp(34px, 4.2vw, 60px); letter-spacing: 0.22em; text-transform: uppercase; color: var(--forest-700); }
+    .wordmark small { display: block; margin-top: 10px; font: 700 11px/1 Arial, Helvetica, sans-serif; letter-spacing: 0.34em; color: var(--graphite-700); }
+    .svg-wrap { width: min(100%, 360px); aspect-ratio: 1; }
+    .palette-swatch { width: 100%; aspect-ratio: 1.05; border-radius: 18px; border: 1px solid rgba(255,255,255,0.22); margin-bottom: 10px; }
+    .font-specimen {
+      padding: 18px; border: 1px solid var(--line); border-radius: 22px; background: rgba(255,255,255,0.7); min-height: 240px;
+    }
+    .font-display { font-size: clamp(46px, 6vw, 80px); line-height: 0.95; max-width: 8ch; margin-bottom: 18px; color: var(--forest-700); }
+    .font-ui { font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.7; color: var(--graphite-700); }
+    .application { overflow: hidden; background: linear-gradient(180deg, rgba(255,255,255,0.82), rgba(244,238,230,0.94)); }
+    .app-header { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+    .app-brand { font-size: 18px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--forest-700); }
+    .poster {
+      min-height: 360px; padding: 22px; border-radius: 24px;
+      background: radial-gradient(circle at top right, rgba(15, 107, 93, 0.18), transparent 24%), linear-gradient(140deg, rgba(255,255,255,0.84), rgba(239,233,223,0.95));
+      border: 1px solid var(--line); display: grid; align-content: space-between; gap: 20px;
+    }
+    .poster h3 { max-width: 9ch; font-size: clamp(34px, 5vw, 56px); }
+    .poster .meta { display: flex; flex-wrap: wrap; gap: 10px; }
+    .meta span {
+      display: inline-flex; min-height: 30px; align-items: center; padding: 0 12px; border-radius: 999px;
+      border: 1px solid var(--line); background: rgba(255,255,255,0.7); font: 700 12px/1 Arial, Helvetica, sans-serif; color: var(--graphite-700);
+    }
+    .dashboard { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 16px; min-height: 360px; border-radius: 24px; overflow: hidden; border: 1px solid var(--line); }
+    .sidebar { background: linear-gradient(180deg, var(--forest-700), #093c34); color: rgba(255,255,255,0.82); padding: 20px; }
+    .sidebar .ks { color: #fff; letter-spacing: 0.24em; text-transform: uppercase; font-size: 16px; margin-bottom: 18px; }
+    .sidebar ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; font: 14px/1.4 Arial, Helvetica, sans-serif; }
+    .workspace { background: rgba(255,253,250,0.92); padding: 20px; display: grid; gap: 14px; }
+    .workspace .headline { font-size: 34px; color: var(--graphite-900); max-width: 10ch; }
+    .kpi-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .kpi { padding: 16px; border-radius: 18px; border: 1px solid var(--line); background: #fff; }
+    .kpi span { display: block; color: var(--graphite-700); font: 700 12px/1 Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+    .kpi strong { display: block; font-size: 34px; color: var(--forest-700); letter-spacing: -0.05em; }
+    .kpi small { display: block; margin-top: 8px; color: var(--graphite-700); font: 13px/1.5 Arial, Helvetica, sans-serif; }
+    .rule-list { display: grid; gap: 10px; }
+    .rule { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 10px; align-items: start; padding: 14px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,0.68); }
+    .rule::before { content: ""; width: 10px; height: 10px; margin-top: 6px; border-radius: 999px; background: var(--forest-500); }
+    .footer { padding-top: 12px; color: var(--graphite-700); font: 13px/1.7 Arial, Helvetica, sans-serif; }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 380ms ease, transform 380ms ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    @media (max-width: 980px) {
+      .hero-grid, .grid-2, .grid-3, .grid-4, .dashboard, .kpi-row { grid-template-columns: 1fr; }
+      h1, h2 { max-width: 100%; }
+      .topbar { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <div class="brand-mini">Konig Systems</div>
+      <div>Brandbook v1 | Clinical Editorial System</div>
+    </div>
+
+    <header class="hero reveal" id="top">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Brandbook completo da Konig Systems</div>
+          <h1>Systems for revenue and operations.</h1>
+          <p>A Konig Systems deve parecer uma firma de sistemas e implantação com leitura de operação, não uma agência, nem um software barato, nem uma startup genérica. Este brandbook organiza posicionamento, identidade, voz, aplicação visual e regras de uso para decks, propostas, site e produto.</p>
+          <p>A direção escolhida para a marca é <strong style="color:var(--graphite-900);">Clinical Editorial</strong>: saúde premium com densidade editorial, serenidade institucional e rigor operacional.</p>
+          <div class="cta-row">
+            <a class="btn" href="#essence">Essência</a>
+            <a class="ghost" href="#identity">Identidade</a>
+            <a class="ghost" href="#applications">Aplicações</a>
+          </div>
+        </div>
+        <aside class="hero-side">
+          <div class="metric-box">
+            <strong>DNA da marca</strong>
+            <div class="metric-grid">
+              <div><strong>1</strong><span>categoria central: sistemas operacionais para receita e operação</span></div>
+              <div><strong>0</strong><span>tolerância para visual de automação genérica</span></div>
+              <div><strong>3</strong><span>pilares: clareza, precisão e presença</span></div>
+              <div><strong>v1</strong><span>sistema inicial pronto para logo, deck, proposta, site e produto</span></div>
+            </div>
+          </div>
+          <div class="quote-box">
+            <strong>Leitura central</strong>
+            <p>Konig Systems entra onde a operação sangra e cria uma camada que organiza, mede e melhora o fluxo. A marca precisa carregar esse mesmo comportamento: sóbria, cirúrgica e memorável.</p>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <nav class="sticky-nav">
+      <a href="#essence">Essência</a>
+      <a href="#voice">Voz</a>
+      <a href="#identity">Logo</a>
+      <a href="#color">Cores</a>
+      <a href="#type">Tipografia</a>
+      <a href="#system">Sistema</a>
+      <a href="#applications">Aplicações</a>
+      <a href="#rules">Regras</a>
+    </nav>
+    <section id="essence" class="reveal">
+      <div class="section-shell">
+        <div class="section-head">
+          <div class="kicker">Essência</div>
+          <h2>O que a Konig Systems é e o que ela não é.</h2>
+          <p>O papel da marca não é “parecer tech”. O papel da marca é tornar visível que a empresa pensa como sistema, opera com rigor e entrega ganho real de capacidade.</p>
+        </div>
+        <div class="grid-2">
+          <div class="voice-card">
+            <span class="tag">É</span>
+            <div class="rule-list">
+              <div class="rule">Firma de sistemas e implantação.</div>
+              <div class="rule">Parceira de ganho operacional mensurável.</div>
+              <div class="rule">Tecnologia aplicada com foco em resultado.</div>
+              <div class="rule">Operação premium, clara e disciplinada.</div>
+            </div>
+          </div>
+          <div class="voice-card">
+            <span class="tag" style="background:rgba(158,103,49,0.12); color:var(--copper-500);">Não é</span>
+            <div class="rule-list">
+              <div class="rule">Agência de marketing ou house de landing page.</div>
+              <div class="rule">Software barato vendido por licença rasa.</div>
+              <div class="rule">Automação genérica com promessa difusa de IA.</div>
+              <div class="rule">Startup visualmente intercambiável.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="voice" class="reveal">
+      <div class="section-shell">
+        <div class="section-head">
+          <div class="kicker">Voz</div>
+          <h2>A marca fala com precisão, não com hype.</h2>
+          <p>A voz da Konig Systems deve soar como uma empresa que entende a operação antes de propor a solução. O tom é firme, sóbrio e técnico sem virar texto frio ou burocrático.</p>
+        </div>
+        <div class="grid-3">
+          <div class="voice-card">
+            <strong>Tom desejado</strong>
+            <p>Sóbrio, preciso, confiante, cirúrgico, premium sem luxo vazio.</p>
+          </div>
+          <div class="voice-card">
+            <strong>Palavras que ajudam</strong>
+            <p>capacidade, agenda, previsibilidade, operação, implantação, fluxo, leitura, recuperação, clareza, cadência.</p>
+          </div>
+          <div class="voice-card">
+            <strong>Palavras a evitar</strong>
+            <p>disruptivo, inovador, revolução, chatbot inteligente, transformação digital, solução completa de IA.</p>
+          </div>
+        </div>
+        <div class="grid-2" style="margin-top:16px;">
+          <div class="specimen">
+            <strong>Exemplo de headline certa</strong>
+            <p>Recuperamos capacidade operacional onde a agenda perde receita.</p>
+          </div>
+          <div class="specimen">
+            <strong>Exemplo de headline errada</strong>
+            <p>Nossa plataforma de IA revoluciona o atendimento com automação inteligente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="identity" class="reveal">
+      <div class="section-shell">
+        <div class="section-head">
+          <div class="kicker">Logo System</div>
+          <h2>Três rotas de identidade para a Konig Systems.</h2>
+          <p>A rota preferida para começar é a combinação de um wordmark forte com um monograma funcional. A marca precisa sobreviver no mundo real, não só em mockup bonito.</p>
+        </div>
+        <div class="grid-3">
+          <div class="logo-card">
+            <span class="tag">Rota A</span>
+            <div class="logo-stage">
+              <div class="wordmark">KONIG<small>SYSTEMS</small></div>
+            </div>
+            <strong>Wordmark soberano</strong>
+            <p>Mais institucional. Ideal para proposta, deck, site e contratos. Passa sensação de firma séria e reduz risco de símbolo fraco no início.</p>
+          </div>
+          <div class="logo-card">
+            <span class="tag">Rota B</span>
+            <div class="logo-stage">
+              <svg class="svg-wrap" viewBox="0 0 240 240" role="img" aria-label="Monograma KS">
+                <rect x="0" y="0" width="240" height="240" rx="42" fill="#0a4b41"/>
+                <path d="M72 56v128" stroke="#f8f3ea" stroke-width="18" stroke-linecap="square"/>
+                <path d="M82 120L156 56" stroke="#f8f3ea" stroke-width="18" stroke-linecap="square"/>
+                <path d="M86 124l72 60" stroke="#dfe9e4" stroke-width="18" stroke-linecap="square"/>
+                <path d="M176 56c-28 0-44 11-44 30 0 46 80 15 80 65 0 22-18 34-46 34-18 0-32-3-48-10" stroke="#f1eadf" stroke-width="14" fill="none" stroke-linecap="square"/>
+              </svg>
+            </div>
+            <strong>Monograma KS</strong>
+            <p>Mais versátil para avatar, favicon, produto e aplicações compactas. Deve comunicar estrutura e controle, não “luxo”.</p>
+          </div>
+          <div class="logo-card">
+            <span class="tag">Rota C</span>
+            <div class="logo-stage">
+              <svg class="svg-wrap" viewBox="0 0 280 220" role="img" aria-label="Crown abstracted">
+                <rect x="14" y="16" width="252" height="188" rx="30" fill="#f8f3ea" stroke="#e5dac7"/>
+                <path d="M56 146l32-64 52 52 44-86 40 98" fill="none" stroke="#0a6b5d" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M54 164h176" stroke="#314047" stroke-width="12" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <strong>Crown abstracted</strong>
+            <p>Referência sutil ao nome “Konig”. Só vale se ficar abstrata, contida e durável. O risco de ficar óbvia demais é alto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="color" class="reveal">
+      <div class="section-shell">
+        <div class="section-head">
+          <div class="kicker">Color</div>
+          <h2>Paleta Clinical Editorial.</h2>
+          <p>Sem azul médico óbvio, sem preto agressivo, sem neon tech. A Konig Systems usa uma base quente e institucional com verde profundo como âncora.</p>
+        </div>
+        <div class="grid-4">
+          <div class="color-card">
+            <div class="palette-swatch" style="background:#0a4b41;"></div>
+            <strong>Forest 700</strong>
+            <p><code>#0A4B41</code><br>Âncora institucional, wordmark, botões e elementos de confiança.</p>
+          </div>
+          <div class="color-card">
+            <div class="palette-swatch" style="background:#0f6b5d;"></div>
+            <strong>Forest 500</strong>
+            <p><code>#0F6B5D</code><br>Ênfase funcional, estados positivos e destaques de navegação.</p>
+          </div>
+          <div class="color-card">
+            <div class="palette-swatch" style="background:#f1eadf;"></div>
+            <strong>Sand 100</strong>
+            <p><code>#F1EADF</code><br>Base quente, editorial e mais sofisticada que branco puro.</p>
+          </div>
+          <div class="color-card">
+            <div class="palette-swatch" style="background:#314047;"></div>
+            <strong>Graphite 700</strong>
+            <p><code>#314047</code><br>Texto auxiliar, contraste suave e densidade de sistema.</p>
+          </div>
+        </div>
+        <div class="grid-3" style="margin-top:16px;">
+          <div class="token-card">
+            <strong>Copper Accent</strong>
+            <p><code>#9E6731</code> é opcional e deve aparecer com parcimônia em selos, linhas editoriais e micro-acento.</p>
+          </div>
+          <div class="token-card">
+            <strong>Mist</strong>
+            <p><code>#DFE9E4</code> entra como respiro claro e material de fundo. Nunca como cor hero principal.</p>
+          </div>
+          <div class="token-card">
+            <strong>White</strong>
+            <p><code>#FFFDFA</code> é branco caloroso, bom para papéis, cards de apoio e módulos de leitura.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="type" class="reveal">
+      <div class="section-shell">
+        <div class="section-head">
+          <div class="kicker">Type</div>
+          <h2>Tipografia como presença e disciplina.</h2>
+          <p>A recomendação é usar uma dupla: serif expressiva para headlines e sans neutra para sistema. Isso sustenta autoridade editorial sem comprometer legibilidade.</p>
+        </div>
+        <div class="grid-2">
+          <div class="font-specimen">
+            <div class="font-display">Konig Systems turns operations into leverage.</div>
+            <div class="font-ui">Display serif para capa, hero, títulos e momentos de marca. Ela carrega a presença da empresa e dá afastamento do visual de SaaS comum.</div>
+          </div>
+          <div class="font-specimen">
+            <div class="font-ui">
+              <strong style="display:block; margin-bottom:10px; color:var(--graphite-900);">Sans de apoio</strong>
+              Use uma sans limpa para interface, deck, tabelas, métricas e copy operacional. O papel dela não é impressionar. O papel dela é organizar, servir e deixar a marca respirar.
+              <br><br>
+              Recomendação prática:
+              <br>Display: Canela / Cormorant Garamond / Instrument Serif
+              <br>UI: Neue Haas Grotesk / Suisse Int'l / Inter Tight
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="system" class="reveal">
+      <div class="section-shell">
+        <div class="section-head">
+          <div class="kicker">System</div>
+          <h2>Princípios de composição.</h2>
+          <p>O sistema visual da Konig Systems precisa parecer construído, não decorado. Isso vale para página, proposta, deck, dashboard e diagnóstico.</p>
+        </div>
+        <div class="grid-3">
+          <div class="token-card">
+            <strong>1. Editorial first</strong>
+            <p>Preferir grandes planos, respiro, linhas de leitura fortes e tipografia dominante a mosaicos de cards sem hierarquia.</p>
+          </div>
+          <div class="token-card">
+            <strong>2. Metrics with dignity</strong>
+            <p>Números são tratados como leitura executiva. Sem visual de dashboard infantil, sem widgets excessivos.</p>
+          </div>
+          <div class="token-card">
+            <strong>3. Real surfaces</strong>
+            <p>Usar fotografia clínica real, materialidade sutil ou textura de papel; evitar dashboards falsos e ilustrações genéricas de IA.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="applications" class="reveal">
+      <div class="section-shell">
+        <div class="section-head">
+          <div class="kicker">Applications</div>
+          <h2>Como a marca se comporta nas superfícies principais.</h2>
+          <p>O mesmo sistema precisa sustentar apresentação comercial, proposta executiva, diagnóstico de conta, landing page e produto operacional.</p>
+        </div>
+        <div class="grid-2">
+          <div class="application">
+            <div class="app-header">
+              <div class="app-brand">Konig Systems</div>
+              <div class="label" style="color:var(--graphite-700);">Deck / proposta</div>
+            </div>
+            <div class="poster">
+              <div>
+                <div class="tag">Clinical Editorial</div>
+                <h3>Recuperação de agenda para operações clínicas complexas.</h3>
+              </div>
+              <div class="meta">
+                <span>diagnóstico</span>
+                <span>implantação</span>
+                <span>previsibilidade</span>
+              </div>
+            </div>
+          </div>
+          <div class="application">
+            <div class="app-header">
+              <div class="app-brand">Konig OS</div>
+              <div class="label" style="color:var(--graphite-700);">Produto / backoffice</div>
+            </div>
+            <div class="dashboard">
+              <div class="sidebar">
+                <div class="ks">KS</div>
+                <ul>
+                  <li>Agenda</li>
+                  <li>Confirmação</li>
+                  <li>Reocupação</li>
+                  <li>Operação</li>
+                  <li>Contas</li>
+                </ul>
+              </div>
+              <div class="workspace">
+                <div class="headline">Agenda recovery workspace</div>
+                <div class="kpi-row">
+                  <div class="kpi">
+                    <span>No-show</span>
+                    <strong>11.2%</strong>
+                    <small>queda de 3.6 p.p. no recorte atual</small>
+                  </div>
+                  <div class="kpi">
+                    <span>Slots recuperados</span>
+                    <strong>84</strong>
+                    <small>últimos 30 dias</small>
+                  </div>
+                  <div class="kpi">
+                    <span>Receita preservada</span>
+                    <strong>R$ 68k</strong>
+                    <small>estimativa operacional</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rules" class="reveal">
+      <div class="section-shell">
+        <div class="section-head">
+          <div class="kicker">Rules</div>
+          <h2>Regras de uso da marca.</h2>
+          <p>As peças da Konig Systems precisam parecer parte do mesmo organismo. Estas regras evitam que a marca desça para um visual genérico ou ornamental.</p>
+        </div>
+        <div class="grid-2">
+          <div class="voice-card">
+            <strong>Fazer</strong>
+            <div class="rule-list">
+              <div class="rule">Usar headline forte e texto curto.</div>
+              <div class="rule">Trabalhar com respiro e composição editorial.</div>
+              <div class="rule">Mostrar dados como leitura executiva.</div>
+              <div class="rule">Usar a marca Konig Systems como condutora do raciocínio.</div>
+            </div>
+          </div>
+          <div class="voice-card">
+            <strong>Evitar</strong>
+            <div class="rule-list">
+              <div class="rule">Decks com linguagem interna ou texto de bastidor.</div>
+              <div class="rule">Telas cheias de cards, gráficos inúteis ou chrome excessivo.</div>
+              <div class="rule">Mockups de IA com robô, cérebro, circuitos e neon.</div>
+              <div class="rule">Visual hospitalar frio com azul clínico padrão.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-shell">
+        <div class="section-head">
+          <div class="kicker">Next</div>
+          <h2>Próximos entregáveis corretos.</h2>
+          <p>Com a fundação da marca pronta, a próxima fase é transformar o sistema em ativos reais e depois reaplicar nas peças comerciais e no produto.</p>
+        </div>
+        <div class="grid-4">
+          <div class="token-card">
+            <strong>1. Logo v1</strong>
+            <p>Selecionar uma rota e fechar o desenho base em SVG.</p>
+          </div>
+          <div class="token-card">
+            <strong>2. Brand kit</strong>
+            <p>Exportar paleta, wordmark, monograma e regras rápidas.</p>
+          </div>
+          <div class="token-card">
+            <strong>3. Assets</strong>
+            <p>Capas, slides mestre, template de proposta e diagnóstico.</p>
+          </div>
+          <div class="token-card">
+            <strong>4. Rebuild</strong>
+            <p>Refazer deck e proposta comercial já com vida, imagem e autoridade.</p>
+          </div>
+        </div>
+        <div class="footer">
+          Konig Systems Brandbook v1 | Base para identidade visual, deck, proposta, landing page e produto.
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('in');
+      });
+    }, { threshold: 0.14 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+    const links = [...document.querySelectorAll('nav.sticky-nav a')];
+    const sections = links
+      .map((link) => document.querySelector(link.getAttribute('href')))
+      .filter(Boolean);
+
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          links.forEach((link) => {
+            link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+          });
+        }
+      });
+    }, { rootMargin: "-35% 0px -50% 0px", threshold: 0.01 });
+
+    sections.forEach((section) => navObserver.observe(section));
+  </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+name: company-strategic-core
+version: 1.0.0
+description: "Squad estratégico da empresa AIOX: braços do CEO, conselho estratégico e abertura de novas venture cells."
+author: "Codex"
+license: UNLICENSED
+slashPrefix: company
+
+aiox:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  tasks:
+    - clarify-direction.md
+    - commission-market-research.md
+    - run-council-debate.md
+    - make-ceo-decision.md
+    - spin-up-venture-cell.md
+  agents:
+    - chief-of-staff.md
+    - orion-cto.md
+    - marcal-growth-counsel.md
+    - hormozi-offer-counsel.md
+    - thiel-strategy-counsel.md
+    - jobs-product-counsel.md
+    - hill-conviction-counsel.md
+  workflows: []
+  checklists:
+    - ceo-gate.md
+  templates: []
+  tools: []
+  scripts: []
+
+config:
+  extends: extend
+  coding-standards: config/coding-standards.md
+  tech-stack: config/tech-stack.md
+  source-tree: config/source-tree.md
+
+dependencies:
+  node: []
+  python: []
+  squads:
+    - konig-research-intel-core
+    - konig-planning-core
+    - konig-governance-core
+
+tags:
+  - company
+  - strategy
+  - ceo
+  - council
+  - mindclones
+  - venture-cells

@@ -1,0 +1,44 @@
+name: bc-create-document
+description: Workflow para criar documentos PDF e PNG a partir de conteúdo
+pipeline: "Maestro → Vault → Brush (images) → Forge (HTML→PDF/PNG) → Gauge (QA)"
+
+steps:
+  - name: Select Template
+    description: Carrega template da marca
+    agent: Vault
+    command: "*load-template --name={template_name}"
+    
+  - name: Generate Images
+    description: Gera imagens AI para o documento
+    agent: Brush
+    command: "*generate-carousel-images --theme={content_theme}"
+    
+  - name: Render Document
+    description: Renderiza HTML para PDF/PNG
+    agent: Forge
+    command: "*render-pdf --content={content_file}"
+    
+  - name: Validate Quality
+    description: Valida qualidade do output
+    agent: Gauge
+    command: "*validate-layout --document={output}"
+
+inputs:
+  - name: template_name
+    type: string
+    required: true
+  - name: content_file
+    type: file
+    required: true
+  - name: format
+    type: string
+    enum: [report-a4, slides-16x9, carousel, social-card]
+    default: report-a4
+    
+outputs:
+  - name: pdf
+    type: file
+  - name: png
+    type: file
+  - name: quality_report
+    type: file

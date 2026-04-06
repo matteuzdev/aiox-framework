@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konig Systems | Proposta Oftalmo</title>
+  <style>
+    :root {
+      --bg: #f3ede3;
+      --surface: rgba(255, 250, 242, 0.86);
+      --ink: #162126;
+      --muted: #5d696f;
+      --line: rgba(22, 33, 38, 0.12);
+      --accent: #0a6a5b;
+      --accent-dark: #06483e;
+      --warm: #9b6220;
+      --shadow: 0 24px 70px rgba(22, 33, 38, 0.08);
+      --radius: 28px;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at top left, rgba(10,106,91,0.12), transparent 28%),
+        linear-gradient(180deg, #f8f2e8, #f1eadf);
+    }
+    a { color: inherit; }
+    .page {
+      width: min(var(--max), calc(100% - 28px));
+      margin: 0 auto;
+      padding: 24px 0 40px;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 16px;
+      color: var(--muted);
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .brand { color: var(--accent-dark); }
+    .hero, .panel, .price-card, .timeline, .metrics, .scope, .cta {
+      border: 1px solid var(--line);
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .hero {
+      min-height: 84svh;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+      gap: 22px;
+      align-items: end;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.82), rgba(245,239,229,0.92)),
+        linear-gradient(160deg, #dce7dd, #faf5eb 65%);
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(10,106,91,0.18);
+      background: rgba(255,255,255,0.72);
+      color: var(--accent-dark);
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 18px;
+    }
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 0.98;
+      letter-spacing: -0.05em;
+    }
+    h1 { font-size: clamp(52px, 10vw, 98px); max-width: 10ch; }
+    h2 { font-size: clamp(34px, 6vw, 56px); }
+    h3 { font-size: 28px; }
+    p, li, td, button {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--muted);
+      line-height: 1.68;
+      font-size: 15px;
+    }
+    .hero p { max-width: 60ch; font-size: 17px; }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+    .btn, .ghost {
+      display: inline-flex;
+      min-height: 46px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 16px;
+      border-radius: 999px;
+      font: 700 13px/1 Arial, Helvetica, sans-serif;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      border: 1px solid var(--line);
+      cursor: pointer;
+    }
+    .btn { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .ghost { background: rgba(255,255,255,0.72); }
+    .hero-side {
+      display: grid;
+      gap: 14px;
+    }
+    .metric-box {
+      padding: 20px;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+    }
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .metric-grid div {
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+    .metric-grid strong {
+      display: block;
+      font-size: 34px;
+      color: var(--accent-dark);
+      letter-spacing: -0.05em;
+    }
+    section { padding: 16px 0; }
+    .head { margin-bottom: 14px; }
+    .kicker {
+      color: var(--accent);
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 10px;
+    }
+    .grid-2, .grid-3 {
+      display: grid;
+      gap: 16px;
+    }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .panel, .scope, .metrics, .timeline, .cta { padding: 22px; }
+    .scope ul, .metrics ul, .timeline ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .price-card {
+      padding: 22px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.88), rgba(246,240,231,0.92));
+    }
+    .price-card .value {
+      display: block;
+      font-size: 34px;
+      color: var(--accent-dark);
+      letter-spacing: -0.05em;
+      margin-top: 8px;
+    }
+    .price-card .label {
+      color: var(--muted);
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .pill {
+      display: inline-flex;
+      min-height: 28px;
+      align-items: center;
+      padding: 0 10px;
+      border-radius: 999px;
+      background: rgba(10,106,91,0.1);
+      color: var(--accent-dark);
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+    }
+    .mini-note {
+      padding: 16px;
+      border-radius: 20px;
+      border: 1px dashed rgba(22,33,38,0.16);
+      background: rgba(255,255,255,0.64);
+    }
+    .cta {
+      background:
+        linear-gradient(120deg, rgba(10,106,91,0.1), rgba(255,255,255,0.78));
+    }
+    .sources {
+      margin-top: 12px;
+      color: var(--muted);
+      font: 13px/1.7 Arial, Helvetica, sans-serif;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 360ms ease, transform 360ms ease;
+    }
+    .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @media (max-width: 940px) {
+      .hero, .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+      }
+      h1 { max-width: 100%; }
+      .nav { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="nav">
+      <div class="brand">Konig Systems</div>
+      <div>Proposta comercial | Oftalmologia privada</div>
+    </div>
+
+    <header class="hero reveal">
+      <div>
+        <div class="eyebrow">Proposta inicial de implantação</div>
+        <h1>Recuperação de agenda para oftalmo.</h1>
+        <p>
+          A Konig Systems propõe uma implantação focada em um problema estreito e mensurável:
+          reduzir perda de receita causada por confirmação falha, cancelamento sem reposição e
+          baixa ocupação da agenda em operações de oftalmologia.
+        </p>
+        <p>
+          Não se trata de trocar prontuário, reestruturar toda a TI ou empurrar um chatbot genérico.
+          Trata-se de colocar uma camada operacional em cima do ponto em que a agenda vaza dinheiro.
+        </p>
+        <div class="actions">
+          <a class="btn" href="#pricing">Ver modelo comercial</a>
+          <a class="ghost" href="#scope">Ver escopo</a>
+          <button class="ghost" id="print-btn" type="button">Imprimir / PDF</button>
+        </div>
+      </div>
+      <aside class="hero-side">
+        <div class="metric-box">
+          <span class="pill">Base usada nesta proposta</span>
+          <div class="metric-grid">
+            <div><strong>23%</strong><span>no-show médio em revisão sistemática de saúde.</span></div>
+            <div><strong>72,1%</strong><span>uso de telefone para marcação em estudo recente.</span></div>
+            <div><strong>1,8%</strong><span>no-show online em estudo de prática oftalmológica.</span></div>
+            <div><strong>5,9%</strong><span>no-show offline no mesmo estudo.</span></div>
+          </div>
+        </div>
+        <div class="mini-note">
+          <p><strong style="color:var(--ink);">Leitura da Konig Systems:</strong> o melhor wedge comercial em oftalmo é entrar pela agenda, não pela promessa genérica de IA.</p>
+        </div>
+      </aside>
+    </header>
+
+    <section class="reveal">
+      <div class="head">
+        <div class="kicker">Problema</div>
+        <h2>O vazamento acontece antes do atendimento.</h2>
+      </div>
+      <div class="grid-3">
+        <div class="panel">
+          <h3>Confirmação</h3>
+          <p>Consultas e exames marcados sem confirmação ativa têm maior chance de virar slot ocioso.</p>
+        </div>
+        <div class="panel">
+          <h3>Cancelamento</h3>
+          <p>Quando uma vaga abre perto da data, muitas operações não conseguem repor o horário a tempo.</p>
+        </div>
+        <div class="panel">
+          <h3>Dependência manual</h3>
+          <p>Telefone e WhatsApp concentrados na recepção criam lentidão, erro humano e perda de cadência.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="scope" class="reveal">
+      <div class="head">
+        <div class="kicker">Escopo</div>
+        <h2>O que a implantação inicial cobre.</h2>
+      </div>
+      <div class="grid-2">
+        <div class="scope">
+          <h3>Inclui</h3>
+          <ul>
+            <li>mapeamento da jornada de marcação, confirmação e encaixe</li>
+            <li>implantação de confirmação ativa por WhatsApp ou SMS</li>
+            <li>tratamento de cancelamento e remarcação sem fricção</li>
+            <li>lista de espera para reaproveitar vagas abertas</li>
+            <li>painel operacional com vagas recuperadas, comparecimento e receita preservada</li>
+          </ul>
+        </div>
+        <div class="scope">
+          <h3>Não inclui no v1</h3>
+          <ul>
+            <li>troca de prontuário eletrônico</li>
+            <li>CRM completo</li>
+            <li>chatbot amplo de atendimento</li>
+            <li>app do paciente</li>
+            <li>BI genérico sem relação direta com agenda</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="head">
+        <div class="kicker">Resultado</div>
+        <h2>Como o cliente percebe valor em 30 dias.</h2>
+      </div>
+      <div class="metrics">
+        <div class="grid-3">
+          <div>
+            <h3>Menos no-show</h3>
+            <p>Queda na taxa de faltas com confirmação melhor.</p>
+          </div>
+          <div>
+            <h3>Mais reaproveitamento</h3>
+            <p>Cancelamentos convertidos em novas consultas ou exames.</p>
+          </div>
+          <div>
+            <h3>Mais ocupação</h3>
+            <p>Uso melhor da capacidade já existente na agenda.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="head">
+        <div class="kicker">Métricas</div>
+        <h2>Indicadores da operação.</h2>
+      </div>
+      <div class="grid-2">
+        <div class="metrics">
+          <ul>
+            <li>taxa de no-show</li>
+            <li>taxa de ocupação da agenda</li>
+            <li>percentual de cancelamentos reaproveitados</li>
+            <li>tempo de confirmação</li>
+          </ul>
+        </div>
+        <div class="metrics">
+          <ul>
+            <li>vagas recuperadas por semana</li>
+            <li>receita estimada preservada</li>
+            <li>comparecimento por tipo de agenda</li>
+            <li>evolução operacional após a implantação</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="reveal">
+      <div class="head">
+        <div class="kicker">Comercial</div>
+        <h2>Modelo proposto pela Konig Systems.</h2>
+      </div>
+      <div class="grid-3">
+        <div class="price-card">
+          <span class="label">Setup</span>
+          <span class="value">R$ 15k a R$ 40k</span>
+          <p>Implantação, desenho do fluxo, integrações mínimas e playbook operacional.</p>
+        </div>
+        <div class="price-card">
+          <span class="label">Mensalidade</span>
+          <span class="value">R$ 4k a R$ 12k</span>
+          <p>Operação, acompanhamento, otimização e leitura contínua dos indicadores.</p>
+        </div>
+        <div class="price-card">
+          <span class="label">Success fee opcional</span>
+          <span class="value">5% a 10%</span>
+          <p>Atrelado a valor recuperado, vaga reocupada ou resultado operacional acordado.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="head">
+        <div class="kicker">Prazo</div>
+        <h2>Sequência de trabalho.</h2>
+      </div>
+      <div class="timeline">
+        <ol>
+          <li>diagnóstico da operação e definição do recorte inicial</li>
+          <li>mapeamento de agenda, confirmação e cancelamento</li>
+          <li>implantação da camada operacional da Konig Systems</li>
+          <li>acompanhamento das primeiras métricas e ajustes</li>
+          <li>prova de resultado em 30 dias</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="cta">
+        <div class="head">
+          <div class="kicker">Próximo passo</div>
+          <h2>Validar aderência e abrir a implantação.</h2>
+        </div>
+        <p>
+          O próximo passo recomendado é uma conversa objetiva para validar o tamanho do vazamento
+          atual na agenda e confirmar se a implantação inicial da Konig Systems faz sentido para a
+          operação.
+        </p>
+        <div class="actions">
+          <a class="btn" href="#scope">Revisar escopo</a>
+          <a class="ghost" href="#pricing">Revisar comercial</a>
+        </div>
+      </div>
+      <div class="sources">
+        Base usada: ANS, revisão sistemática de no-show em saúde, estudo recente sobre métodos de
+        marcação, estudo de prática oftalmológica com 1,8% online vs 5,9% offline, estudo de
+        autoagendamento com menor no-show e case de preenchimento de vagas abertas na UCSF.
+      </div>
+    </section>
+  </div>
+
+  <script>
+    document.getElementById('print-btn').addEventListener('click', () => window.print());
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('in');
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>

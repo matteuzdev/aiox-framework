@@ -1,0 +1,59 @@
+name: konig-instagram-intelligence-core
+version: 1.0.0
+description: "Inteligencia e producao editorial para Instagram. Analise competitiva, sistema de conteudo, carrosseis, legendas e QA social."
+author: "Codex"
+license: UNLICENSED
+slashPrefix: insta
+
+aiox:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  tasks:
+    - analyze-instagram-competition.md
+    - build-editorial-war-map.md
+    - produce-carousel-batch.md
+    - write-caption-batch.md
+    - run-social-quality-gate.md
+    - publish-to-instagram.md
+  agents:
+    - instagram-chief.md
+    - competitor-intel-analyst.md
+    - content-pattern-strategist.md
+    - carousel-factory.md
+    - caption-engineer.md
+    - social-quality-auditor.md
+  workflows:
+    - instagram-content-pipeline.md
+  checklists:
+    - instagram-publish-gate.md
+  templates: []
+  tools: []
+  scripts: []
+
+config:
+  extends: extend
+  coding-standards: config/coding-standards.md
+  tech-stack: config/tech-stack.md
+  source-tree: config/source-tree.md
+
+dependencies:
+  node: []
+  python: []
+  squads:
+    - konig-media-authority-core
+    - konig-growth-core
+    - konig-experience-core
+    - konig-context-core
+    - konig-delivery-factory-core
+
+tags:
+  - instagram
+  - content
+  - intelligence
+  - authority
+  - carousel
+  - captions
+  - reels
+  - growth

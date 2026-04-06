@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konig Systems | Control Center</title>
+  <style>
+    :root {
+      --bg: #f7f2e9;
+      --panel: rgba(255, 253, 250, 0.9);
+      --ink: #152025;
+      --muted: #5f6a70;
+      --line: rgba(21, 32, 37, 0.12);
+      --accent: #0a4b41;
+      --accent-soft: rgba(10, 75, 65, 0.1);
+      --warn: #9e6731;
+      --warn-soft: rgba(158, 103, 49, 0.12);
+      --danger: #a33a32;
+      --shadow: 0 24px 80px rgba(21, 32, 37, 0.08);
+      --radius-xl: 30px;
+      --radius-lg: 22px;
+      --max: 1260px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(10,75,65,0.1), transparent 22%),
+        linear-gradient(180deg, #faf5ec, #f1eadf);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    a { color: inherit; text-decoration: none; }
+    .page { width: min(var(--max), calc(100% - 28px)); margin: 0 auto; padding: 24px 0 44px; }
+    .hero, .panel, .artifact, .stage, .log, .squad, .rule, .metric {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+    .hero {
+      padding: 28px;
+      margin-bottom: 18px;
+      background:
+        linear-gradient(140deg, rgba(255,255,255,0.86), rgba(245,239,229,0.94)),
+        linear-gradient(160deg, #dfe9e4, #f9f4ea 68%);
+    }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 20px;
+      color: var(--muted);
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .brand { color: var(--accent); }
+    .hero-grid, .grid-2, .grid-3, .grid-4 {
+      display: grid;
+      gap: 16px;
+    }
+    .hero-grid { grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr); align-items: end; }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 0.98;
+      letter-spacing: -0.05em;
+      font-weight: 600;
+    }
+    h1 { font-size: clamp(54px, 9vw, 96px); max-width: 8ch; }
+    h2 { font-size: clamp(34px, 5vw, 54px); max-width: 12ch; }
+    h3 { font-size: 28px; }
+    p, li, td, th, button, .label, .status, .meta {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .hero p, .panel p, .artifact p, .log p, .rule p, .squad p, li {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+    .eyebrow {
+      display: inline-flex;
+      min-height: 38px;
+      align-items: center;
+      padding: 0 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.74);
+      border: 1px solid rgba(10,75,65,0.16);
+      color: var(--accent);
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 18px;
+    }
+    .hero p { max-width: 62ch; font-size: 17px; }
+    .side-stack { display: grid; gap: 14px; }
+    .metric { padding: 18px; border-radius: var(--radius-lg); }
+    .metric strong {
+      display: block;
+      font-size: 36px;
+      letter-spacing: -0.05em;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+    nav {
+      position: sticky;
+      top: 10px;
+      z-index: 20;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(255,253,250,0.84);
+      backdrop-filter: blur(8px);
+      box-shadow: var(--shadow);
+    }
+    nav a {
+      min-height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      font: 700 13px/1 Arial, Helvetica, sans-serif;
+    }
+    nav a:hover, nav a.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    section { padding: 12px 0; }
+    .panel { padding: 22px; }
+    .section-head { margin-bottom: 16px; }
+    .kicker {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+      margin-bottom: 10px;
+    }
+    .stage {
+      padding: 18px;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(180deg, rgba(255,255,255,0.78), rgba(246,240,231,0.94));
+    }
+    .stage .step {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+    .stage .step:last-child { margin-bottom: 0; }
+    .status {
+      display: inline-flex;
+      min-height: 28px;
+      align-items: center;
+      padding: 0 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .done { background: var(--accent-soft); color: var(--accent); }
+    .working { background: var(--warn-soft); color: var(--warn); }
+    .blocked { background: rgba(163,58,50,0.12); color: var(--danger); }
+    .pending { background: rgba(49,64,71,0.08); color: var(--graphite-700); }
+    .artifact, .log, .squad, .rule { padding: 18px; border-radius: var(--radius-lg); }
+    .artifact strong, .log strong, .squad strong, .rule strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--ink);
+      font: 700 15px/1.5 Arial, Helvetica, sans-serif;
+    }
+    .artifact a {
+      display: inline-flex;
+      margin-top: 10px;
+      min-height: 38px;
+      align-items: center;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      font: 700 13px/1 Arial, Helvetica, sans-serif;
+    }
+    .artifact a:hover { border-color: var(--accent); color: var(--accent); }
+    ul { margin: 0; padding-left: 18px; }
+    .log-list, .rule-list { display: grid; gap: 12px; }
+    .meta { color: var(--muted); font-size: 13px; margin-top: 8px; }
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 360ms ease, transform 360ms ease;
+    }
+    .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @media (max-width: 980px) {
+      .hero-grid, .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+      h1, h2 { max-width: 100%; }
+      .topbar { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero reveal">
+      <div class="topbar">
+        <div class="brand">Konig Systems</div>
+        <div>Control Center | Fonte de verdade operacional</div>
+      </div>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Operação interna sincronizada com o trabalho do terminal</div>
+          <h1>Stop improvising. Run the company.</h1>
+          <p>Este painel existe para resolver exatamente o problema que apareceu: trabalho acontecendo em várias frentes sem um quadro operacional visível. A partir daqui, estratégia, pipeline, entregas, ativos e próximos passos ficam em um único lugar.</p>
+          <p>Regra nova: o terminal trabalha, mas o estado da empresa precisa aparecer aqui. Assim você entende o que está sendo feito, por quê, o que já foi decidido e o que ainda está bloqueado.</p>
+        </div>
+        <aside class="side-stack">
+          <div class="metric">
+            <strong>1</strong>
+            <p>nicho em foco: oftalmologia privada</p>
+          </div>
+          <div class="metric">
+            <strong>4</strong>
+            <p>frentes ativas: estratégia, comercial, branding e operação</p>
+          </div>
+          <div class="metric">
+            <strong>Agora</strong>
+            <p>precisamos travar processo e separar material interno de material externo</p>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <nav>
+      <a href="#mission">Missão</a>
+      <a href="#pipeline">Pipeline</a>
+      <a href="#squads">Squads</a>
+      <a href="#artifacts">Artefatos</a>
+      <a href="#decisions">Decisões</a>
+      <a href="#next">Próximos passos</a>
+      <a href="#rules">Regras</a>
+    </nav>
+
+    <section id="mission" class="reveal">
+      <div class="panel">
+        <div class="section-head">
+          <div class="kicker">Missão Atual</div>
+          <h2>Vender uma solução real para clínicas reais.</h2>
+        </div>
+        <div class="grid-3">
+          <div class="rule">
+            <strong>Mercado</strong>
+            <p>Foco atual em clínicas e redes de oftalmologia privada.</p>
+          </div>
+          <div class="rule">
+            <strong>Problema</strong>
+            <p>Perda de receita entre marcação, confirmação, cancelamento e reocupação da agenda.</p>
+          </div>
+          <div class="rule">
+            <strong>Posicionamento</strong>
+            <p>Não vendemos “IA”. Vendemos previsibilidade, ocupação de agenda e capacidade operacional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pipeline" class="reveal">
+      <div class="panel">
+        <div class="section-head">
+          <div class="kicker">Pipeline da Empresa</div>
+          <h2>Ordem de trabalho que devemos seguir.</h2>
+        </div>
+        <div class="grid-4">
+          <div class="stage">
+            <strong>1. Tese</strong>
+            <div class="step"><span>Nicho: oftalmo</span><span class="status done">Feito</span></div>
+            <div class="step"><span>Dor principal</span><span class="status done">Feito</span></div>
+            <div class="step"><span>Posicionamento</span><span class="status done">Feito</span></div>
+          </div>
+          <div class="stage">
+            <strong>2. Sistema Comercial</strong>
+            <div class="step"><span>Linguagem externa</span><span class="status working">Em ajuste</span></div>
+            <div class="step"><span>Estrutura da call</span><span class="status done">Feito</span></div>
+            <div class="step"><span>Proposta externa</span><span class="status working">Em ajuste</span></div>
+          </div>
+          <div class="stage">
+            <strong>3. Marca e Presença</strong>
+            <div class="step"><span>Fundação de marca</span><span class="status done">Feito</span></div>
+            <div class="step"><span>Logo final</span><span class="status blocked">Travado</span></div>
+            <div class="step"><span>Deck/padrão visual</span><span class="status working">Em ajuste</span></div>
+          </div>
+          <div class="stage">
+            <strong>4. Execução</strong>
+            <div class="step"><span>Lista priorizada de contas</span><span class="status done">Feito</span></div>
+            <div class="step"><span>Pré-diagnóstico por conta</span><span class="status pending">Pendente</span></div>
+            <div class="step"><span>Implantação piloto</span><span class="status pending">Pendente</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="squads" class="reveal">
+      <div class="panel">
+        <div class="section-head">
+          <div class="kicker">Squads em jogo</div>
+          <h2>Quem faz o quê.</h2>
+        </div>
+        <div class="grid-3">
+          <div class="squad">
+            <strong>Company Strategic Core</strong>
+            <p>Define aposta, posicionamento, tensões estratégicas e recomendação de mercado.</p>
+            <div class="meta">Hoje: nicho validado em oftalmo, mas precisa reassumir o padrão do material externo.</div>
+          </div>
+          <div class="squad">
+            <strong>Konig Growth Core</strong>
+            <p>Cuida de conta-alvo, abordagem comercial, qualificação e narrativa de aquisição.</p>
+            <div class="meta">Hoje: playbook e lista de contas existem; proposta e deck externos ainda precisam maturidade.</div>
+          </div>
+          <div class="squad">
+            <strong>Konig Experience Core</strong>
+            <p>Protege percepção, marca, apresentação, proposta e qualidade de experiência.</p>
+            <div class="meta">Hoje: base de marca criada; identidade final e aplicação ainda não passaram no crivo.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="artifacts" class="reveal">
+      <div class="panel">
+        <div class="section-head">
+          <div class="kicker">Artefatos</div>
+          <h2>O que já existe no workspace.</h2>
+        </div>
+        <div class="grid-3">
+          <div class="artifact">
+            <strong>Brandbook</strong>
+            <p>Fundação visual e verbal da Konig Systems.</p>
+            <a href="../../konig-experience-core/brand/konig-brandbook.html">Abrir</a>
+          </div>
+          <div class="artifact">
+            <strong>Índice navegável</strong>
+            <p>Ponto de entrada para marca, deck, proposta e assets.</p>
+            <a href="../../konig-experience-core/brand/konig-index.html">Abrir</a>
+          </div>
+          <div class="artifact">
+            <strong>Deck Rede Oftalmo</strong>
+            <p>Apresentação externa em revisão de tom e design.</p>
+            <a href="../../konig-growth-core/sales/rede-oftalmo-apresentacao.html">Abrir</a>
+          </div>
+          <div class="artifact">
+            <strong>Proposta Rede Oftalmo</strong>
+            <p>Versão preliminar que ainda precisa alinhar tom e padrão visual.</p>
+            <a href="../../konig-growth-core/sales/rede-oftalmo-proposta.html">Abrir</a>
+          </div>
+          <div class="artifact">
+            <strong>Playbook Oftalmo</strong>
+            <p>Material interno de abordagem, objeções e condução comercial.</p>
+            <a href="../../konig-growth-core/sales/oftalmo-playbook.html">Abrir</a>
+          </div>
+          <div class="artifact">
+            <strong>Brand Council</strong>
+            <p>Núcleo interno de branding que define a barra da marca.</p>
+            <a href="../../konig-experience-core/data/brand-council.md">Abrir</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="decisions" class="reveal">
+      <div class="panel">
+        <div class="section-head">
+          <div class="kicker">Decisões e Aprendizados</div>
+          <h2>O que já está decidido e o que aprendemos errando.</h2>
+        </div>
+        <div class="log-list">
+          <div class="log">
+            <strong>Decisão 1</strong>
+            <p>O foco inicial é oftalmologia, não um mercado genérico de clínicas.</p>
+          </div>
+          <div class="log">
+            <strong>Decisão 2</strong>
+            <p>O discurso comercial é sobre agenda, comparecimento, ocupação e receita. Não sobre “IA para clínicas”.</p>
+          </div>
+          <div class="log">
+            <strong>Aprendizado 1</strong>
+            <p>Material externo não pode falar a nossa língua interna. Termos como ICP, MVP, wedge e playbook ficam dentro de casa.</p>
+          </div>
+          <div class="log">
+            <strong>Aprendizado 2</strong>
+            <p>Branding não pode correr solto sem crivo executivo. A barra precisa ser mais alta para logo, imagem e composição.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="next" class="reveal">
+      <div class="panel">
+        <div class="section-head">
+          <div class="kicker">Próximos passos</div>
+          <h2>O que fazer agora, na ordem certa.</h2>
+        </div>
+        <div class="grid-3">
+          <div class="rule">
+            <strong>1. Travar o padrão externo</strong>
+            <p>Reescrever a proposta e revisar o deck no tom de dono, diretor e gestor de clínica.</p>
+          </div>
+          <div class="rule">
+            <strong>2. Fechar processo comercial</strong>
+            <p>Separar claramente abordagem, pré-diagnóstico, call, proposta e próximo passo.</p>
+          </div>
+          <div class="rule">
+            <strong>3. Operar por conta</strong>
+            <p>Criar um dossiê por clínica-alvo em vez de fazer peças genéricas sem contexto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rules" class="reveal">
+      <div class="panel">
+        <div class="section-head">
+          <div class="kicker">Regras novas</div>
+          <h2>Como vamos trabalhar daqui para frente.</h2>
+        </div>
+        <div class="rule-list">
+          <div class="rule">
+            <strong>Regra 1</strong>
+            <p>Todo artefato precisa ser marcado como interno ou externo antes de ser produzido.</p>
+          </div>
+          <div class="rule">
+            <strong>Regra 2</strong>
+            <p>Material externo fala na linguagem do cliente. Material interno pode falar na linguagem da operação.</p>
+          </div>
+          <div class="rule">
+            <strong>Regra 3</strong>
+            <p>O Control Center vira a visão executiva do que está acontecendo. Não avançamos em várias direções sem atualizar esse quadro.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('in');
+      });
+    }, { threshold: 0.14 });
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+    const links = [...document.querySelectorAll('nav a')];
+    const sections = links.map((link) => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          links.forEach((link) => link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`));
+        }
+      });
+    }, { rootMargin: "-35% 0px -50% 0px", threshold: 0.01 });
+    sections.forEach((section) => navObserver.observe(section));
+  </script>
+</body>
+</html>

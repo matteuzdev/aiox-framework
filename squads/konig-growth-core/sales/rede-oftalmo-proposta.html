@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konig Systems | Proposta Preliminar para Rede Oftalmo</title>
+  <style>
+    :root {
+      --bg: #f3ede4;
+      --surface: rgba(255, 250, 242, 0.88);
+      --ink: #152126;
+      --muted: #5d696f;
+      --accent: #0a6859;
+      --accent-dark: #07473d;
+      --line: rgba(21, 33, 38, 0.12);
+      --shadow: 0 24px 70px rgba(21, 33, 38, 0.08);
+      --radius: 28px;
+      --max: 1160px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at top left, rgba(10,104,89,0.12), transparent 28%),
+        linear-gradient(180deg, #f9f4eb, #f1eadf);
+    }
+    .page {
+      width: min(var(--max), calc(100% - 28px));
+      margin: 0 auto;
+      padding: 24px 0 40px;
+    }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 16px;
+      color: var(--muted);
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .brand { color: var(--accent-dark); }
+    .hero, .panel, .cta {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    .hero {
+      padding: 30px;
+      min-height: 72svh;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+      gap: 20px;
+      align-items: end;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.84), rgba(245,239,229,0.94)),
+        linear-gradient(160deg, #dbe7de, #faf5eb 64%);
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(10,104,89,0.18);
+      background: rgba(255,255,255,0.72);
+      color: var(--accent-dark);
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 18px;
+    }
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 0.98;
+      letter-spacing: -0.05em;
+    }
+    h1 { font-size: clamp(48px, 9vw, 92px); max-width: 10ch; }
+    h2 { font-size: clamp(34px, 6vw, 56px); }
+    h3 { font-size: 28px; }
+    p, li {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+    .hero p { max-width: 62ch; font-size: 17px; }
+    .stack, .grid-2, .grid-3 {
+      display: grid;
+      gap: 16px;
+    }
+    .stack { gap: 12px; }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .chipbox, .box {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(255,255,255,0.72);
+    }
+    .chipbox strong, .box strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--ink);
+      font: 700 15px/1.4 Arial, Helvetica, sans-serif;
+    }
+    .metric {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .metric div {
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+    .metric strong {
+      display: block;
+      font-size: 34px;
+      color: var(--accent-dark);
+      letter-spacing: -0.05em;
+    }
+    section { padding: 16px 0; }
+    .head { margin-bottom: 14px; }
+    .kicker {
+      color: var(--accent);
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 10px;
+    }
+    .panel, .cta { padding: 22px; }
+    .panel ul, .panel ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .cta {
+      background:
+        linear-gradient(120deg, rgba(10,104,89,0.1), rgba(255,255,255,0.78));
+    }
+    .note {
+      padding: 16px;
+      border-radius: 20px;
+      border: 1px dashed rgba(21,33,38,0.16);
+      background: rgba(255,255,255,0.66);
+      margin-top: 14px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .btn, .ghost {
+      display: inline-flex;
+      min-height: 46px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 16px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      text-decoration: none;
+      font: 700 13px/1 Arial, Helvetica, sans-serif;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+    }
+    .btn { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .ghost { background: rgba(255,255,255,0.74); color: var(--ink); }
+    .sources {
+      margin-top: 12px;
+      color: var(--muted);
+      font: 13px/1.7 Arial, Helvetica, sans-serif;
+    }
+    @media (max-width: 940px) {
+      .hero, .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      h1 { max-width: 100%; }
+      .topbar { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <div class="brand">Konig Systems</div>
+      <div>Proposta preliminar para avaliação de aderência</div>
+    </div>
+
+    <header class="hero">
+      <div>
+        <div class="eyebrow">Rede Oftalmo | proposta preliminar</div>
+        <h1>Estruturar a agenda como alavanca operacional.</h1>
+        <p>
+          Com base nas informações públicas da Rede Oftalmo, a Konig Systems entende que existe um
+          cenário com alta densidade assistencial: múltiplas unidades, consultas, exames, cirurgias
+          e atendimento de urgência. Em operações desse porte, a agenda deixa de ser apenas rotina
+          administrativa e passa a ser um ponto crítico de coordenação e receita.
+        </p>
+        <p>
+          Esta proposta preliminar não fecha escopo executivo nem condições comerciais finais.
+          Ela organiza o ponto de entrada recomendado pela Konig Systems e indica como transformar
+          um diagnóstico operacional em implantação objetiva.
+        </p>
+      </div>
+      <aside class="stack">
+        <div class="chipbox">
+          <strong>Footprint público observado</strong>
+          <div class="metric">
+            <div><strong>5</strong><span>hospitais e clínicas</span></div>
+            <div><strong>13</strong><span>salas de cirurgia</span></div>
+            <div><strong>+60</strong><span>consultórios</span></div>
+            <div><strong>+200</strong><span>médicos oftalmologistas</span></div>
+          </div>
+        </div>
+        <div class="chipbox">
+          <strong>Tese da Konig Systems</strong>
+          <p>O melhor ponto de entrada é confirmação, remarcação, reaproveitamento de cancelamentos e visibilidade da agenda por recorte operacional.</p>
+        </div>
+      </aside>
+    </header>
+
+    <section>
+      <div class="head">
+        <div class="kicker">Contexto</div>
+        <h2>Por que olhar para agenda agora.</h2>
+      </div>
+      <div class="grid-3">
+        <div class="panel">
+          <h3>Rede</h3>
+          <p>Múltiplas unidades e marcas trazem mais capacidade, mas também mais variação operacional em confirmação, encaixe e resposta a cancelamentos.</p>
+        </div>
+        <div class="panel">
+          <h3>Mix assistencial</h3>
+          <p>Consulta, exame, cirurgia e urgência têm comportamentos diferentes de comparecimento e exigem coordenação distinta.</p>
+        </div>
+        <div class="panel">
+          <h3>Capacidade</h3>
+          <p>Quanto maior a estrutura clínica, maior o impacto econômico de slots subutilizados ou invisibilidade de agenda.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="head">
+        <div class="kicker">Objetivo</div>
+        <h2>O que a Konig Systems propõe validar.</h2>
+      </div>
+      <div class="grid-2">
+        <div class="panel">
+          <h3>Hipótese operacional</h3>
+          <p>Existe espaço para melhorar comparecimento, reaproveitar cancelamentos e elevar previsibilidade de agenda sem substituir os sistemas centrais já utilizados pela Rede Oftalmo.</p>
+        </div>
+        <div class="panel">
+          <h3>Hipótese de implantação</h3>
+          <p>Um recorte inicial bem escolhido pode gerar leitura objetiva do problema e viabilizar expansão posterior com risco controlado.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="head">
+        <div class="kicker">Escopo preliminar</div>
+        <h2>Como sugerimos começar.</h2>
+      </div>
+      <div class="grid-2">
+        <div class="panel">
+          <h3>Etapa 1 | Diagnóstico operacional</h3>
+          <ol>
+            <li>mapear jornada de marcação, confirmação e encaixe</li>
+            <li>identificar recorte inicial de maior sensibilidade operacional</li>
+            <li>validar sistemas envolvidos, regras de agenda e responsáveis da operação</li>
+          </ol>
+        </div>
+        <div class="panel">
+          <h3>Etapa 2 | Implantação do recorte inicial</h3>
+          <ol>
+            <li>confirmar consultas e exames com lógica adequada ao recorte</li>
+            <li>estruturar tratamento de cancelamentos e remarcações</li>
+            <li>ativar waitlist ou fila de reocupação quando aplicável</li>
+            <li>dar visibilidade operacional aos indicadores definidos</li>
+          </ol>
+        </div>
+      </div>
+      <div class="note">
+        <p><strong style="color:var(--ink);">Importante:</strong> o recorte inicial pode ser uma unidade, um conjunto de agendas, um tipo de atendimento ou uma combinação de frentes com maior custo de ociosidade.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="head">
+        <div class="kicker">Indicadores</div>
+        <h2>O que precisa ficar visível.</h2>
+      </div>
+      <div class="grid-3">
+        <div class="panel">
+          <h3>Comparecimento</h3>
+          <ul>
+            <li>taxa de no-show</li>
+            <li>confirmação por tipo de agenda</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Capacidade</h3>
+          <ul>
+            <li>ocupação da agenda</li>
+            <li>cancelamentos reaproveitados</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Operação</h3>
+          <ul>
+            <li>tempo de confirmação</li>
+            <li>vagas recuperadas e leitura financeira</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="head">
+        <div class="kicker">Comercial</div>
+        <h2>Condições comerciais após o discovery.</h2>
+      </div>
+      <div class="panel">
+        <p>
+          A Konig Systems entende que apresentar valor fechado antes de validar volume operacional,
+          recorte de implantação, integrações e critérios de sucesso tende a distorcer a proposta.
+        </p>
+        <p>
+          Por isso, as condições comerciais finais devem ser apresentadas após a etapa de diagnóstico
+          operacional, quando já estiver claro:
+        </p>
+        <ul>
+          <li>qual unidade ou fluxo entra primeiro</li>
+          <li>quais sistemas e canais precisam ser considerados</li>
+          <li>qual o volume de agenda e criticidade operacional do recorte</li>
+          <li>qual a cadência de implantação e acompanhamento faz sentido</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="cta">
+        <div class="head">
+          <div class="kicker">Próximo passo</div>
+          <h2>Confirmar aderência e definir o recorte inicial.</h2>
+        </div>
+        <p>
+          O próximo passo sugerido é uma conversa de imersão com a operação para entender a lógica
+          atual de confirmação, remarcação, cancelamento e ocupação da agenda. A partir disso, a
+          Konig Systems devolve escopo executivo, recorte recomendado, cronograma e proposta
+          comercial compatível com o volume real da operação.
+        </p>
+        <div class="actions">
+          <button class="btn" id="print-btn" type="button">Imprimir / PDF</button>
+          <a class="ghost" href="#top">Revisar proposta</a>
+        </div>
+      </div>
+      <div class="sources">
+        Base pública usada nesta peça: site institucional da Rede Oftalmo e pesquisas externas
+        sobre no-show, métodos de marcação e agendamento em oftalmologia.
+      </div>
+    </section>
+  </div>
+
+  <script>
+    document.getElementById('print-btn').addEventListener('click', () => window.print());
+  </script>
+</body>
+</html>

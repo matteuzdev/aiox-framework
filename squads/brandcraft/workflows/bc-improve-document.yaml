@@ -1,0 +1,44 @@
+name: bc-improve-document
+description: Workflow para melhorar PDFs existentes com redesign automático
+pipeline: "Scribe (extracts content) → Maestro → Vault → Forge (re-renders) → Gauge (QA)"
+
+steps:
+  - name: Read PDF
+    description: Extrai conteúdo do PDF existente
+    agent: Scribe
+    command: "*read-pdf --path={pdf_file}"
+    
+  - name: Convert to Markdown
+    description: Converte para Markdown estruturado
+    agent: Scribe
+    command: "*convert-to-markdown"
+    
+  - name: Load Template
+    description: Carrega template da marca
+    agent: Vault
+    command: "*load-template --name={template_name}"
+    
+  - name: Re-render Document
+    description: Re-renderiza com novo design system
+    agent: Forge
+    command: "*render-pdf --content={markdown_content}"
+    
+  - name: Validate Quality
+    description: Valida aplicação da marca
+    agent: Gauge
+    command: "*validate-layout --document={improved_pdf}"
+
+inputs:
+  - name: pdf_file
+    type: file
+    required: true
+  - name: template_name
+    type: string
+    required: true
+    
+outputs:
+  - name: improved_pdf
+    type: file
+    description: PDF com novo design
+  - name: quality_report
+    type: file

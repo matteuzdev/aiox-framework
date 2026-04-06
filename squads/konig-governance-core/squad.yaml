@@ -1,0 +1,42 @@
+name: konig-governance-core
+version: 1.0.0
+description: "Governança, ordem e saúde operacional da Konig."
+author: "Codex"
+license: UNLICENSED
+slashPrefix: gov
+
+aiox:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  tasks:
+    - report-company-health.md
+    - audit-governance.md
+  agents:
+    - governance-chief.md
+    - health-auditor.md
+  workflows: []
+  checklists:
+    - health-gate.md
+  templates: []
+  tools: []
+  scripts: []
+
+config:
+  extends: extend
+  coding-standards: config/coding-standards.md
+  tech-stack: config/tech-stack.md
+  source-tree: config/source-tree.md
+
+dependencies:
+  node: []
+  python: []
+  squads:
+    - company-strategic-core
+
+tags:
+  - governance
+  - health
+  - reporting
+  - audit

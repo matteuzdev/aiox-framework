@@ -1,0 +1,62 @@
+name: konig-team-core
+version: 1.0.0
+description: "Team orchestrator que mostra todas as capacidades da Konig e executa workflows ponta a ponta."
+author: "CAIO + Conselho"
+license: UNLICENSED
+slashPrefix: team
+
+aiox:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  tasks:
+    - show-capabilities.md
+    - run-workflow.md
+    - sync-squads.md
+  agents:
+    - konig-team-orchestrator.md
+  workflows:
+    - new-product-launch.md
+    - content-to-market.md
+    - sales-cycle.md
+    - strategic-review.md
+  checklists:
+    - team-gate.md
+  templates:
+    - workflow-template.md
+
+config:
+  extends: extend
+  coding-standards: config/coding-standards.md
+  tech-stack: config/tech-stack.md
+  source-tree: config/source-tree.md
+
+dependencies:
+  node: []
+  python: []
+  squads:
+    - company-strategic-core
+    - konig-revenue-core
+    - konig-prospecting-core
+    - konig-growth-core
+    - konig-product-core
+    - konig-planning-core
+    - konig-engineering-core
+    - konig-media-authority-core
+    - konig-instagram-intelligence-core
+    - konig-experience-core
+    - konig-ops-core
+    - konig-delivery-factory-core
+    - konig-orchestration-core
+    - konig-governance-core
+    - konig-research-intel-core
+    - konig-athenaeum-core
+    - konig-context-core
+
+tags:
+  - team
+  - orchestration
+  - workflow
+  - overview
+  - capabilities
