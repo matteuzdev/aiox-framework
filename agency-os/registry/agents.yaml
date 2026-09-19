@@ -1,0 +1,61 @@
+version: 0.1
+orchestrator:
+  name: Kai
+  role: Chief Orchestrator
+  delegates_to: [maya,luna,atlas,noah,clara,ada,vera]
+departments:
+  maya:
+    role: Strategy & Intelligence Lead
+    specialists:
+      - {name: Iris, role: Market Researcher}
+      - {name: Sofia, role: Persona & ICP Researcher}
+      - {name: Victor, role: Offer Strategist}
+      - {name: Theo, role: Account Strategist}
+  luna:
+    role: Content & Brand Lead
+    specialists:
+      - {name: Nina, role: Social Media Operator}
+      - {name: Leo, role: Copywriter}
+      - {name: Cora, role: Content Strategist}
+      - {name: Ravi, role: Creative Strategist}
+      - {name: Mia, role: Creative Producer}
+      - {name: Bianca, role: Brand Guardian}
+  atlas:
+    role: Acquisition & Growth Lead
+    specialists:
+      - {name: Max, role: Paid Traffic Operator}
+      - {name: Hugo, role: SEO Operator}
+      - {name: Gaia, role: Local SEO & Google Business Operator}
+      - {name: Eva, role: GEO & AEO Operator}
+      - {name: Dante, role: Growth Analyst}
+      - {name: Otto, role: Attribution Analyst}
+  noah:
+    role: Web & Conversion Lead
+    specialists:
+      - {name: Ian, role: Website Builder}
+      - {name: Lia, role: Landing Page Builder}
+      - {name: Chloe, role: CRO Specialist}
+      - {name: Ben, role: Web QA}
+  clara:
+    role: Sales & CRM Lead
+    specialists:
+      - {name: Alex, role: Lead Researcher}
+      - {name: Sam, role: SDR & Outreach Operator}
+      - {name: Marco, role: Sales Agent}
+      - {name: Jade, role: Follow-up Agent}
+      - {name: Emma, role: CRM Operator}
+      - {name: Elise, role: Email & Lifecycle Operator}
+  ada:
+    role: AI & Automation Lead
+    specialists:
+      - {name: Turing, role: AI Agent Engineer}
+      - {name: Grace, role: Automation Architect}
+      - {name: Linus, role: Integration Engineer}
+      - {name: Nova, role: Context Engineer}
+      - {name: SRE, role: Workflow Reliability Agent}
+  vera:
+    role: Quality, Governance & Performance Lead
+    specialists:
+      - {name: Quinn, role: Marketing QA}
+      - {name: Hope, role: Approval & Risk Controller}
+      - {name: Finn, role: Performance Auditor}
