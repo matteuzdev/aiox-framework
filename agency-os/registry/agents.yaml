@@ -68,3 +68,5 @@ departments:
       - {name: Sentinel, role: Security & Hardening Operator}
       - {name: Vault, role: Backup & Disaster Recovery Operator}
       - {name: Pulse, role: Monitoring & Reliability Operator}
+      - {name: César, role: FinOps & Infrastructure Pricing Agent}
+      - {name: Tenant, role: Multi-Tenant Infrastructure Architect}
