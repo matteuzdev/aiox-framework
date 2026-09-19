@@ -36,6 +36,8 @@ departments:
       - {name: Lia, role: Landing Page Builder}
       - {name: Chloe, role: CRO Specialist}
       - {name: Ben, role: Web QA}
+      - {name: Wally, role: WordPress Solutions Architect}
+      - {name: Piper, role: WordPress Plugin & Backoffice Engineer}
   clara:
     role: Sales & CRM Lead
     specialists:
