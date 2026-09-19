@@ -2,7 +2,7 @@ version: 0.2
 orchestrator:
   name: Orion
   role: Chief Orchestrator
-  delegates_to: [maya,luna,atlas,noah,clara,ada,vera]
+  delegates_to: [maya,luna,atlas,noah,clara,ada,vera,bruno]
 departments:
   maya:
     role: Strategy & Intelligence Lead
@@ -59,3 +59,12 @@ departments:
       - {name: Quinn, role: Marketing QA}
       - {name: Hope, role: Approval & Risk Controller}
       - {name: Finn, role: Performance Auditor}
+
+  bruno:
+    role: VPS & Infrastructure Lead
+    specialists:
+      - {name: Nix, role: Linux Systems Operator}
+      - {name: Dock, role: Docker & Container Operator}
+      - {name: Sentinel, role: Security & Hardening Operator}
+      - {name: Vault, role: Backup & Disaster Recovery Operator}
+      - {name: Pulse, role: Monitoring & Reliability Operator}
