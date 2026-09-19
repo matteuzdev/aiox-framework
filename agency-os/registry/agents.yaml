@@ -1,6 +1,6 @@
-version: 0.1
+version: 0.2
 orchestrator:
-  name: Kai
+  name: Orion
   role: Chief Orchestrator
   delegates_to: [maya,luna,atlas,noah,clara,ada,vera]
 departments:
@@ -18,7 +18,7 @@ departments:
       - {name: Leo, role: Copywriter}
       - {name: Cora, role: Content Strategist}
       - {name: Ravi, role: Creative Strategist}
-      - {name: Mia, role: Creative Producer}
+      - {name: Mia, role: Creative Producer, native_capabilities: [image_generation]}
       - {name: Bianca, role: Brand Guardian}
   atlas:
     role: Acquisition & Growth Lead
